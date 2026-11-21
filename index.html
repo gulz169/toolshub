@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>ToolsHub - Free Online PDF, Image &amp; Data Tools</title>
+  <meta name="description" content="Free online tools: Image to PDF, PDF to Images, PDF merge and split, data arranger and more. Works in your browser, no upload, no signup.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0b0a1f">
+  <link rel="icon" href="icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+</head>
+<body class="home" data-root="">
+
+  <header id="site-header"></header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-text">
+          <h1 data-en="PDF, image and 100+ free tools that run in your browser"
+              data-ur="PDF، تصویر اور ڈیٹا کے ٹولز جو آپ کے براؤزر میں چلتے ہیں">PDF, image and 100+ free tools that run in your browser</h1>
+          <p data-en="Convert, merge and organize your files in seconds."
+             data-ur="اپنی فائلیں سیکنڈوں میں کنورٹ، مرج اور ترتیب دیں۔">Convert, merge and organize your files in seconds.</p>
+
+          <div class="perks">
+            <span class="perk"><i style="--c:#34d399"></i><span data-en="Free" data-ur="مفت">Free</span></span>
+            <span class="perk"><i style="--c:#22d3ee"></i><span data-en="No signup" data-ur="سائن اپ نہیں">No signup</span></span>
+            <span class="perk"><i style="--c:#f472b6"></i><span data-en="Files stay on your device" data-ur="فائلیں آپ کے آلے پر ہی رہتی ہیں">Files stay on your device</span></span>
+          </div>
+
+          <div class="finder">
+            <div class="search">
+              <input type="search" id="toolSearch" autocomplete="off"
+                     aria-label="Search tools"
+                     data-en-ph="Search tools, like merge or excel"
+                     data-ur-ph="ٹول تلاش کریں، مثلاً merge یا excel"
+                     placeholder="Search tools, like merge or excel">
+            </div>
+            <div class="chips" id="chips" role="group" aria-label="Filter"><button type="button" class="chip" data-filter="all" aria-pressed="true" data-en="All" data-ur="سب">All</button></div>
+          </div>
+        </div>
+
+        <div class="floaters" aria-hidden="true">
+          <div class="file" data-tone="rose">PDF</div>
+          <div class="file" data-tone="amber">JPG</div>
+          <div class="file" data-tone="sky">PNG</div>
+          <div class="file" data-tone="mint">XLSX</div>
+          <div class="file" data-tone="violet">CSV</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container cats-section" id="cats">
+      <h2 class="sec-h" data-en="Browse by category" data-ur="زمرے کے حساب سے دیکھیں">Browse by category</h2>
+      <div class="cat-grid" id="catGrid"></div>
+      <div id="recent" class="recent" hidden></div>
+    </section>
+
+    <section class="container tools-section" id="tools">
+      <h2 class="sec-h" data-en="All tools" data-ur="تمام ٹولز">All tools</h2>
+      <div class="grid">
+
+        <a class="tool-card" data-tone="rose" data-cat="pdf" href="tools/image-to-pdf.html"
+           data-kw="image to pdf photo picture jpg png tasveer pdf banao">
+          <div class="tc-top">
+            <span class="ico">🖼️</span>
+            <div class="legend"><b>JPG</b><i></i><b class="to">PDF</b></div>
+          </div>
+          <h3 data-en="Image to PDF" data-ur="تصویر سے PDF">Image to PDF</h3>
+          <p data-en="Put JPG, PNG or WebP images into one PDF." data-ur="JPG، PNG یا WebP تصاویر کو ایک PDF میں رکھیں۔">Put JPG, PNG or WebP images into one PDF.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="sky" data-cat="pdf" href="tools/pdf-to-images.html"
+           data-kw="pdf to images jpg png pages convert tasveer">
+          <div class="tc-top">
+            <span class="ico">📑</span>
+            <div class="legend"><b>PDF</b><i></i><b class="to">JPG</b></div>
+          </div>
+          <h3 data-en="PDF to Images" data-ur="PDF سے تصاویر">PDF to Images</h3>
+          <p data-en="Save every PDF page as a JPG or PNG." data-ur="PDF کے ہر صفحے کو JPG یا PNG میں محفوظ کریں۔">Save every PDF page as a JPG or PNG.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="mint" data-cat="pdf" href="tools/pdf-merge.html"
+           data-kw="merge pdf join combine jorna milana">
+          <div class="tc-top">
+            <span class="ico">🧩</span>
+            <div class="legend"><b>PDF</b><i class="plus">+</i><b>PDF</b><i></i><b class="to">PDF</b></div>
+          </div>
+          <h3 data-en="Merge PDF" data-ur="PDF مرج کریں">Merge PDF</h3>
+          <p data-en="Join several PDFs into one document." data-ur="کئی PDF فائلوں کو ایک میں جوڑیں۔">Join several PDFs into one document.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="amber" data-cat="pdf" href="tools/pdf-split.html"
+           data-kw="split pdf extract pages alag nikalna">
+          <div class="tc-top">
+            <span class="ico">✂️</span>
+            <div class="legend"><b>PDF</b><i></i><b class="to">1-3</b></div>
+          </div>
+          <h3 data-en="Split PDF" data-ur="PDF اسپلٹ کریں">Split PDF</h3>
+          <p data-en="Pull out the pages you need, or split every page." data-ur="مطلوبہ صفحات نکالیں، یا ہر صفحہ الگ کریں۔">Pull out the pages you need, or split every page.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="violet" data-cat="image" href="tools/image-compressor.html"
+           data-kw="image compress compressor reduce size jpg png webp chota tasveer">
+          <div class="tc-top">
+            <span class="ico">🗜️</span>
+            <div class="legend"><b>5 MB</b><i></i><b class="to">500 KB</b></div>
+          </div>
+          <h3 data-en="Image Compressor" data-ur="امیج کمپریسر">Image Compressor</h3>
+          <p data-en="Shrink JPG, PNG or WebP images." data-ur="JPG، PNG یا WebP تصاویر کا سائز کم کریں۔">Shrink JPG, PNG or WebP images.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="mint" data-cat="image" href="tools/image-converter.html"
+           data-kw="image resize resizer convert converter jpg png webp size badalna tasveer">
+          <div class="tc-top">
+            <span class="ico">🔄</span>
+            <div class="legend"><b>PNG</b><i></i><b class="to">JPG</b></div>
+          </div>
+          <h3 data-en="Image Resizer &amp; Converter" data-ur="امیج ری سائزر اور کنورٹر">Image Resizer &amp; Converter</h3>
+          <p data-en="Resize images and switch between JPG, PNG and WebP." data-ur="تصاویر کا سائز بدلیں اور JPG، PNG، WebP میں کنورٹ کریں۔">Resize images and switch between JPG, PNG and WebP.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="sky" data-cat="text" href="tools/word-counter.html"
+           data-kw="word character counter count letters sentences paragraphs text lafz huroof ginti">
+          <div class="tc-top">
+            <span class="ico">🔢</span>
+            <div class="legend"><b>Aa</b><i></i><b class="to">123</b></div>
+          </div>
+          <h3 data-en="Word &amp; Character Counter" data-ur="لفظ اور حروف گننے والا">Word &amp; Character Counter</h3>
+          <p data-en="Count words, characters and reading time live." data-ur="الفاظ، حروف اور پڑھنے کا وقت فوراً گنیں۔">Count words, characters and reading time live.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="rose" data-cat="dev" href="tools/qr-generator.html"
+           data-kw="qr code generator link url barcode scan banao">
+          <div class="tc-top">
+            <span class="ico">📱</span>
+            <div class="legend"><b>URL</b><i></i><b class="to">QR</b></div>
+          </div>
+          <h3 data-en="QR Code Generator" data-ur="کیو آر کوڈ جنریٹر">QR Code Generator</h3>
+          <p data-en="Make a QR code from any link or text." data-ur="کسی بھی لنک یا متن سے QR کوڈ بنائیں۔">Make a QR code from any link or text.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="amber" data-cat="pdf" href="tools/pdf-pages.html"
+           data-kw="rotate delete remove pdf pages ghumana hatana page">
+          <div class="tc-top">
+            <span class="ico">🔃</span>
+            <div class="legend"><b>PDF</b><i></i><b class="to">↻ ✕</b></div>
+          </div>
+          <h3 data-en="Rotate &amp; Delete PDF Pages" data-ur="PDF صفحات گھمائیں اور ہٹائیں">Rotate &amp; Delete PDF Pages</h3>
+          <p data-en="Turn pages around or remove the ones you don't need." data-ur="صفحات گھمائیں یا غیر ضروری صفحات ہٹائیں۔">Turn pages around or remove the ones you don't need.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="violet" data-cat="pdf" href="tools/pdf-compress.html"
+           data-kw="compress pdf reduce size shrink chota kam size">
+          <div class="tc-top">
+            <span class="ico">🗜️</span>
+            <div class="legend"><b>PDF</b><i></i><b class="to">small</b></div>
+          </div>
+          <h3 data-en="Compress PDF" data-ur="PDF کمپریس کریں">Compress PDF</h3>
+          <p data-en="Reduce a PDF's file size for easy sharing." data-ur="آسانی سے بھیجنے کے لیے PDF کا سائز کم کریں۔">Reduce a PDF's file size for easy sharing.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="mint" data-cat="dev" href="tools/password-generator.html"
+           data-kw="password generator strong random secure safe pass word">
+          <div class="tc-top">
+            <span class="ico">🔐</span>
+            <div class="legend"><b>***</b><i></i><b class="to">Xk9#</b></div>
+          </div>
+          <h3 data-en="Password Generator" data-ur="پاس ورڈ جنریٹر">Password Generator</h3>
+          <p data-en="Make strong random passwords in one click." data-ur="ایک کلک میں مضبوط رینڈم پاس ورڈ بنائیں۔">Make strong random passwords in one click.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="amber" data-cat="text" href="tools/text-case.html"
+           data-kw="text case converter uppercase lowercase title sentence camel snake capital bara chota">
+          <div class="tc-top">
+            <span class="ico">🔠</span>
+            <div class="legend"><b>aa</b><i></i><b class="to">AA</b></div>
+          </div>
+          <h3 data-en="Text Case Converter" data-ur="ٹیکسٹ کیس کنورٹر">Text Case Converter</h3>
+          <p data-en="Switch text to UPPER, lower, Title or Sentence case." data-ur="متن کو UPPER، lower، Title یا Sentence کیس میں بدلیں۔">Switch text to UPPER, lower, Title or Sentence case.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="violet" data-cat="date" href="tools/age-calculator.html"
+           data-kw="age calculator birthday date of birth umar saalgira">
+          <div class="tc-top">
+            <span class="ico">🎂</span>
+            <div class="legend"><b>DOB</b><i></i><b class="to">Age</b></div>
+          </div>
+          <h3 data-en="Age Calculator" data-ur="عمر کیلکولیٹر">Age Calculator</h3>
+          <p data-en="Find your exact age in years, months and days." data-ur="سال، مہینے اور دن میں اپنی درست عمر معلوم کریں۔">Find your exact age in years, months and days.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="sky" data-cat="calc" href="tools/percentage-calculator.html"
+           data-kw="percentage percent calculator change discount fisad">
+          <div class="tc-top">
+            <span class="ico">％</span>
+            <div class="legend"><b>X%</b><i></i><b class="to">Y</b></div>
+          </div>
+          <h3 data-en="Percentage Calculator" data-ur="فیصد کیلکولیٹر">Percentage Calculator</h3>
+          <p data-en="Work out percentages and percentage change." data-ur="فیصد اور فیصد تبدیلی نکالیں۔">Work out percentages and percentage change.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="rose" data-cat="image" href="tools/image-to-text.html"
+           data-kw="image to text ocr extract read scan screenshot urdu english tasveer se text nikalna">
+          <div class="tc-top">
+            <span class="ico">🔍</span>
+            <div class="legend"><b>IMG</b><i></i><b class="to">Abc</b></div>
+          </div>
+          <h3 data-en="Image to Text (OCR)" data-ur="تصویر سے متن (OCR)">Image to Text (OCR)</h3>
+          <p data-en="Extract text from photos and scans. English and Urdu." data-ur="تصاویر اور اسکین سے متن نکالیں۔ انگریزی اور اردو۔">Extract text from photos and scans. English and Urdu.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="sky" data-cat="calc" href="tools/unit-converter.html"
+           data-kw="unit converter length weight temperature area marla kanal tola maund speed celsius fahrenheit kg">
+          <div class="tc-top">
+            <span class="ico">📏</span>
+            <div class="legend"><b>kg</b><i></i><b class="to">lb</b></div>
+          </div>
+          <h3 data-en="Unit Converter" data-ur="یونٹ کنورٹر">Unit Converter</h3>
+          <p data-en="Length, weight, temperature, area, marla, kanal and more." data-ur="لمبائی، وزن، درجہ حرارت، رقبہ، مرلہ، کنال اور مزید۔">Length, weight, temperature, area, marla, kanal and more.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="violet" data-cat="image" href="tools/background-remover.html"
+           data-kw="background remover remove bg transparent png cutout photo editor tasveer background hatana">
+          <div class="tc-top">
+            <span class="ico">✨</span>
+            <div class="legend"><b>JPG</b><i></i><b class="to">PNG</b></div>
+          </div>
+          <h3 data-en="Background Remover" data-ur="بیک گراؤنڈ ریموور">Background Remover</h3>
+          <p data-en="Remove a photo's background and save a transparent PNG." data-ur="تصویر کا بیک گراؤنڈ ہٹائیں اور شفاف PNG محفوظ کریں۔">Remove a photo's background and save a transparent PNG.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="mint" data-cat="dev" href="tools/json-formatter.html"
+           data-kw="json formatter validator beautify minify pretty print developer code">
+          <div class="tc-top">
+            <span class="ico">🧾</span>
+            <div class="legend"><b>{ }</b><i></i><b class="to">OK</b></div>
+          </div>
+          <h3 data-en="JSON Formatter &amp; Validator" data-ur="JSON فارمیٹر اور ویلیڈیٹر">JSON Formatter &amp; Validator</h3>
+          <p data-en="Beautify, minify and check JSON for errors." data-ur="JSON کو خوبصورت بنائیں، چھوٹا کریں اور غلطیاں چیک کریں۔">Beautify, minify and check JSON for errors.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="amber" data-cat="image" href="tools/image-cropper.html"
+           data-kw="image crop cropper cut trim photo square ratio tasveer kaatna">
+          <div class="tc-top">
+            <span class="ico">✂️</span>
+            <div class="legend"><b>IMG</b><i></i><b class="to">1:1</b></div>
+          </div>
+          <h3 data-en="Image Cropper" data-ur="امیج کراپر">Image Cropper</h3>
+          <p data-en="Crop photos freely or to 1:1, 4:3 and 16:9." data-ur="تصاویر آزادانہ یا 1:1، 4:3، 16:9 میں کراپ کریں۔">Crop photos freely or to 1:1, 4:3 and 16:9.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="sky" data-cat="dev" href="tools/base64.html"
+           data-kw="base64 encode decode text developer">
+          <div class="tc-top">
+            <span class="ico">🔣</span>
+            <div class="legend"><b>Text</b><i></i><b class="to">B64</b></div>
+          </div>
+          <h3 data-en="Base64 Encode &amp; Decode" data-ur="Base64 انکوڈ اور ڈی کوڈ">Base64 Encode &amp; Decode</h3>
+          <p data-en="Convert text to Base64 and back." data-ur="متن کو Base64 میں اور واپس بدلیں۔">Convert text to Base64 and back.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="rose" data-cat="image" href="tools/image-rotate.html"
+           data-kw="rotate flip mirror image photo ghumana ulta seedha">
+          <div class="tc-top">
+            <span class="ico">🔄</span>
+            <div class="legend"><b>↺</b><i></i><b class="to">⇋</b></div>
+          </div>
+          <h3 data-en="Rotate &amp; Flip Image" data-ur="تصویر گھمائیں اور فلپ کریں">Rotate &amp; Flip Image</h3>
+          <p data-en="Rotate a photo or mirror it, then save." data-ur="تصویر گھمائیں یا پلٹیں، پھر محفوظ کریں۔">Rotate a photo or mirror it, then save.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="amber" data-cat="dev" href="tools/color-picker.html"
+           data-kw="color colour picker hex rgb hsl eyedropper rang">
+          <div class="tc-top">
+            <span class="ico">🎨</span>
+            <div class="legend"><b>HEX</b><i></i><b class="to">RGB</b></div>
+          </div>
+          <h3 data-en="Color Picker &amp; Converter" data-ur="کلر پکر اور کنورٹر">Color Picker &amp; Converter</h3>
+          <p data-en="Pick colors and get HEX, RGB and HSL codes." data-ur="رنگ چنیں اور HEX، RGB، HSL کوڈ حاصل کریں۔">Pick colors and get HEX, RGB and HSL codes.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="mint" data-cat="text" href="tools/lorem-ipsum.html"
+           data-kw="lorem ipsum dummy placeholder text generator design">
+          <div class="tc-top">
+            <span class="ico">📝</span>
+            <div class="legend"><b>Lorem</b><i></i><b class="to">Text</b></div>
+          </div>
+          <h3 data-en="Lorem Ipsum Generator" data-ur="لوریم ایپسم جنریٹر">Lorem Ipsum Generator</h3>
+          <p data-en="Make dummy text for your designs." data-ur="ڈیزائن کے لیے نمونے کا متن بنائیں۔">Make dummy text for your designs.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="violet" data-cat="text" href="tools/line-tools.html"
+           data-kw="sort lines remove duplicate duplicates list alphabetical reverse shuffle empty">
+          <div class="tc-top">
+            <span class="ico">↕️</span>
+            <div class="legend"><b>C·A</b><i></i><b class="to">A·C</b></div>
+          </div>
+          <h3 data-en="Line Tools" data-ur="لائن ٹولز">Line Tools</h3>
+          <p data-en="Sort lines, remove duplicates, clean lists." data-ur="لائنیں ترتیب دیں، دہرائی ہوئی ہٹائیں۔">Sort lines, remove duplicates, clean lists.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="sky" data-cat="text" href="tools/text-compare.html"
+           data-kw="text compare diff difference changes checker">
+          <div class="tc-top">
+            <span class="ico">🆚</span>
+            <div class="legend"><b>A</b><i></i><b class="to">B</b></div>
+          </div>
+          <h3 data-en="Text Compare" data-ur="ٹیکسٹ کمپیئر">Text Compare</h3>
+          <p data-en="See what changed between two texts." data-ur="دو متن کے درمیان فرق دیکھیں۔">See what changed between two texts.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="rose" data-cat="image" href="tools/watermark.html"
+           data-kw="watermark image pdf logo text protect copyright">
+          <div class="tc-top">
+            <span class="ico">💧</span>
+            <div class="legend"><b>IMG</b><i></i><b class="to">©</b></div>
+          </div>
+          <h3 data-en="Add Watermark" data-ur="واٹر مارک لگائیں">Add Watermark</h3>
+          <p data-en="Put a text watermark on images or PDFs." data-ur="تصاویر یا PDF پر ٹیکسٹ واٹر مارک لگائیں۔">Put a text watermark on images or PDFs.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="amber" data-cat="text" href="tools/number-to-words.html"
+           data-kw="number to words urdu english lakh crore cheque amount ginti alfaz">
+          <div class="tc-top">
+            <span class="ico">🔢</span>
+            <div class="legend"><b>1250</b><i></i><b class="to">Words</b></div>
+          </div>
+          <h3 data-en="Number to Words" data-ur="نمبر سے الفاظ">Number to Words</h3>
+          <p data-en="Write numbers in English or Urdu words." data-ur="نمبر کو انگریزی یا اردو الفاظ میں لکھیں۔">Write numbers in English or Urdu words.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="mint" data-cat="date" href="tools/date-converter.html"
+           data-kw="hijri islamic date converter calendar gregorian tareekh islami">
+          <div class="tc-top">
+            <span class="ico">🌙</span>
+            <div class="legend"><b>1448</b><i></i><b class="to">2026</b></div>
+          </div>
+          <h3 data-en="Hijri Date Converter" data-ur="ہجری تاریخ کنورٹر">Hijri Date Converter</h3>
+          <p data-en="Convert Hijri and English dates." data-ur="ہجری اور انگریزی تاریخیں بدلیں۔">Convert Hijri and English dates.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="violet" data-cat="dev" href="tools/image-to-base64.html"
+           data-kw="image base64 data url encode decode developer">
+          <div class="tc-top">
+            <span class="ico">🔣</span>
+            <div class="legend"><b>IMG</b><i></i><b class="to">B64</b></div>
+          </div>
+          <h3 data-en="Image to Base64" data-ur="تصویر سے Base64">Image to Base64</h3>
+          <p data-en="Turn images into Base64 and back." data-ur="تصویر کو Base64 میں اور واپس بدلیں۔">Turn images into Base64 and back.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="sky" data-cat="pdf" href="tools/pdf-to-text.html"
+           data-kw="pdf to text word doc extract copy text convert">
+          <div class="tc-top">
+            <span class="ico">📄</span>
+            <div class="legend"><b>PDF</b><i></i><b class="to">TXT</b></div>
+          </div>
+          <h3 data-en="PDF to Text" data-ur="PDF سے متن">PDF to Text</h3>
+          <p data-en="Extract text from a PDF. Save as TXT or Word." data-ur="PDF سے متن نکالیں۔ TXT یا Word میں محفوظ کریں۔">Extract text from a PDF. Save as TXT or Word.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="rose" data-cat="image" href="tools/image-filters.html"
+           data-kw="image filters black white sepia blur brightness contrast photo effect">
+          <div class="tc-top">
+            <span class="ico">🎞️</span>
+            <div class="legend"><b>IMG</b><i></i><b class="to">B&amp;W</b></div>
+          </div>
+          <h3 data-en="Image Filters" data-ur="امیج فلٹرز">Image Filters</h3>
+          <p data-en="Black &amp; white, sepia, blur, brightness and more." data-ur="سیاہ و سفید، سیپیا، بلر، روشنی اور مزید۔">Black &amp; white, sepia, blur, brightness and more.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="amber" data-cat="image" href="tools/text-on-image.html"
+           data-kw="text on image meme maker caption add text photo">
+          <div class="tc-top">
+            <span class="ico">💬</span>
+            <div class="legend"><b>TOP</b><i></i><b class="to">TEXT</b></div>
+          </div>
+          <h3 data-en="Text on Image" data-ur="تصویر پر متن">Text on Image</h3>
+          <p data-en="Add meme-style text to a photo." data-ur="تصویر پر میم اسٹائل متن لکھیں۔">Add meme-style text to a photo.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="mint" data-cat="date" href="tools/timer.html"
+           data-kw="stopwatch timer countdown alarm laps clock">
+          <div class="tc-top">
+            <span class="ico">⏱️</span>
+            <div class="legend"><b>00:00</b><i></i><b class="to">GO</b></div>
+          </div>
+          <h3 data-en="Stopwatch &amp; Timer" data-ur="اسٹاپ واچ اور ٹائمر">Stopwatch &amp; Timer</h3>
+          <p data-en="Stopwatch with laps and a countdown alarm." data-ur="لیپس والی اسٹاپ واچ اور الارم والا کاؤنٹ ڈاؤن۔">Stopwatch with laps and a countdown alarm.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="violet" data-cat="fun" href="tools/random-picker.html"
+           data-kw="random picker wheel name spin lucky draw number generator">
+          <div class="tc-top">
+            <span class="ico">🎡</span>
+            <div class="legend"><b>A</b><i></i><b class="to">B</b></div>
+          </div>
+          <h3 data-en="Random Picker" data-ur="رینڈم پکر">Random Picker</h3>
+          <p data-en="Spin a wheel to pick a name, or a random number." data-ur="نام چننے کے لیے وہیل گھمائیں، یا رینڈم نمبر لیں۔">Spin a wheel to pick a name, or a random number.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="sky" data-cat="calc" href="tools/emi-calculator.html"
+           data-kw="emi loan calculator installment interest qist bank car home">
+          <div class="tc-top">
+            <span class="ico">🏦</span>
+            <div class="legend"><b>EMI</b><i></i><b class="to">Rs</b></div>
+          </div>
+          <h3 data-en="EMI / Loan Calculator" data-ur="ای ایم آئی / لون کیلکولیٹر">EMI / Loan Calculator</h3>
+          <p data-en="Monthly installment, interest and yearly schedule." data-ur="ماہانہ قسط، سود اور سالانہ شیڈول۔">Monthly installment, interest and yearly schedule.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="amber" data-cat="pdf" href="tools/pdf-page-numbers.html"
+           data-kw="pdf page numbers number pages add">
+          <div class="tc-top">
+            <span class="ico">🔢</span>
+            <div class="legend"><b>PDF</b><i></i><b class="to">1 2 3</b></div>
+          </div>
+          <h3 data-en="Add Page Numbers to PDF" data-ur="PDF میں صفحہ نمبر لگائیں">Add Page Numbers to PDF</h3>
+          <p data-en="Number the pages of a PDF." data-ur="PDF کے صفحات پر نمبر لگائیں۔">Number the pages of a PDF.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="rose" data-cat="text" href="tools/text-to-speech.html"
+           data-kw="text to speech read aloud voice tts urdu english">
+          <div class="tc-top">
+            <span class="ico">🔊</span>
+            <div class="legend"><b>Aa</b><i></i><b class="to">🔊</b></div>
+          </div>
+          <h3 data-en="Text to Speech" data-ur="متن سے آواز">Text to Speech</h3>
+          <p data-en="Listen to text read aloud." data-ur="متن کو بلند آواز میں سنیں۔">Listen to text read aloud.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="mint" data-cat="text" href="tools/voice-to-text.html"
+           data-kw="voice to text speech recognition dictation typing urdu">
+          <div class="tc-top">
+            <span class="ico">🎤</span>
+            <div class="legend"><b>🎤</b><i></i><b class="to">Aa</b></div>
+          </div>
+          <h3 data-en="Voice to Text" data-ur="آواز سے متن">Voice to Text</h3>
+          <p data-en="Speak and your words are typed." data-ur="بولیں اور الفاظ خود لکھے جائیں۔">Speak and your words are typed.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="sky" data-cat="dev" href="tools/hash-generator.html"
+           data-kw="hash sha256 sha1 sha512 checksum generator file">
+          <div class="tc-top">
+            <span class="ico">#️⃣</span>
+            <div class="legend"><b>TXT</b><i></i><b class="to">SHA</b></div>
+          </div>
+          <h3 data-en="Hash Generator" data-ur="ہیش جنریٹر">Hash Generator</h3>
+          <p data-en="SHA-256 and more hashes of text or files." data-ur="متن یا فائل کے SHA-256 اور دیگر ہیش۔">SHA-256 and more hashes of text or files.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="violet" data-cat="image" href="tools/remove-metadata.html"
+           data-kw="exif metadata remove gps location privacy photo strip">
+          <div class="tc-top">
+            <span class="ico">🛡️</span>
+            <div class="legend"><b>EXIF</b><i></i><b class="to">✕</b></div>
+          </div>
+          <h3 data-en="Remove Image Metadata" data-ur="تصویر کا میٹا ڈیٹا ہٹائیں">Remove Image Metadata</h3>
+          <p data-en="Remove location and camera data from photos." data-ur="تصاویر سے لوکیشن اور کیمرے کا ڈیٹا ہٹائیں۔">Remove location and camera data from photos.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="amber" data-cat="data" href="tools/csv-json.html"
+           data-kw="csv json converter table data excel developer">
+          <div class="tc-top">
+            <span class="ico">🔁</span>
+            <div class="legend"><b>CSV</b><i></i><b class="to">JSON</b></div>
+          </div>
+          <h3 data-en="CSV ↔ JSON Converter" data-ur="CSV ↔ JSON کنورٹر">CSV ↔ JSON Converter</h3>
+          <p data-en="Convert tables to JSON and back." data-ur="ٹیبل کو JSON میں اور واپس بدلیں۔">Convert tables to JSON and back.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="rose" data-cat="calc" href="tools/bmi-calculator.html"
+           data-kw="bmi body mass index weight height health calculator wazan">
+          <div class="tc-top">
+            <span class="ico">⚖️</span>
+            <div class="legend"><b>kg</b><i></i><b class="to">BMI</b></div>
+          </div>
+          <h3 data-en="BMI Calculator" data-ur="بی ایم آئی کیلکولیٹر">BMI Calculator</h3>
+          <p data-en="Check your BMI and healthy weight range." data-ur="اپنا BMI اور صحت مند وزن چیک کریں۔">Check your BMI and healthy weight range.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="mint" data-cat="calc" href="tools/zakat-calculator.html"
+           data-kw="zakat calculator nisab gold silver tola islamic 2.5 zakaat">
+          <div class="tc-top">
+            <span class="ico">🕌</span>
+            <div class="legend"><b>2.5%</b><i></i><b class="to">Zakat</b></div>
+          </div>
+          <h3 data-en="Zakat Calculator" data-ur="زکوٰۃ کیلکولیٹر">Zakat Calculator</h3>
+          <p data-en="Calculate Zakat on savings, gold and silver." data-ur="بچت، سونے اور چاندی پر زکوٰۃ نکالیں۔">Calculate Zakat on savings, gold and silver.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="sky" data-cat="dev" href="tools/url-encoder.html"
+           data-kw="url encode decode percent encoding link query">
+          <div class="tc-top">
+            <span class="ico">🔗</span>
+            <div class="legend"><b>%20</b><i></i><b class="to">URL</b></div>
+          </div>
+          <h3 data-en="URL Encoder &amp; Decoder" data-ur="URL انکوڈر اور ڈی کوڈر">URL Encoder &amp; Decoder</h3>
+          <p data-en="Encode or decode links and query text." data-ur="لنک اور کوئری متن انکوڈ یا ڈی کوڈ کریں۔">Encode or decode links and query text.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="amber" data-cat="image" href="tools/image-size-reducer.html"
+           data-kw="compress image kb 20kb 50kb 100kb size reduce form upload cnic passport">
+          <div class="tc-top">
+            <span class="ico">📉</span>
+            <div class="legend"><b>2 MB</b><i></i><b class="to">50 KB</b></div>
+          </div>
+          <h3 data-en="Compress Image to KB" data-ur="تصویر کو KB میں چھوٹا کریں">Compress Image to KB</h3>
+          <p data-en="Reduce a photo to 20, 50 or 100 KB for forms." data-ur="فارم کے لیے تصویر 20، 50 یا 100 KB تک چھوٹی کریں۔">Reduce a photo to 20, 50 or 100 KB for forms.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="mint" data-cat="image" href="tools/passport-photo.html"
+           data-kw="passport photo maker id cnic visa size print sheet 35x45 picture">
+          <div class="tc-top">
+            <span class="ico">🪪</span>
+            <div class="legend"><b>IMG</b><i></i><b class="to">35×45</b></div>
+          </div>
+          <h3 data-en="Passport Photo Maker" data-ur="پاسپورٹ فوٹو میکر">Passport Photo Maker</h3>
+          <p data-en="Passport / ID photo size and print sheet." data-ur="پاسپورٹ / آئی ڈی فوٹو سائز اور پرنٹ شیٹ۔">Passport / ID photo size and print sheet.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="violet" data-cat="image" href="tools/signature-maker.html"
+           data-kw="signature maker draw sign online transparent png dastakhat">
+          <div class="tc-top">
+            <span class="ico">✍️</span>
+            <div class="legend"><b>✍</b><i></i><b class="to">PNG</b></div>
+          </div>
+          <h3 data-en="Signature Maker" data-ur="دستخط میکر">Signature Maker</h3>
+          <p data-en="Draw a signature and save a transparent PNG." data-ur="دستخط بنائیں اور شفاف PNG محفوظ کریں۔">Draw a signature and save a transparent PNG.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="rose" data-cat="calc" href="tools/discount-gst.html"
+           data-kw="discount gst sales tax calculator percent sale price vat">
+          <div class="tc-top">
+            <span class="ico">🏷️</span>
+            <div class="legend"><b>−20%</b><i></i><b class="to">+GST</b></div>
+          </div>
+          <h3 data-en="Discount &amp; GST Calculator" data-ur="ڈسکاؤنٹ اور GST کیلکولیٹر">Discount &amp; GST Calculator</h3>
+          <p data-en="Sale price, add or remove GST / sales tax." data-ur="سیل قیمت، GST / سیلز ٹیکس شامل یا منہا کریں۔">Sale price, add or remove GST / sales tax.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="sky" data-cat="date" href="tools/date-difference.html"
+           data-kw="date difference days between dates add days calculator weekdays tareekh">
+          <div class="tc-top">
+            <span class="ico">📅</span>
+            <div class="legend"><b>D1</b><i></i><b class="to">D2</b></div>
+          </div>
+          <h3 data-en="Date Calculator" data-ur="تاریخ کیلکولیٹر">Date Calculator</h3>
+          <p data-en="Days between dates, or add days to a date." data-ur="تاریخوں کے درمیان دن، یا تاریخ میں دن جمع کریں۔">Days between dates, or add days to a date.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="amber" data-cat="date" href="tools/time-zone-converter.html"
+           data-kw="time zone converter pakistan saudi uk usa dubai canada world clock">
+          <div class="tc-top">
+            <span class="ico">🌍</span>
+            <div class="legend"><b>PKT</b><i></i><b class="to">GMT</b></div>
+          </div>
+          <h3 data-en="Time Zone Converter" data-ur="ٹائم زون کنورٹر">Time Zone Converter</h3>
+          <p data-en="Pakistan, Saudi, UK, USA and more." data-ur="پاکستان، سعودی، برطانیہ، امریکہ اور مزید۔">Pakistan, Saudi, UK, USA and more.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="violet" data-cat="dev" href="tools/barcode-generator.html"
+           data-kw="barcode generator code128 ean13 upc code39 create">
+          <div class="tc-top">
+            <span class="ico">🏷️</span>
+            <div class="legend"><b>123</b><i></i><b class="to">|||</b></div>
+          </div>
+          <h3 data-en="Barcode Generator" data-ur="بار کوڈ جنریٹر">Barcode Generator</h3>
+          <p data-en="Code 128, EAN-13, UPC and more as PNG." data-ur="Code 128، EAN-13، UPC اور مزید PNG میں۔">Code 128, EAN-13, UPC and more as PNG.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="mint" data-cat="image" href="tools/color-palette.html"
+           data-kw="color palette image extract colors dominant hex rang">
+          <div class="tc-top">
+            <span class="ico">🎨</span>
+            <div class="legend"><b>IMG</b><i></i><b class="to">5</b></div>
+          </div>
+          <h3 data-en="Color Palette from Image" data-ur="تصویر سے رنگوں کا پیلیٹ">Color Palette from Image</h3>
+          <p data-en="Find the main colors of a photo." data-ur="تصویر کے اہم رنگ معلوم کریں۔">Find the main colors of a photo.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="rose" data-cat="dev" href="tools/number-base.html"
+           data-kw="number base converter binary hex octal decimal roman numerals">
+          <div class="tc-top">
+            <span class="ico">💻</span>
+            <div class="legend"><b>0b</b><i></i><b class="to">0xFF</b></div>
+          </div>
+          <h3 data-en="Number Base Converter" data-ur="نمبر بیس کنورٹر">Number Base Converter</h3>
+          <p data-en="Binary, octal, decimal, hex and Roman." data-ur="بائنری، آکٹل، ڈیسیمل، ہیکس اور رومن۔">Binary, octal, decimal, hex and Roman.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="amber" data-cat="pdf" href="tools/pdf-organize.html"
+           data-kw="pdf reorder organize rearrange pages order move sort">
+          <div class="tc-top">
+            <span class="ico">🗂️</span>
+            <div class="legend"><b>1 2 3</b><i></i><b class="to">3 1 2</b></div>
+          </div>
+          <h3 data-en="Reorder PDF Pages" data-ur="PDF صفحات کی ترتیب بدلیں">Reorder PDF Pages</h3>
+          <p data-en="Drag pages into a new order and save." data-ur="صفحات کھینچ کر نئی ترتیب میں محفوظ کریں۔">Drag pages into a new order and save.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="violet" data-cat="dev" href="tools/favicon-maker.html"
+           data-kw="favicon maker ico icon website logo apple touch icon">
+          <div class="tc-top">
+            <span class="ico">⭐</span>
+            <div class="legend"><b>IMG</b><i></i><b class="to">.ico</b></div>
+          </div>
+          <h3 data-en="Favicon Maker" data-ur="فیو آئیکن میکر">Favicon Maker</h3>
+          <p data-en="Make favicon.ico and PNG icons from an image." data-ur="تصویر سے favicon.ico اور PNG آئیکن بنائیں۔">Make favicon.ico and PNG icons from an image.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="mint" data-cat="text" href="tools/word-frequency.html"
+           data-kw="word frequency counter most used words count text analysis keywords">
+          <div class="tc-top">
+            <span class="ico">📊</span>
+            <div class="legend"><b>Aa</b><i></i><b class="to">12</b></div>
+          </div>
+          <h3 data-en="Word Frequency Counter" data-ur="الفاظ کی تعداد">Word Frequency Counter</h3>
+          <p data-en="Find the most used words in a text." data-ur="متن میں سب سے زیادہ استعمال شدہ الفاظ معلوم کریں۔">Find the most used words in a text.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="sky" data-cat="calc" href="tools/currency-converter.html"
+           data-kw="currency converter exchange rate pkr usd sar aed gbp dollar riyal dirham rupee">
+          <div class="tc-top">
+            <span class="ico">💱</span>
+            <div class="legend"><b>PKR</b><i></i><b class="to">USD</b></div>
+          </div>
+          <h3 data-en="Currency Converter" data-ur="کرنسی کنورٹر">Currency Converter</h3>
+          <p data-en="PKR, USD, SAR, AED, GBP and more." data-ur="PKR، USD، SAR، AED، GBP اور مزید۔">PKR, USD, SAR, AED, GBP and more.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="rose" data-cat="fun" href="tools/typing-test.html"
+           data-kw="typing speed test wpm keyboard urdu english practice">
+          <div class="tc-top">
+            <span class="ico">⌨️</span>
+            <div class="legend"><b>WPM</b><i></i><b class="to">⏱</b></div>
+          </div>
+          <h3 data-en="Typing Speed Test" data-ur="ٹائپنگ اسپیڈ ٹیسٹ">Typing Speed Test</h3>
+          <p data-en="Test your typing speed in English or Urdu." data-ur="انگریزی یا اردو میں اپنی ٹائپنگ کی رفتار جانچیں۔">Test your typing speed in English or Urdu.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="mint" data-cat="image" href="tools/image-collage.html"
+           data-kw="photo collage maker combine merge images grid join pictures">
+          <div class="tc-top">
+            <span class="ico">🧩</span>
+            <div class="legend"><b>IMG</b><i></i><b class="to">▦</b></div>
+          </div>
+          <h3 data-en="Photo Collage Maker" data-ur="فوٹو کولاج میکر">Photo Collage Maker</h3>
+          <p data-en="Combine photos into one image." data-ur="کئی تصاویر کو ایک تصویر میں جوڑیں۔">Combine photos into one image.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="violet" data-cat="fun" href="tools/fancy-text.html"
+           data-kw="fancy text generator cool fonts stylish bold italic script bubble instagram bio">
+          <div class="tc-top">
+            <span class="ico">🅰️</span>
+            <div class="legend"><b>Abc</b><i></i><b class="to">𝓐𝓫𝓬</b></div>
+          </div>
+          <h3 data-en="Fancy Text Generator" data-ur="فینسی ٹیکسٹ جنریٹر">Fancy Text Generator</h3>
+          <p data-en="Cool fonts to copy and paste." data-ur="کاپی پیسٹ کے لیے اسٹائلش فونٹس۔">Cool fonts to copy and paste.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="amber" data-cat="pdf" href="tools/pdf-sign.html"
+           data-kw="sign pdf signature add draw upload esign dastakhat">
+          <div class="tc-top">
+            <span class="ico">✍️</span>
+            <div class="legend"><b>PDF</b><i></i><b class="to">✍</b></div>
+          </div>
+          <h3 data-en="Sign PDF" data-ur="PDF پر دستخط کریں">Sign PDF</h3>
+          <p data-en="Add your signature to a PDF." data-ur="اپنی PDF پر دستخط لگائیں۔">Add your signature to a PDF.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="sky" data-cat="dev" href="tools/whatsapp-link.html"
+           data-kw="whatsapp link generator wa.me chat message number click to chat">
+          <div class="tc-top">
+            <span class="ico">💬</span>
+            <div class="legend"><b>+92</b><i></i><b class="to">wa.me</b></div>
+          </div>
+          <h3 data-en="WhatsApp Link Generator" data-ur="واٹس ایپ لنک جنریٹر">WhatsApp Link Generator</h3>
+          <p data-en="Make a chat link with a ready message." data-ur="تیار پیغام کے ساتھ چیٹ لنک بنائیں۔">Make a chat link with a ready message.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="rose" data-cat="image" href="tools/image-blur.html"
+           data-kw="blur pixelate image hide face censor redact privacy cover">
+          <div class="tc-top">
+            <span class="ico">🕶️</span>
+            <div class="legend"><b>IMG</b><i></i><b class="to">▒</b></div>
+          </div>
+          <h3 data-en="Blur &amp; Pixelate Image" data-ur="تصویر بلر اور پکسلیٹ">Blur &amp; Pixelate Image</h3>
+          <p data-en="Hide faces, numbers or text in a photo." data-ur="تصویر میں چہرے، نمبر یا متن چھپائیں۔">Hide faces, numbers or text in a photo.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="violet" data-cat="calc" href="tools/gpa-calculator.html"
+           data-kw="gpa cgpa grade marks university student calculator">
+          <div class="tc-top">
+            <span class="ico">🎓</span>
+          </div>
+          <h3 data-en="GPA / CGPA Calculator" data-ur="GPA / CGPA کیلکولیٹر">GPA / CGPA Calculator</h3>
+          <p data-en="Add your courses and get GPA on a 4.0 scale." data-ur="کورسز شامل کریں اور 4.0 اسکیل پر GPA معلوم کریں۔">Add your courses and get GPA on a 4.0 scale.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="mint" data-cat="calc" href="tools/compound-interest.html"
+           data-kw="compound interest savings investment profit return munafa">
+          <div class="tc-top">
+            <span class="ico">📈</span>
+          </div>
+          <h3 data-en="Compound Interest Calculator" data-ur="کمپاؤنڈ انٹرسٹ کیلکولیٹر">Compound Interest Calculator</h3>
+          <p data-en="See how savings grow with compound interest." data-ur="دیکھیں کہ کمپاؤنڈ انٹرسٹ سے بچت کیسے بڑھتی ہے۔">See how savings grow with compound interest.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="amber" data-cat="calc" href="tools/bill-splitter.html"
+           data-kw="bill split tip restaurant dinner share">
+          <div class="tc-top">
+            <span class="ico">🍽️</span>
+          </div>
+          <h3 data-en="Bill Splitter" data-ur="بل تقسیم کریں">Bill Splitter</h3>
+          <p data-en="Split a bill with tip between friends." data-ur="دوستوں میں بل اور ٹپ تقسیم کریں۔">Split a bill with tip between friends.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="rose" data-cat="calc" href="tools/fuel-cost.html"
+           data-kw="fuel petrol diesel cost trip mileage average safar kharcha">
+          <div class="tc-top">
+            <span class="ico">⛽</span>
+          </div>
+          <h3 data-en="Fuel Cost Calculator" data-ur="فیول کوسٹ کیلکولیٹر">Fuel Cost Calculator</h3>
+          <p data-en="Find how much petrol a trip will cost." data-ur="سفر پر پیٹرول کا خرچ معلوم کریں۔">Find how much petrol a trip will cost.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="sky" data-cat="image" href="tools/aspect-ratio.html"
+           data-kw="aspect ratio resize width height 16:9 4:3 screen">
+          <div class="tc-top">
+            <span class="ico">📐</span>
+          </div>
+          <h3 data-en="Aspect Ratio Calculator" data-ur="ایسپیکٹ ریشو کیلکولیٹر">Aspect Ratio Calculator</h3>
+          <p data-en="Find the ratio and resize while keeping it." data-ur="ریشو معلوم کریں اور اسی ریشو میں سائز بدلیں۔">Find the ratio and resize while keeping it.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="violet" data-cat="text" href="tools/markdown-preview.html"
+           data-kw="markdown md preview editor readme">
+          <div class="tc-top">
+            <span class="ico">📝</span>
+          </div>
+          <h3 data-en="Markdown Previewer" data-ur="مارک ڈاؤن پری ویو">Markdown Previewer</h3>
+          <p data-en="Write Markdown and see it live." data-ur="مارک ڈاؤن لکھیں اور فوراً پری ویو دیکھیں۔">Write Markdown and see it live.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="amber" data-cat="dev" href="tools/regex-tester.html"
+           data-kw="regex regexp regular expression tester pattern match">
+          <div class="tc-top">
+            <span class="ico">🧪</span>
+          </div>
+          <h3 data-en="Regex Tester" data-ur="ریجیکس ٹیسٹر">Regex Tester</h3>
+          <p data-en="Test regular expressions and see matches live." data-ur="ریگولر ایکسپریشن ٹیسٹ کریں اور میچ فوراً دیکھیں۔">Test regular expressions and see matches live.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="sky" data-cat="dev" href="tools/uuid-generator.html"
+           data-kw="uuid guid random id generator unique">
+          <div class="tc-top">
+            <span class="ico">🆔</span>
+          </div>
+          <h3 data-en="UUID Generator" data-ur="UUID جنریٹر">UUID Generator</h3>
+          <p data-en="Generate random UUIDs (v4) in bulk." data-ur="رینڈم UUID (v4) ایک ساتھ بنائیں۔">Generate random UUIDs (v4) in bulk.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="mint" data-cat="date" href="tools/timestamp-converter.html"
+           data-kw="unix timestamp epoch date time convert">
+          <div class="tc-top">
+            <span class="ico">🕒</span>
+          </div>
+          <h3 data-en="Unix Timestamp Converter" data-ur="یونکس ٹائم اسٹیمپ کنورٹر">Unix Timestamp Converter</h3>
+          <p data-en="Convert Unix time to a date and back." data-ur="یونکس ٹائم کو تاریخ میں اور تاریخ کو ٹائم اسٹیمپ میں بدلیں۔">Convert Unix time to a date and back.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="rose" data-cat="dev" href="tools/text-encoder.html"
+           data-kw="binary hex morse code text encode decode ascii">
+          <div class="tc-top">
+            <span class="ico">🔣</span>
+          </div>
+          <h3 data-en="Text to Binary, Hex &amp; Morse" data-ur="ٹیکسٹ سے بائنری، ہیکس اور مورس">Text to Binary, Hex &amp; Morse</h3>
+          <p data-en="Convert text to binary, hex or Morse code and back." data-ur="ٹیکسٹ کو بائنری، ہیکس یا مورس کوڈ میں بدلیں اور واپس۔">Convert text to binary, hex or Morse code and back.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="amber" data-cat="text" href="tools/roman-numerals.html"
+           data-kw="roman numerals number convert xiv">
+          <div class="tc-top">
+            <span class="ico">🏛️</span>
+          </div>
+          <h3 data-en="Roman Numeral Converter" data-ur="رومن نمبر کنورٹر">Roman Numeral Converter</h3>
+          <p data-en="Convert numbers to Roman numerals and back." data-ur="نمبروں کو رومن اعداد میں اور واپس بدلیں۔">Convert numbers to Roman numerals and back.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="violet" data-cat="dev" href="tools/css-gradient.html"
+           data-kw="css gradient color background generator web design">
+          <div class="tc-top">
+            <span class="ico">🌈</span>
+          </div>
+          <h3 data-en="CSS Gradient Generator" data-ur="CSS گریڈینٹ جنریٹر">CSS Gradient Generator</h3>
+          <p data-en="Make a gradient and copy the CSS." data-ur="گریڈینٹ بنائیں اور CSS کاپی کریں۔">Make a gradient and copy the CSS.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="sky" data-cat="text" href="tools/slug-generator.html"
+           data-kw="slug url permalink seo blog title">
+          <div class="tc-top">
+            <span class="ico">🔗</span>
+          </div>
+          <h3 data-en="Slug Generator" data-ur="سلگ جنریٹر">Slug Generator</h3>
+          <p data-en="Turn titles into clean URL slugs." data-ur="ٹائٹل کو صاف URL سلگ میں بدلیں۔">Turn titles into clean URL slugs.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="mint" data-cat="dev" href="tools/code-minifier.html"
+           data-kw="css html minify minifier compress code speed">
+          <div class="tc-top">
+            <span class="ico">🗜️</span>
+          </div>
+          <h3 data-en="CSS &amp; HTML Minifier" data-ur="CSS اور HTML مینیفائر">CSS &amp; HTML Minifier</h3>
+          <p data-en="Shrink CSS or HTML code to load faster." data-ur="CSS یا HTML کوڈ چھوٹا کریں تاکہ تیزی سے لوڈ ہو۔">Shrink CSS or HTML code to load faster.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="amber" data-cat="dev" href="tools/px-rem-converter.html"
+           data-kw="px rem em pt pixel css convert font size">
+          <div class="tc-top">
+            <span class="ico">📏</span>
+          </div>
+          <h3 data-en="PX, REM &amp; EM Converter" data-ur="PX، REM اور EM کنورٹر">PX, REM &amp; EM Converter</h3>
+          <p data-en="Convert pixels to rem, em and points." data-ur="پکسل کو rem، em اور پوائنٹس میں بدلیں۔">Convert pixels to rem, em and points.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="mint" data-cat="calc" href="tools/salary-converter.html"
+           data-kw="salary hourly monthly yearly pay wage tankhwah">
+          <div class="tc-top">
+            <span class="ico">💼</span>
+          </div>
+          <h3 data-en="Salary Converter" data-ur="سیلری کنورٹر">Salary Converter</h3>
+          <p data-en="Convert pay between hourly, daily, weekly, monthly and yearly." data-ur="تنخواہ کو گھنٹہ، دن، ہفتہ، ماہ اور سال میں بدلیں۔">Convert pay between hourly, daily, weekly, monthly and yearly.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="amber" data-cat="calc" href="tools/profit-margin.html"
+           data-kw="profit margin markup selling price business munafa">
+          <div class="tc-top">
+            <span class="ico">🏷️</span>
+          </div>
+          <h3 data-en="Profit &amp; Margin Calculator" data-ur="پرافٹ اور مارجن کیلکولیٹر">Profit &amp; Margin Calculator</h3>
+          <p data-en="Find profit, margin and markup, or the price for a target margin." data-ur="منافع، مارجن اور مارک اپ معلوم کریں، یا مطلوبہ مارجن کی قیمت نکالیں۔">Find profit, margin and markup, or the price for a target margin.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="sky" data-cat="calc" href="tools/average-calculator.html"
+           data-kw="average mean median mode sum numbers statistics">
+          <div class="tc-top">
+            <span class="ico">➗</span>
+          </div>
+          <h3 data-en="Average Calculator" data-ur="اوسط کیلکولیٹر">Average Calculator</h3>
+          <p data-en="Mean, median, mode, sum and range of a list of numbers." data-ur="نمبروں کی فہرست کا اوسط، میڈین، موڈ، مجموعہ اور رینج۔">Mean, median, mode, sum and range of a list of numbers.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="amber" data-cat="calc" href="tools/gold-calculator.html"
+           data-kw="gold sona tola masha ratti karat price calculator">
+          <div class="tc-top">
+            <span class="ico">🪙</span>
+          </div>
+          <h3 data-en="Gold Calculator (Tola, Masha, Ratti)" data-ur="سونا کیلکولیٹر (تولہ، ماشہ، رتی)">Gold Calculator (Tola, Masha, Ratti)</h3>
+          <p data-en="Convert gold weight and find its value by karat." data-ur="سونے کا وزن کنورٹ کریں اور کیرٹ کے حساب سے قیمت معلوم کریں۔">Convert gold weight and find its value by karat.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="rose" data-cat="calc" href="tools/speed-distance-time.html"
+           data-kw="speed distance time rafter fasla waqt travel">
+          <div class="tc-top">
+            <span class="ico">🚗</span>
+          </div>
+          <h3 data-en="Speed, Distance &amp; Time" data-ur="رفتار، فاصلہ اور وقت">Speed, Distance &amp; Time</h3>
+          <p data-en="Leave one box empty and find it." data-ur="ایک خانہ خالی چھوڑیں اور اسے معلوم کریں۔">Leave one box empty and find it.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="amber" data-cat="calc" href="tools/electricity-cost.html"
+           data-kw="electricity bill unit kwh watt ac fan cost bijli">
+          <div class="tc-top">
+            <span class="ico">💡</span>
+          </div>
+          <h3 data-en="Electricity Cost Calculator" data-ur="بجلی کا خرچ کیلکولیٹر">Electricity Cost Calculator</h3>
+          <p data-en="Find the electricity cost of any appliance." data-ur="کسی بھی آلے کی بجلی کا خرچ معلوم کریں۔">Find the electricity cost of any appliance.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="mint" data-cat="calc" href="tools/calorie-calculator.html"
+           data-kw="calorie bmr diet weight loss gain tdee">
+          <div class="tc-top">
+            <span class="ico">🥗</span>
+          </div>
+          <h3 data-en="Calorie &amp; BMR Calculator" data-ur="کیلوری اور BMR کیلکولیٹر">Calorie &amp; BMR Calculator</h3>
+          <p data-en="Estimate daily calories for your body and activity." data-ur="اپنے جسم اور سرگرمی کے مطابق روزانہ کیلوریز کا اندازہ لگائیں۔">Estimate daily calories for your body and activity.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="violet" data-cat="text" href="tools/reverse-text.html"
+           data-kw="reverse text flip words letters ulta">
+          <div class="tc-top">
+            <span class="ico">🔁</span>
+          </div>
+          <h3 data-en="Reverse Text" data-ur="ٹیکسٹ الٹا کریں">Reverse Text</h3>
+          <p data-en="Reverse letters, words or lines." data-ur="حروف، الفاظ یا لائنیں الٹی کریں۔">Reverse letters, words or lines.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="sky" data-cat="text" href="tools/find-replace.html"
+           data-kw="find replace text bulk change regex">
+          <div class="tc-top">
+            <span class="ico">🔎</span>
+          </div>
+          <h3 data-en="Find &amp; Replace" data-ur="تلاش اور تبدیلی">Find &amp; Replace</h3>
+          <p data-en="Find and replace text in bulk." data-ur="متن میں الفاظ تلاش کریں اور ایک ساتھ بدلیں۔">Find and replace text in bulk.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="rose" data-cat="text" href="tools/reading-time.html"
+           data-kw="reading time words minutes speaking blog article">
+          <div class="tc-top">
+            <span class="ico">📖</span>
+          </div>
+          <h3 data-en="Reading Time Estimator" data-ur="ریڈنگ ٹائم اندازہ">Reading Time Estimator</h3>
+          <p data-en="Estimate how long a text takes to read or speak." data-ur="کوئی ٹیکسٹ پڑھنے یا بولنے میں کتنا وقت لے گا۔">Estimate how long a text takes to read or speak.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="mint" data-cat="text" href="tools/text-repeater.html"
+           data-kw="text repeater repeat copy paste many times">
+          <div class="tc-top">
+            <span class="ico">♾️</span>
+          </div>
+          <h3 data-en="Text Repeater" data-ur="ٹیکسٹ دہرائیں">Text Repeater</h3>
+          <p data-en="Repeat any text many times." data-ur="کسی بھی ٹیکسٹ کو کئی بار دہرائیں۔">Repeat any text many times.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="violet" data-cat="dev" href="tools/jwt-decoder.html"
+           data-kw="jwt json web token decode auth bearer">
+          <div class="tc-top">
+            <span class="ico">🔑</span>
+          </div>
+          <h3 data-en="JWT Decoder" data-ur="JWT ڈیکوڈر">JWT Decoder</h3>
+          <p data-en="Decode a JSON Web Token in your browser." data-ur="JSON Web Token کو براؤزر میں ہی ڈیکوڈ کریں۔">Decode a JSON Web Token in your browser.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="amber" data-cat="dev" href="tools/html-entities.html"
+           data-kw="html entities escape encode decode special characters">
+          <div class="tc-top">
+            <span class="ico">🏷️</span>
+          </div>
+          <h3 data-en="HTML Entity Encoder / Decoder" data-ur="HTML اینٹٹی انکوڈر / ڈی کوڈر">HTML Entity Encoder / Decoder</h3>
+          <p data-en="Escape special characters for HTML, or decode them." data-ur="HTML کے لیے خاص حروف انکوڈ کریں یا ڈی کوڈ کریں۔">Escape special characters for HTML, or decode them.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="rose" data-cat="dev" href="tools/box-shadow.html"
+           data-kw="css box shadow generator design web">
+          <div class="tc-top">
+            <span class="ico">🔲</span>
+          </div>
+          <h3 data-en="CSS Box Shadow Generator" data-ur="CSS باکس شیڈو جنریٹر">CSS Box Shadow Generator</h3>
+          <p data-en="Design a box shadow and copy the CSS." data-ur="باکس شیڈو بنائیں اور CSS کاپی کریں۔">Design a box shadow and copy the CSS.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="sky" data-cat="dev" href="tools/meta-tag-generator.html"
+           data-kw="meta tags seo open graph twitter website title description">
+          <div class="tc-top">
+            <span class="ico">🏁</span>
+          </div>
+          <h3 data-en="Meta Tag Generator" data-ur="میٹا ٹیگ جنریٹر">Meta Tag Generator</h3>
+          <p data-en="Create SEO, Open Graph and Twitter meta tags." data-ur="SEO، Open Graph اور Twitter میٹا ٹیگز بنائیں۔">Create SEO, Open Graph and Twitter meta tags.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="mint" data-cat="dev" href="tools/robots-txt.html"
+           data-kw="robots txt seo crawler sitemap website">
+          <div class="tc-top">
+            <span class="ico">🤖</span>
+          </div>
+          <h3 data-en="Robots.txt Generator" data-ur="robots.txt جنریٹر">Robots.txt Generator</h3>
+          <p data-en="Create a robots.txt file for your website." data-ur="اپنی ویب سائٹ کے لیے robots.txt فائل بنائیں۔">Create a robots.txt file for your website.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="violet" data-cat="dev" href="tools/url-parser.html"
+           data-kw="url parser query string params host path domain">
+          <div class="tc-top">
+            <span class="ico">🌐</span>
+          </div>
+          <h3 data-en="URL Parser" data-ur="URL پارسر">URL Parser</h3>
+          <p data-en="Break a URL into its parts and query parameters." data-ur="URL کو اس کے حصوں اور پیرامیٹرز میں توڑیں۔">Break a URL into its parts and query parameters.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="amber" data-cat="dev" href="tools/contrast-checker.html"
+           data-kw="contrast color accessibility wcag readable text background">
+          <div class="tc-top">
+            <span class="ico">👁️</span>
+          </div>
+          <h3 data-en="Color Contrast Checker" data-ur="کلر کنٹراسٹ چیکر">Color Contrast Checker</h3>
+          <p data-en="Check if text and background colors are readable (WCAG)." data-ur="چیک کریں کہ ٹیکسٹ اور بیک گراؤنڈ رنگ پڑھنے کے قابل ہیں (WCAG)۔">Check if text and background colors are readable (WCAG).</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="rose" data-cat="date" href="tools/countdown-timer.html"
+           data-kw="countdown days left until event date exam eid">
+          <div class="tc-top">
+            <span class="ico">⏳</span>
+          </div>
+          <h3 data-en="Countdown to a Date" data-ur="تاریخ تک کاؤنٹ ڈاؤن">Countdown to a Date</h3>
+          <p data-en="See days, hours and minutes left until any date." data-ur="کسی بھی تاریخ تک کے دن، گھنٹے اور منٹ دیکھیں۔">See days, hours and minutes left until any date.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="sky" data-cat="date" href="tools/date-add.html"
+           data-kw="date add subtract days months years calculator after before">
+          <div class="tc-top">
+            <span class="ico">➕</span>
+          </div>
+          <h3 data-en="Add or Subtract Days from a Date" data-ur="تاریخ میں دن جمع یا منفی کریں">Add or Subtract Days from a Date</h3>
+          <p data-en="Find the date after or before a number of days, months or years." data-ur="کچھ دن، مہینے یا سال بعد یا پہلے کی تاریخ معلوم کریں۔">Find the date after or before a number of days, months or years.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="mint" data-cat="date" href="tools/day-of-week.html"
+           data-kw="day of week weekday date birthday week number leap year">
+          <div class="tc-top">
+            <span class="ico">📆</span>
+          </div>
+          <h3 data-en="Day of the Week Finder" data-ur="ہفتے کا دن معلوم کریں">Day of the Week Finder</h3>
+          <p data-en="Find the weekday, week number and day of year for any date." data-ur="کسی بھی تاریخ کا دن، ہفتہ نمبر اور سال کا دن معلوم کریں۔">Find the weekday, week number and day of year for any date.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="violet" data-cat="fun" href="tools/dice-coin.html"
+           data-kw="dice roll coin flip toss random game">
+          <div class="tc-top">
+            <span class="ico">🎲</span>
+          </div>
+          <h3 data-en="Dice Roller &amp; Coin Flip" data-ur="ڈائس اور سکہ">Dice Roller &amp; Coin Flip</h3>
+          <p data-en="Roll dice or flip a coin." data-ur="ڈائس پھینکیں یا سکہ اچھالیں۔">Roll dice or flip a coin.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="sky" data-cat="fun" href="tools/random-number.html"
+           data-kw="random number generator lottery range pick">
+          <div class="tc-top">
+            <span class="ico">🔢</span>
+          </div>
+          <h3 data-en="Random Number Generator" data-ur="رینڈم نمبر جنریٹر">Random Number Generator</h3>
+          <p data-en="Generate random numbers in any range." data-ur="کسی بھی رینج میں رینڈم نمبر بنائیں۔">Generate random numbers in any range.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="amber" data-cat="fun" href="tools/emoji-picker.html"
+           data-kw="emoji picker copy smileys symbols">
+          <div class="tc-top">
+            <span class="ico">😀</span>
+          </div>
+          <h3 data-en="Emoji Picker" data-ur="ایموجی پکر">Emoji Picker</h3>
+          <p data-en="Tap emojis to build a message and copy it." data-ur="ایموجی پر ٹیپ کر کے میسج بنائیں اور کاپی کریں۔">Tap emojis to build a message and copy it.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="violet" data-cat="pdf" href="tools/pdf-metadata.html"
+           data-kw="pdf metadata title author properties edit">
+          <div class="tc-top">
+            <span class="ico">🏷️</span>
+          </div>
+          <h3 data-en="PDF Metadata Editor" data-ur="PDF میٹا ڈیٹا ایڈیٹر">PDF Metadata Editor</h3>
+          <p data-en="Edit title, author, subject and keywords of a PDF." data-ur="PDF کا ٹائٹل، مصنف، سبجیکٹ اور کی ورڈز بدلیں۔">Edit title, author, subject and keywords of a PDF.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="amber" data-cat="pdf" href="tools/pdf-crop.html"
+           data-kw="pdf crop trim margins white space">
+          <div class="tc-top">
+            <span class="ico">✂️</span>
+          </div>
+          <h3 data-en="Crop PDF Margins" data-ur="PDF مارجن کراپ کریں">Crop PDF Margins</h3>
+          <p data-en="Trim white margins from every page of a PDF." data-ur="PDF کے ہر صفحے کے سفید مارجن کاٹیں۔">Trim white margins from every page of a PDF.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="sky" data-cat="pdf" href="tools/pdf-resize.html"
+           data-kw="pdf resize a4 letter legal paper size fit">
+          <div class="tc-top">
+            <span class="ico">📏</span>
+          </div>
+          <h3 data-en="Resize PDF to A4 / Letter" data-ur="PDF کو A4 / Letter میں بدلیں">Resize PDF to A4 / Letter</h3>
+          <p data-en="Fit every page of a PDF onto A4, Letter or Legal paper." data-ur="PDF کے ہر صفحے کو A4، Letter یا Legal کاغذ پر فٹ کریں۔">Fit every page of a PDF onto A4, Letter or Legal paper.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="mint" data-cat="pdf" href="tools/pdf-n-up.html"
+           data-kw="pdf n-up multiple pages per sheet save paper print 2 4 6">
+          <div class="tc-top">
+            <span class="ico">🗂️</span>
+          </div>
+          <h3 data-en="PDF Pages per Sheet (N-up)" data-ur="PDF ایک شیٹ پر کئی صفحات">PDF Pages per Sheet (N-up)</h3>
+          <p data-en="Put 2, 4 or 6 PDF pages on one sheet to save paper." data-ur="کاغذ بچانے کے لیے ایک شیٹ پر 2، 4 یا 6 صفحات رکھیں۔">Put 2, 4 or 6 PDF pages on one sheet to save paper.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="rose" data-cat="pdf" href="tools/pdf-grayscale.html"
+           data-kw="pdf grayscale black white ink save print colour">
+          <div class="tc-top">
+            <span class="ico">⚫</span>
+          </div>
+          <h3 data-en="PDF to Black &amp; White" data-ur="PDF کو بلیک اینڈ وائٹ کریں">PDF to Black &amp; White</h3>
+          <p data-en="Turn a colour PDF into grayscale to save ink." data-ur="رنگین PDF کو گرے اسکیل میں بدلیں تاکہ سیاہی بچے۔">Turn a colour PDF into grayscale to save ink.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="sky" data-cat="pdf" href="tools/pdf-info.html"
+           data-kw="pdf info properties pages size details">
+          <div class="tc-top">
+            <span class="ico">ℹ️</span>
+          </div>
+          <h3 data-en="PDF Info" data-ur="PDF معلومات">PDF Info</h3>
+          <p data-en="See page count, size and properties of a PDF." data-ur="PDF کے صفحات، سائز اور خصوصیات دیکھیں۔">See page count, size and properties of a PDF.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="violet" data-cat="image" href="tools/image-splitter.html"
+           data-kw="image split grid cut pieces instagram puzzle">
+          <div class="tc-top">
+            <span class="ico">🧩</span>
+          </div>
+          <h3 data-en="Image Splitter (Grid)" data-ur="امیج اسپلٹر (گرڈ)">Image Splitter (Grid)</h3>
+          <p data-en="Cut one image into a grid of equal pieces." data-ur="ایک تصویر کو برابر ٹکڑوں کے گرڈ میں کاٹیں۔">Cut one image into a grid of equal pieces.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="rose" data-cat="image" href="tools/social-resizer.html"
+           data-kw="social media image resize instagram youtube whatsapp dp facebook thumbnail">
+          <div class="tc-top">
+            <span class="ico">📱</span>
+          </div>
+          <h3 data-en="Social Media Image Resizer" data-ur="سوشل میڈیا امیج ری سائزر">Social Media Image Resizer</h3>
+          <p data-en="Resize images for Instagram, YouTube, WhatsApp and more." data-ur="انسٹاگرام، یوٹیوب، واٹس ایپ وغیرہ کے لیے تصویر کا سائز بدلیں۔">Resize images for Instagram, YouTube, WhatsApp and more.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="mint" data-cat="image" href="tools/circle-crop.html"
+           data-kw="circle crop round profile picture photo dp avatar">
+          <div class="tc-top">
+            <span class="ico">⭕</span>
+          </div>
+          <h3 data-en="Circle Crop (Round Photo)" data-ur="سرکل کراپ (گول تصویر)">Circle Crop (Round Photo)</h3>
+          <p data-en="Make a round profile picture with a transparent background." data-ur="شفاف بیک گراؤنڈ کے ساتھ گول پروفائل تصویر بنائیں۔">Make a round profile picture with a transparent background.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="amber" data-cat="image" href="tools/image-border.html"
+           data-kw="image border frame add photo padding rounded">
+          <div class="tc-top">
+            <span class="ico">🖼️</span>
+          </div>
+          <h3 data-en="Add Border to Image" data-ur="تصویر پر بارڈر لگائیں">Add Border to Image</h3>
+          <p data-en="Add a colour border or frame around a photo." data-ur="تصویر کے گرد رنگین بارڈر یا فریم لگائیں۔">Add a colour border or frame around a photo.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="sky" data-cat="image" href="tools/image-color-picker.html"
+           data-kw="image color picker eyedropper hex rgb photo">
+          <div class="tc-top">
+            <span class="ico">🎯</span>
+          </div>
+          <h3 data-en="Pick Colors from Image" data-ur="تصویر سے رنگ چنیں">Pick Colors from Image</h3>
+          <p data-en="Click anywhere on a photo to get its HEX and RGB color." data-ur="تصویر پر کہیں بھی کلک کر کے اس کا HEX اور RGB رنگ حاصل کریں۔">Click anywhere on a photo to get its HEX and RGB color.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="violet" data-cat="image" href="tools/svg-to-png.html"
+           data-kw="svg png convert vector image">
+          <div class="tc-top">
+            <span class="ico">🔷</span>
+          </div>
+          <h3 data-en="SVG to PNG Converter" data-ur="SVG سے PNG کنورٹر">SVG to PNG Converter</h3>
+          <p data-en="Convert an SVG file into a PNG image." data-ur="SVG فائل کو PNG تصویر میں بدلیں۔">Convert an SVG file into a PNG image.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card" data-tone="amber" data-cat="image" href="tools/image-info.html"
+           data-kw="image info size dimensions resolution megapixel dpi">
+          <div class="tc-top">
+            <span class="ico">🔍</span>
+          </div>
+          <h3 data-en="Image Info" data-ur="تصویر کی معلومات">Image Info</h3>
+          <p data-en="See size, dimensions and details of an image." data-ur="تصویر کا سائز، ڈائمنشنز اور تفصیل دیکھیں۔">See size, dimensions and details of an image.</p>
+          <span class="go" aria-hidden="true">→</span>
+        </a>
+
+        <a class="tool-card wide" data-tone="violet" data-cat="data" href="tools/data-arranger.html"
+             data-kw="data arranger excel csv sort clean sheet organize">
+          <span class="ico">📊</span>
+          <div class="body">
+            <h3 data-en="Data Auto-Arranger" data-ur="ڈیٹا آٹو ارینجر">Data Auto-Arranger</h3>
+            <p data-en="Upload a CSV or Excel file. It cleans, sorts and arranges the data for you." data-ur="CSV یا Excel فائل اپلوڈ کریں۔ ڈیٹا خود صاف، ترتیب وار اور منظم ہو جائے گا۔">Upload a CSV or Excel file. It cleans, sorts and arranges the data for you.</p>
+          </div>
+          <div class="side">
+            <div class="legend"><b>CSV</b><i></i><b class="to">A-Z</b></div>
+            <span class="go" aria-hidden="true">→</span>
+          </div>
+        </a>
+
+      </div>
+
+      <p class="empty" id="emptyMsg" hidden
+         data-en="No tool matches that. Try pdf, image or excel."
+         data-ur="اس نام کا کوئی ٹول نہیں ملا۔ pdf، image یا excel لکھ کر دیکھیں۔">No tool matches that. Try pdf, image or excel.</p>
+
+      <div class="ad-slot">Ad space (AdSense baad mein)</div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="js/registry.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>
