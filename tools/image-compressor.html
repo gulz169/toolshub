@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Image Compressor - Reduce JPG, PNG, WebP Size Free | ToolsHub</title>
+  <meta name="description" content="Compress images and reduce file size for free. Choose quality, download instantly. Works in your browser, no upload.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#0b0a1f">
+  <link rel="icon" href="../icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+</head>
+<body data-root="../">
+
+  <header id="site-header"></header>
+
+  <main class="tool-wrap">
+    <div class="container">
+      <h1 data-en="Image Compressor" data-ur="امیج کمپریسر">Image Compressor</h1>
+      <p class="sub" data-en="Make images smaller without losing visible quality."
+         data-ur="تصاویر کا سائز کم کریں، معیار تقریباً وہی رہے گا۔">Make images smaller without losing visible quality.</p>
+
+      <div class="panel">
+        <div class="dropzone" id="dropzone">
+          <div class="big">🗜️</div>
+          <strong data-en="Click to choose images or drag &amp; drop here" data-ur="تصاویر چنیں یا یہاں ڈراپ کریں">Click to choose images or drag &amp; drop here</strong>
+          <small data-en="JPG, PNG or WebP" data-ur="JPG، PNG یا WebP">JPG, PNG or WebP</small>
+        </div>
+        <input type="file" id="fileInput" accept="image/jpeg,image/png,image/webp" multiple hidden>
+
+        <div class="options" style="margin-top:16px">
+          <label><span data-en="Quality" data-ur="معیار">Quality</span>
+            <select id="quality">
+              <option value="0.9" data-en="High (90%)" data-ur="زیادہ (90%)">High (90%)</option>
+              <option value="0.75" selected data-en="Balanced (75%)" data-ur="درمیانہ (75%)">Balanced (75%)</option>
+              <option value="0.5" data-en="Small file (50%)" data-ur="چھوٹی فائل (50%)">Small file (50%)</option>
+            </select></label>
+          <label><span data-en="Max width" data-ur="زیادہ سے زیادہ چوڑائی">Max width</span>
+            <select id="maxW">
+              <option value="0" data-en="Keep original" data-ur="اصل رہنے دیں">Keep original</option>
+              <option value="2560">2560 px</option>
+              <option value="1920">1920 px</option>
+              <option value="1280">1280 px</option>
+            </select></label>
+        </div>
+
+        <div class="pdf-list" id="list"></div>
+
+        <div class="actions" id="actions" hidden style="margin-top:16px">
+          <button class="btn green" id="allBtn" type="button" data-en="Download all" data-ur="سب ڈاؤن لوڈ کریں">Download all</button>
+          <button class="btn ghost" id="clearBtn" type="button" data-en="Clear all" data-ur="سب ہٹائیں">Clear all</button>
+        </div>
+        <div class="status" id="status"></div>
+      </div>
+
+      <div class="ad-slot">Ad space</div>
+
+      <div class="panel info">
+        <h2 data-en="How to use" data-ur="استعمال کا طریقہ">How to use</h2>
+        <ol>
+          <li data-en="Add one or more images." data-ur="ایک یا زیادہ تصاویر شامل کریں۔">Add one or more images.</li>
+          <li data-en="Pick quality and max width." data-ur="معیار اور چوڑائی چنیں۔">Pick quality and max width.</li>
+          <li data-en="Download the smaller files." data-ur="چھوٹی فائلیں ڈاؤن لوڈ کریں۔">Download the smaller files.</li>
+        </ol>
+        <p data-en="Your files never leave your device." data-ur="آپ کی فائلیں آپ کے آلے سے باہر نہیں جاتیں۔">Your files never leave your device.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="../js/common.js"></script>
+  <script src="../js/image-compressor.js"></script>
+</body>
+</html>

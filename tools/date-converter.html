@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Hijri Date Converter - Islamic and Gregorian Dates | ToolsHub</title>
+  <meta name="description" content="Convert between Hijri (Islamic) and Gregorian dates. Adjust by a day for moon sighting. Free online.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#0b0a1f">
+  <link rel="icon" href="../icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <style>
+    textarea.t{width:100%;min-height:150px;padding:14px;border-radius:14px;resize:vertical;font-size:1rem;line-height:1.7;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.18);color:inherit}
+    .stage{display:flex;justify-content:center;margin-top:16px}
+    .stage canvas,.stage img{max-width:100%;max-height:420px;border-radius:12px;background:#111}
+  </style>
+</head>
+<body data-root="../">
+  <header id="site-header"></header>
+  <main class="tool-wrap">
+    <div class="container">
+      <h1 data-en="Hijri Date Converter" data-ur="ہجری تاریخ کنورٹر">Hijri Date Converter</h1>
+      <p class="sub" data-en="Convert between English (Gregorian) and Hijri dates." data-ur="انگریزی اور ہجری تاریخوں میں تبدیلی کریں۔">Convert between English (Gregorian) and Hijri dates.</p>
+      <div class="panel">
+        <div class="options">
+          <label><span data-en="Calendar" data-ur="کیلنڈر">Calendar</span>
+            <select id="cal"><option value="islamic-umalqura">Umm al-Qura</option><option value="islamic-civil">Civil (tabular)</option></select></label>
+          <label><span data-en="Adjust (days)" data-ur="ایڈجسٹ (دن)">Adjust (days)</span>
+            <select id="adj"><option value="-2">-2</option><option value="-1">-1</option><option value="0" selected>0</option><option value="1">+1</option><option value="2">+2</option></select></label>
+        </div>
+        <div style="margin-top:18px;font-weight:700" data-en="English date → Hijri" data-ur="انگریزی تاریخ → ہجری">English date → Hijri</div>
+        <div class="options"><input type="date" id="g"></div>
+        <div id="gOut" style="margin-top:10px;font-size:1.3rem;font-weight:700"></div>
+        <div style="margin-top:22px;font-weight:700" data-en="Hijri date → English" data-ur="ہجری تاریخ → انگریزی">Hijri date → English</div>
+        <div class="options">
+          <input type="number" id="hd" min="1" max="30" value="1" style="width:80px"><select id="hm"></select><input type="number" id="hy" min="1300" max="1600" value="1448" style="width:110px">
+        </div>
+        <div id="hOut" style="margin-top:10px;font-size:1.3rem;font-weight:700"></div>
+        <div class="status" id="status"></div>
+      </div>
+      <div class="ad-slot">Ad space</div>
+      <div class="panel info">
+        <h2 data-en="How to use" data-ur="استعمال کا طریقہ">How to use</h2>
+        <ol>
+          <li data-en="Pick an English date to see the Hijri date, or enter a Hijri date." data-ur="انگریزی تاریخ چنیں تو ہجری تاریخ ملے گی، یا ہجری تاریخ لکھیں۔">Pick an English date to see the Hijri date, or enter a Hijri date.</li>
+          <li data-en="In Pakistan the moon is sighted locally, so use the Adjust box to match your calendar." data-ur="پاکستان میں چاند مقامی طور پر دیکھا جاتا ہے، اپنے کیلنڈر سے ملانے کے لیے ایڈجسٹ استعمال کریں۔">In Pakistan the moon is sighted locally, so use the Adjust box to match your calendar.</li>
+        </ol>
+        <p data-en="Dates are calculated, not sighted. Islamic months can differ by 1-2 days from the announced date." data-ur="تاریخیں حساب سے نکالی جاتی ہیں، چاند دیکھ کر نہیں۔ اعلان شدہ تاریخ سے 1-2 دن کا فرق ہو سکتا ہے۔">Dates are calculated, not sighted. Islamic months can differ by 1-2 days from the announced date.</p>
+      </div>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="../js/common.js"></script>
+  <script src="../js/date-converter.js"></script>
+</body>
+</html>

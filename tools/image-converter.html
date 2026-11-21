@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Image Resizer &amp; Converter - JPG PNG WebP Free | ToolsHub</title>
+  <meta name="description" content="Resize images and convert between JPG, PNG and WebP for free. Works in your browser, no upload.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#0b0a1f">
+  <link rel="icon" href="../icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+</head>
+<body data-root="../">
+
+  <header id="site-header"></header>
+
+  <main class="tool-wrap">
+    <div class="container">
+      <h1 data-en="Image Resizer &amp; Converter" data-ur="امیج ری سائزر اور کنورٹر">Image Resizer &amp; Converter</h1>
+      <p class="sub" data-en="Change image size and convert between JPG, PNG and WebP."
+         data-ur="تصویر کا سائز بدلیں اور JPG، PNG، WebP میں کنورٹ کریں۔">Change image size and convert between JPG, PNG and WebP.</p>
+
+      <div class="panel">
+        <div class="dropzone" id="dropzone">
+          <div class="big">🔄</div>
+          <strong data-en="Click to choose images or drag &amp; drop here" data-ur="تصاویر چنیں یا یہاں ڈراپ کریں">Click to choose images or drag &amp; drop here</strong>
+          <small data-en="JPG, PNG or WebP" data-ur="JPG، PNG یا WebP">JPG, PNG or WebP</small>
+        </div>
+        <input type="file" id="fileInput" accept="image/jpeg,image/png,image/webp" multiple hidden>
+
+        <div class="options" style="margin-top:16px">
+          <label><span data-en="Convert to" data-ur="فارمیٹ">Convert to</span>
+            <select id="fmt">
+              <option value="image/jpeg">JPG</option>
+              <option value="image/png">PNG</option>
+              <option value="image/webp">WebP</option>
+            </select></label>
+          <label><span data-en="Resize" data-ur="سائز">Resize</span>
+            <select id="scale">
+              <option value="100" data-en="Original size" data-ur="اصل سائز">Original size</option>
+              <option value="75">75%</option>
+              <option value="50">50%</option>
+              <option value="25">25%</option>
+              <option value="custom" data-en="Custom width" data-ur="اپنی چوڑائی">Custom width</option>
+            </select></label>
+          <label id="wBox" hidden><span data-en="Width (px)" data-ur="چوڑائی (px)">Width (px)</span>
+            <input type="number" id="wInput" min="1" max="10000" value="800"></label>
+        </div>
+
+        <div class="pdf-list" id="list"></div>
+
+        <div class="actions" id="actions" hidden style="margin-top:16px">
+          <button class="btn green" id="allBtn" type="button" data-en="Download all" data-ur="سب ڈاؤن لوڈ کریں">Download all</button>
+          <button class="btn ghost" id="clearBtn" type="button" data-en="Clear all" data-ur="سب ہٹائیں">Clear all</button>
+        </div>
+        <div class="status" id="status"></div>
+      </div>
+
+      <div class="ad-slot">Ad space</div>
+
+      <div class="panel info">
+        <h2 data-en="How to use" data-ur="استعمال کا طریقہ">How to use</h2>
+        <ol>
+          <li data-en="Add your images." data-ur="اپنی تصاویر شامل کریں۔">Add your images.</li>
+          <li data-en="Choose the format and size." data-ur="فارمیٹ اور سائز چنیں۔">Choose the format and size.</li>
+          <li data-en="Download the results." data-ur="نتیجہ ڈاؤن لوڈ کریں۔">Download the results.</li>
+        </ol>
+        <p data-en="Your files never leave your device." data-ur="آپ کی فائلیں آپ کے آلے سے باہر نہیں جاتیں۔">Your files never leave your device.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="../js/common.js"></script>
+  <script src="../js/image-converter.js"></script>
+</body>
+</html>

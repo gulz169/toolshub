@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Compound Interest Calculator | ToolsHub</title>
+  <meta name="description" content="See how savings grow with compound interest. Free online.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#0b0a1f">
+  <link rel="icon" href="../icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+</head>
+<body data-root="../">
+  <header id="site-header"></header>
+  <main class="tool-wrap">
+    <div class="container">
+      <h1 data-en="Compound Interest Calculator" data-ur="کمپاؤنڈ انٹرسٹ کیلکولیٹر">Compound Interest Calculator</h1>
+      <p class="sub" data-en="See how savings grow with compound interest." data-ur="دیکھیں کہ کمپاؤنڈ انٹرسٹ سے بچت کیسے بڑھتی ہے۔">See how savings grow with compound interest.</p>
+      <div class="panel">
+<div class="options"><label><span data-en="Starting amount" data-ur="شروعاتی رقم">Starting amount</span><input type="number" id="p" value="100000" dir="ltr" ></label><label><span data-en="Yearly rate %" data-ur="سالانہ شرح %">Yearly rate %</span><input type="number" id="r" value="12" dir="ltr" ></label><label><span data-en="Years" data-ur="سال">Years</span><input type="number" id="y" value="5" dir="ltr" ></label><label><span data-en="Monthly deposit" data-ur="ماہانہ جمع">Monthly deposit</span><input type="number" id="m" value="5000" dir="ltr" ></label><label><span data-en="Compounding" data-ur="کمپاؤنڈنگ">Compounding</span><select id="n"><option value="12">Monthly</option><option value="1">Yearly</option><option value="4">Quarterly</option><option value="365">Daily</option></select></label></div><div class="stats"><div class="stat"><b id="fin">-</b><span data-en="Final amount" data-ur="کل رقم">Final amount</span></div><div class="stat"><b id="dep">-</b><span data-en="Total deposited" data-ur="کل جمع">Total deposited</span></div><div class="stat"><b id="int">-</b><span data-en="Interest earned" data-ur="کمایا گیا منافع">Interest earned</span></div></div><div id="tbl" style="margin-top:14px;overflow:auto"></div>
+        <div class="status" id="status"></div>
+      </div>
+      <div class="ad-slot">Ad space</div>
+      <div class="panel info">
+        <h2 data-en="How to use" data-ur="استعمال کا طریقہ">How to use</h2>
+        <p data-en="Enter the starting amount, yearly rate, years and optional monthly deposit." data-ur="شروعاتی رقم، سالانہ شرح، سال اور ماہانہ جمع (اختیاری) لکھیں۔">Enter the starting amount, yearly rate, years and optional monthly deposit.</p>
+        <p data-en="Nothing you enter leaves your device." data-ur="آپ کا درج کیا ہوا آپ کے آلے سے باہر نہیں جاتا۔">Nothing you enter leaves your device.</p>
+      </div>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="../js/common.js"></script>
+  <script src="../js/compound-interest.js"></script>
+</body>
+</html>

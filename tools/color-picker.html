@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Color Picker &amp; Converter - HEX, RGB, HSL | ToolsHub</title>
+  <meta name="description" content="Pick a color and convert between HEX, RGB and HSL. Eyedropper to pick from your screen. Free online.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#0b0a1f">
+  <link rel="icon" href="../icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <style>
+    .swatch{height:110px;border-radius:16px;border:1px solid rgba(255,255,255,.2);margin-top:4px}
+    .row{display:flex;gap:10px;align-items:center;margin-top:14px;direction:ltr}
+    .row b{width:48px}
+    .row input[type=text]{flex:1;min-width:0}
+    .shades{display:grid;grid-template-columns:repeat(9,1fr);gap:6px;margin-top:16px;direction:ltr}
+    .shades button{height:44px;border-radius:10px;border:1px solid rgba(255,255,255,.2);cursor:pointer}
+    #picker{width:100%;height:46px;padding:2px;margin-top:14px}
+  </style>
+</head>
+<body data-root="../">
+  <header id="site-header"></header>
+  <main class="tool-wrap">
+    <div class="container">
+      <h1 data-en="Color Picker &amp; Converter" data-ur="کلر پکر اور کنورٹر">Color Picker &amp; Converter</h1>
+      <p class="sub" data-en="Pick a color and get its HEX, RGB and HSL codes." data-ur="رنگ چنیں اور اس کے HEX، RGB اور HSL کوڈ حاصل کریں۔">Pick a color and get its HEX, RGB and HSL codes.</p>
+      <div class="panel">
+        <div class="swatch" id="swatch"></div>
+        <input type="color" id="picker" value="#2563eb" aria-label="Color">
+        <div class="row"><b>HEX</b><input type="text" id="hex"><button class="btn" data-copy="hex" type="button" data-en="Copy" data-ur="کاپی">Copy</button></div>
+        <div class="row"><b>RGB</b><input type="text" id="rgb"><button class="btn" data-copy="rgb" type="button" data-en="Copy" data-ur="کاپی">Copy</button></div>
+        <div class="row"><b>HSL</b><input type="text" id="hsl"><button class="btn" data-copy="hsl" type="button" data-en="Copy" data-ur="کاپی">Copy</button></div>
+        <div class="shades" id="shades"></div>
+        <div class="actions" style="margin-top:16px">
+          <button class="btn green" id="eye" type="button" hidden data-en="Pick from screen" data-ur="اسکرین سے رنگ چنیں">Pick from screen</button>
+        </div>
+        <div class="status" id="status"></div>
+      </div>
+      <div class="ad-slot">Ad space</div>
+      <div class="panel info">
+        <h2 data-en="How to use" data-ur="استعمال کا طریقہ">How to use</h2>
+        <ol>
+          <li data-en="Pick a color, or type a HEX, RGB or HSL code." data-ur="رنگ چنیں، یا HEX، RGB یا HSL کوڈ لکھیں۔">Pick a color, or type a HEX, RGB or HSL code.</li>
+          <li data-en="Click Copy next to the format you need." data-ur="جو فارمیٹ چاہیے اس کے ساتھ کاپی دبائیں۔">Click Copy next to the format you need.</li>
+          <li data-en="Click a shade to use it." data-ur="شیڈ پر کلک کر کے اسے استعمال کریں۔">Click a shade to use it.</li>
+        </ol>
+        <p data-en="The screen picker works in Chrome, Edge and Opera." data-ur="اسکرین سے رنگ چننا Chrome، Edge اور Opera میں چلتا ہے۔">The screen picker works in Chrome, Edge and Opera.</p>
+      </div>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="../js/common.js"></script>
+  <script src="../js/color-picker.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>CSV to JSON and JSON to CSV Converter | ToolsHub</title>
+  <meta name="description" content="Convert CSV to JSON or JSON to CSV online. Handles quotes, commas and Urdu text. Free.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#0b0a1f">
+  <link rel="icon" href="../icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <style>
+    textarea.t{width:100%;min-height:150px;padding:14px;border-radius:14px;resize:vertical;font-size:1rem;line-height:1.7;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.18);color:inherit}
+    .stage{display:flex;justify-content:center;margin-top:16px}
+    .stage canvas,.stage img{max-width:100%;max-height:420px;border-radius:12px;background:#111}
+  </style>
+</head>
+<body data-root="../">
+  <header id="site-header"></header>
+  <main class="tool-wrap">
+    <div class="container">
+      <h1 data-en="CSV ↔ JSON Converter" data-ur="CSV ↔ JSON کنورٹر">CSV ↔ JSON Converter</h1>
+      <p class="sub" data-en="Convert tables to JSON and back." data-ur="ٹیبل کو JSON میں اور واپس بدلیں۔">Convert tables to JSON and back.</p>
+      <div class="panel">
+        <div class="options"><label><span data-en="Delimiter" data-ur="علیحدگی">Delimiter</span><select id="delim"><option value=",">Comma ,</option><option value=";">Semicolon ;</option><option value="\t">Tab</option></select></label>
+          <label style="display:flex;gap:6px;align-items:center"><input type="checkbox" id="hdr" checked><span data-en="First row is header" data-ur="پہلی قطار ہیڈر ہے">First row is header</span></label></div>
+        <textarea class="t" id="inp" dir="auto" spellcheck="false" style="min-height:200px;margin-top:12px;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.9rem" data-en-ph="Paste CSV or JSON here" data-ur-ph="یہاں CSV یا JSON پیسٹ کریں" placeholder="Paste CSV or JSON here"></textarea>
+        <div class="actions" style="margin-top:12px"><button class="btn green" id="toJson" type="button" data-en="CSV → JSON" data-ur="CSV → JSON">CSV → JSON</button> <button class="btn green" id="toCsv" type="button" data-en="JSON → CSV" data-ur="JSON → CSV">JSON → CSV</button> <button class="btn" id="copyBtn" type="button" data-en="Copy" data-ur="کاپی">Copy</button> <button class="btn" id="dlBtn" type="button" data-en="Download" data-ur="ڈاؤن لوڈ">Download</button> <button class="btn ghost" id="clearBtn" type="button" data-en="Clear" data-ur="صاف کریں">Clear</button></div>
+        <div class="status" id="status"></div>
+      </div>
+      <div class="ad-slot">Ad space</div>
+      <div class="panel info">
+        <h2 data-en="How to use" data-ur="استعمال کا طریقہ">How to use</h2>
+        <ol>
+          <li data-en="Paste CSV or JSON." data-ur="CSV یا JSON پیسٹ کریں۔">Paste CSV or JSON.</li>
+          <li data-en="Press the matching button. The result replaces the text." data-ur="متعلقہ بٹن دبائیں۔ نتیجہ اسی خانے میں آ جاتا ہے۔">Press the matching button. The result replaces the text.</li>
+        </ol>
+        <p data-en="Your files never leave your device." data-ur="آپ کی فائلیں آپ کے آلے سے باہر نہیں جاتیں۔">Your files never leave your device.</p>
+      </div>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="../js/common.js"></script>
+  <script src="../js/csv-json.js"></script>
+</body>
+</html>

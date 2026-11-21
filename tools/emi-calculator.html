@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>EMI Calculator - Loan Monthly Installment | ToolsHub</title>
+  <meta name="description" content="Calculate monthly loan installment (EMI), total interest and a yearly schedule. Free online.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#0b0a1f">
+  <link rel="icon" href="../icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <style>
+    textarea.t{width:100%;min-height:150px;padding:14px;border-radius:14px;resize:vertical;font-size:1rem;line-height:1.7;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.18);color:inherit}
+    .stage{display:flex;justify-content:center;margin-top:16px}
+    .stage canvas,.stage img{max-width:100%;max-height:420px;border-radius:12px;background:#111}
+    .stat{padding:14px;border-radius:14px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);text-align:center}
+    .stat b{display:block;font-size:1.35rem;direction:ltr}.stat span{font-size:.85rem;opacity:.75}
+    .bar2{height:12px;border-radius:99px;background:#f59e0b;margin-top:18px;overflow:hidden;direction:ltr}.bar2 i{display:block;height:100%;background:#34d399;width:0}
+    .tbl{border-collapse:collapse;width:100%;font-size:.9rem;direction:ltr}.tbl th,.tbl td{padding:8px 12px;border-bottom:1px solid rgba(255,255,255,.1);text-align:right}.tbl th:first-child,.tbl td:first-child{text-align:left}
+  </style>
+</head>
+<body data-root="../">
+  <header id="site-header"></header>
+  <main class="tool-wrap">
+    <div class="container">
+      <h1 data-en="EMI / Loan Calculator" data-ur="ای ایم آئی / لون کیلکولیٹر">EMI / Loan Calculator</h1>
+      <p class="sub" data-en="Find your monthly installment, total interest and total payment." data-ur="ماہانہ قسط، کل سود اور کل ادائیگی معلوم کریں۔">Find your monthly installment, total interest and total payment.</p>
+      <div class="panel">
+        <div class="options">
+          <label><span data-en="Loan amount" data-ur="قرض کی رقم">Loan amount</span><input type="number" id="amt" value="1000000" min="0" dir="ltr"></label>
+          <label><span data-en="Interest rate (% per year)" data-ur="سود (% سالانہ)">Interest rate (% per year)</span><input type="number" id="rate" value="15" min="0" step="0.1" dir="ltr"></label>
+          <label><span data-en="Tenure" data-ur="مدت">Tenure</span><input type="number" id="ten" value="5" min="1" dir="ltr"></label>
+          <label><span data-en="Unit" data-ur="اکائی">Unit</span><select id="unit"><option value="12" data-en="Years" data-ur="سال">Years</option><option value="1" data-en="Months" data-ur="مہینے">Months</option></select></label>
+        </div>
+        <div class="stats" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-top:18px">
+          <div class="stat"><b id="emi">-</b><span data-en="Monthly EMI" data-ur="ماہانہ قسط">Monthly EMI</span></div>
+          <div class="stat"><b id="int">-</b><span data-en="Total interest" data-ur="کل سود">Total interest</span></div>
+          <div class="stat"><b id="tot">-</b><span data-en="Total payment" data-ur="کل ادائیگی">Total payment</span></div>
+        </div>
+        <div class="bar2"><i id="pBar"></i></div>
+        <div style="display:flex;justify-content:space-between;font-size:.85rem;opacity:.8;margin-top:6px"><span data-en="Principal" data-ur="اصل رقم">Principal</span><span data-en="Interest" data-ur="سود">Interest</span></div>
+        <div style="overflow:auto;margin-top:16px"><table class="tbl" id="sch"></table></div>
+        <div class="status" id="status"></div>
+      </div>
+      <div class="ad-slot">Ad space</div>
+      <div class="panel info">
+        <h2 data-en="How to use" data-ur="استعمال کا طریقہ">How to use</h2>
+        <ol>
+          <li data-en="Enter the loan amount, yearly rate and tenure." data-ur="قرض کی رقم، سالانہ شرح اور مدت لکھیں۔">Enter the loan amount, yearly rate and tenure.</li>
+          <li data-en="See the EMI and the yearly schedule below." data-ur="نیچے قسط اور سالانہ شیڈول دیکھیں۔">See the EMI and the yearly schedule below.</li>
+        </ol>
+        <p data-en="This is an estimate using a fixed rate and equal monthly installments. Bank fees and rules can change the real amount." data-ur="یہ اندازہ ہے جو مقررہ شرح اور برابر قسطوں پر مبنی ہے۔ بینک کی فیس اور قواعد سے اصل رقم بدل سکتی ہے۔">This is an estimate using a fixed rate and equal monthly installments. Bank fees and rules can change the real amount.</p>
+      </div>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="../js/common.js"></script>
+  <script src="../js/emi-calculator.js"></script>
+</body>
+</html>

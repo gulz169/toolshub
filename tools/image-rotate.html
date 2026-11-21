@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Rotate &amp; Flip Image - Free Online | ToolsHub</title>
+  <meta name="description" content="Rotate images 90 degrees or flip them horizontally and vertically, then download. Free, no upload.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#0b0a1f">
+  <link rel="icon" href="../icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <style>
+    .stage{display:flex;justify-content:center;margin-top:16px}
+    #view{max-width:100%;max-height:460px;border-radius:12px;background:#111}
+    .btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px;justify-content:center}
+  </style>
+</head>
+<body data-root="../">
+  <header id="site-header"></header>
+  <main class="tool-wrap">
+    <div class="container">
+      <h1 data-en="Rotate &amp; Flip Image" data-ur="تصویر گھمائیں اور فلپ کریں">Rotate &amp; Flip Image</h1>
+      <p class="sub" data-en="Fix a sideways photo or mirror it." data-ur="الٹی تصویر سیدھی کریں یا اسے آئینے کی طرح پلٹیں۔">Fix a sideways photo or mirror it.</p>
+      <div class="panel">
+        <div class="dropzone" id="dropzone">
+          <div class="big">🔄</div>
+          <strong data-en="Click to choose an image or drag &amp; drop here" data-ur="تصویر چنیں یا یہاں ڈراپ کریں">Click to choose an image or drag &amp; drop here</strong>
+          <small data-en="JPG, PNG or WebP" data-ur="JPG، PNG یا WebP">JPG, PNG or WebP</small>
+        </div>
+        <input type="file" id="fileInput" accept="image/jpeg,image/png,image/webp" hidden>
+        <div class="status" id="status"></div>
+        <div id="work" hidden>
+          <div class="stage"><canvas id="view"></canvas></div>
+          <div class="btns">
+            <button class="btn" id="rl" type="button" data-en="↺ Rotate left" data-ur="↺ بائیں گھمائیں">↺ Rotate left</button>
+            <button class="btn" id="rr" type="button" data-en="↻ Rotate right" data-ur="↻ دائیں گھمائیں">↻ Rotate right</button>
+            <button class="btn" id="fh" type="button" data-en="⇋ Flip horizontal" data-ur="⇋ افقی فلپ">⇋ Flip horizontal</button>
+            <button class="btn" id="fv" type="button" data-en="⇅ Flip vertical" data-ur="⇅ عمودی فلپ">⇅ Flip vertical</button>
+          </div>
+          <div class="options" style="margin-top:16px">
+            <label><span data-en="Save as" data-ur="فارمیٹ">Save as</span>
+              <select id="fmt"><option value="image/png">PNG</option><option value="image/jpeg">JPG</option><option value="image/webp">WebP</option></select></label>
+          </div>
+          <div class="actions" style="margin-top:16px">
+            <button class="btn green" id="dlBtn" type="button" data-en="Download" data-ur="ڈاؤن لوڈ">Download</button>
+            <button class="btn" id="resetBtn" type="button" data-en="Reset" data-ur="ری سیٹ">Reset</button>
+            <button class="btn ghost" id="newBtn" type="button" data-en="New image" data-ur="نئی تصویر">New image</button>
+          </div>
+        </div>
+      </div>
+      <div class="ad-slot">Ad space</div>
+      <div class="panel info">
+        <h2 data-en="How to use" data-ur="استعمال کا طریقہ">How to use</h2>
+        <ol>
+          <li data-en="Add a photo." data-ur="تصویر شامل کریں۔">Add a photo.</li>
+          <li data-en="Press the rotate or flip buttons." data-ur="گھمانے یا فلپ کے بٹن دبائیں۔">Press the rotate or flip buttons.</li>
+          <li data-en="Download the result." data-ur="نتیجہ ڈاؤن لوڈ کریں۔">Download the result.</li>
+        </ol>
+        <p data-en="Your image never leaves your device." data-ur="آپ کی تصویر آپ کے آلے سے باہر نہیں جاتی۔">Your image never leaves your device.</p>
+      </div>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="../js/common.js"></script>
+  <script src="../js/image-rotate.js"></script>
+</body>
+</html>

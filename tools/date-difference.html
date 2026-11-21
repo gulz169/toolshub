@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Date Difference Calculator - Days Between Dates | ToolsHub</title>
+  <meta name="description" content="Find the days, months and years between two dates, or add and subtract days from a date. Free.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#0b0a1f">
+  <link rel="icon" href="../icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <style>
+    textarea.t{width:100%;min-height:150px;padding:14px;border-radius:14px;resize:vertical;font-size:1rem;line-height:1.7;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.18);color:inherit}
+    .stage{display:flex;justify-content:center;margin-top:16px}
+    .stage canvas,.stage img{max-width:100%;max-height:420px;border-radius:12px;background:#111}
+    .stat{padding:14px;border-radius:14px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);text-align:center}
+    .stat b{display:block;font-size:1.35rem;direction:ltr}.stat span{font-size:.85rem;opacity:.75}
+    .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-top:18px}
+  </style>
+</head>
+<body data-root="../">
+  <header id="site-header"></header>
+  <main class="tool-wrap">
+    <div class="container">
+      <h1 data-en="Date Calculator" data-ur="تاریخ کیلکولیٹر">Date Calculator</h1>
+      <p class="sub" data-en="Days between two dates, or a date plus some days." data-ur="دو تاریخوں کے درمیان دن، یا تاریخ میں دن جمع کریں۔">Days between two dates, or a date plus some days.</p>
+      <div class="panel">
+<div style="margin:20px 0 6px;font-weight:700" data-en="Days between two dates" data-ur="دو تاریخوں کے درمیان دن">Days between two dates</div>
+        <div class="options"><label><span data-en="From" data-ur="سے">From</span><input type="date" id="d1"></label><label><span data-en="To" data-ur="تک">To</span><input type="date" id="d2"></label></div>
+        <div class="stats"><div class="stat"><b id="ymd">-</b><span data-en="Years / months / days" data-ur="سال / مہینے / دن">Years / months / days</span></div><div class="stat"><b id="days">-</b><span data-en="Total days" data-ur="کل دن">Total days</span></div><div class="stat"><b id="weeks">-</b><span data-en="Weeks" data-ur="ہفتے">Weeks</span></div><div class="stat"><b id="wd">-</b><span data-en="Weekdays (Mon-Fri)" data-ur="کام کے دن (پیر-جمعہ)">Weekdays (Mon-Fri)</span></div></div>
+        <div style="margin:20px 0 6px;font-weight:700" data-en="Add or subtract days" data-ur="دن جمع یا منفی کریں">Add or subtract days</div>
+        <div class="options"><label><span data-en="Start date" data-ur="شروع تاریخ">Start date</span><input type="date" id="d3"></label><label><span data-en="Days (use - to go back)" data-ur="دن (پیچھے جانے کے لیے - لگائیں)">Days (use - to go back)</span><input type="number" id="n" value="30" dir="ltr" ></label></div>
+        <div class="stats"><div class="stat"><b id="res">-</b><span data-en="Result date" data-ur="نتیجے کی تاریخ">Result date</span></div></div>
+        <div class="status" id="status"></div>
+      </div>
+      <div class="ad-slot">Ad space</div>
+      <div class="panel info">
+        <h2 data-en="How to use" data-ur="استعمال کا طریقہ">How to use</h2>
+        <ol>
+          <li data-en="Pick two dates to see the difference." data-ur="فرق دیکھنے کے لیے دو تاریخیں چنیں۔">Pick two dates to see the difference.</li>
+          <li data-en="Or enter a start date and a number of days." data-ur="یا شروع تاریخ اور دنوں کی تعداد لکھیں۔">Or enter a start date and a number of days.</li>
+        </ol>
+        <p data-en="Nothing you enter leaves your device." data-ur="آپ کا درج کیا ہوا آپ کے آلے سے باہر نہیں جاتا۔">Nothing you enter leaves your device.</p>
+      </div>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="../js/common.js"></script>
+  <script src="../js/date-difference.js"></script>
+</body>
+</html>

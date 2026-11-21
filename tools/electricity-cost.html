@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Electricity Cost Calculator | ToolsHub</title>
+  <meta name="description" content="Find the electricity cost of any appliance. Free online.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#0b0a1f">
+  <link rel="icon" href="../icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+</head>
+<body data-root="../">
+  <header id="site-header"></header>
+  <main class="tool-wrap">
+    <div class="container">
+      <h1 data-en="Electricity Cost Calculator" data-ur="بجلی کا خرچ کیلکولیٹر">Electricity Cost Calculator</h1>
+      <p class="sub" data-en="Find the electricity cost of any appliance." data-ur="کسی بھی آلے کی بجلی کا خرچ معلوم کریں۔">Find the electricity cost of any appliance.</p>
+      <div class="panel">
+<div class="options"><label><span data-en="Power (watts)" data-ur="پاور (واٹ)">Power (watts)</span><input type="number" id="w" value="1500" dir="ltr" ></label><label><span data-en="Hours per day" data-ur="گھنٹے روزانہ">Hours per day</span><input type="number" id="h" value="8" dir="ltr" ></label><label><span data-en="Quantity" data-ur="تعداد">Quantity</span><input type="number" id="n" value="1" dir="ltr" min="1"></label><label><span data-en="Price per unit" data-ur="قیمت فی یونٹ">Price per unit</span><input type="number" id="p" value="50" dir="ltr" ></label></div><div class="stats"><div class="stat"><b id="kd">-</b><span data-en="Units per day" data-ur="یونٹ روزانہ">Units per day</span></div><div class="stat"><b id="km">-</b><span data-en="Units per month" data-ur="یونٹ ماہانہ">Units per month</span></div><div class="stat"><b id="cd">-</b><span data-en="Cost per day" data-ur="روزانہ خرچ">Cost per day</span></div><div class="stat"><b id="cm">-</b><span data-en="Cost per month" data-ur="ماہانہ خرچ">Cost per month</span></div></div>
+        <div class="status" id="status"></div>
+      </div>
+      <div class="ad-slot">Ad space</div>
+      <div class="panel info">
+        <h2 data-en="How to use" data-ur="استعمال کا طریقہ">How to use</h2>
+        <p data-en="Enter watts, hours per day and your price per unit (kWh)." data-ur="واٹ، روزانہ گھنٹے اور فی یونٹ (kWh) قیمت لکھیں۔">Enter watts, hours per day and your price per unit (kWh).</p>
+        <p data-en="Nothing you enter leaves your device." data-ur="آپ کا درج کیا ہوا آپ کے آلے سے باہر نہیں جاتا۔">Nothing you enter leaves your device.</p>
+      </div>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="../js/common.js"></script>
+  <script src="../js/electricity-cost.js"></script>
+</body>
+</html>

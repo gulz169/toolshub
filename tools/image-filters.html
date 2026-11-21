@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Image Filters - Black and White, Sepia, Blur, Brightness | ToolsHub</title>
+  <meta name="description" content="Apply filters to photos: black and white, sepia, blur, brightness, contrast and more. Free, no upload.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#0b0a1f">
+  <link rel="icon" href="../icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <style>
+    textarea.t{width:100%;min-height:150px;padding:14px;border-radius:14px;resize:vertical;font-size:1rem;line-height:1.7;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.18);color:inherit}
+    .stage{display:flex;justify-content:center;margin-top:16px}
+    .stage canvas,.stage img{max-width:100%;max-height:420px;border-radius:12px;background:#111}
+  </style>
+</head>
+<body data-root="../">
+  <header id="site-header"></header>
+  <main class="tool-wrap">
+    <div class="container">
+      <h1 data-en="Image Filters" data-ur="امیج فلٹرز">Image Filters</h1>
+      <p class="sub" data-en="Adjust or stylize a photo and save it." data-ur="تصویر کو ایڈجسٹ یا اسٹائل کریں اور محفوظ کریں۔">Adjust or stylize a photo and save it.</p>
+      <div class="panel">
+        <div class="dropzone" id="dropzone">
+          <div class="big">🖼️</div>
+          <strong data-en="Click to choose an image or drag &amp; drop here" data-ur="تصویر چنیں یا یہاں ڈراپ کریں">Click to choose an image or drag &amp; drop here</strong>
+          <small data-en="JPG, PNG or WebP" data-ur="JPG، PNG یا WebP">JPG, PNG or WebP</small>
+        </div>
+        <input type="file" id="fileInput" accept="image/jpeg,image/png,image/webp" hidden>
+        <div id="work" hidden>
+          <div class="ratios" id="presets" style="display:flex;flex-wrap:wrap;gap:8px;margin-top:16px">
+            <button class="chip" type="button" data-p="none" data-en="Original" data-ur="اصل">Original</button><button class="chip" type="button" data-p="bw" data-en="Black &amp; white" data-ur="سیاہ و سفید">Black &amp; white</button><button class="chip" type="button" data-p="sepia" data-en="Sepia" data-ur="سیپیا">Sepia</button><button class="chip" type="button" data-p="vivid" data-en="Vivid" data-ur="شوخ">Vivid</button><button class="chip" type="button" data-p="vintage" data-en="Vintage" data-ur="پرانا">Vintage</button>
+          </div>
+          <div class="stage"><canvas id="view"></canvas></div>
+          <div class="options" style="margin-top:16px">
+            <label><span data-en="Brightness" data-ur="روشنی">Brightness</span><input type="range" id="brightness" min="0" max="200" value="100" dir="ltr"></label><label><span data-en="Contrast" data-ur="کنٹراسٹ">Contrast</span><input type="range" id="contrast" min="0" max="200" value="100" dir="ltr"></label><label><span data-en="Saturation" data-ur="رنگ">Saturation</span><input type="range" id="saturate" min="0" max="300" value="100" dir="ltr"></label>
+            <label><span data-en="Grayscale" data-ur="گرے">Grayscale</span><input type="range" id="grayscale" min="0" max="100" value="0" dir="ltr"></label><label><span data-en="Sepia" data-ur="سیپیا">Sepia</span><input type="range" id="sepia" min="0" max="100" value="0" dir="ltr"></label><label><span data-en="Hue" data-ur="ہیو">Hue</span><input type="range" id="hue" min="0" max="360" value="0" dir="ltr"></label><label><span data-en="Blur" data-ur="دھندلا">Blur</span><input type="range" id="blur" min="0" max="20" value="0" dir="ltr"></label><label><span data-en="Invert" data-ur="الٹا">Invert</span><input type="range" id="invert" min="0" max="100" value="0" dir="ltr"></label>
+          </div>
+          <div class="actions" style="margin-top:16px"><button class="btn green" id="dlBtn" type="button" data-en="Download PNG" data-ur="PNG ڈاؤن لوڈ">Download PNG</button> <button class="btn" id="resetBtn" type="button" data-en="Reset" data-ur="ری سیٹ">Reset</button> <button class="btn ghost" id="newBtn" type="button" data-en="New image" data-ur="نئی تصویر">New image</button></div>
+        </div>
+        <div class="status" id="status"></div>
+      </div>
+      <div class="ad-slot">Ad space</div>
+      <div class="panel info">
+        <h2 data-en="How to use" data-ur="استعمال کا طریقہ">How to use</h2>
+        <ol>
+          <li data-en="Add a photo." data-ur="تصویر شامل کریں۔">Add a photo.</li>
+          <li data-en="Pick a preset or move the sliders." data-ur="پری سیٹ چنیں یا سلائیڈر ہلائیں۔">Pick a preset or move the sliders.</li>
+          <li data-en="Download the result." data-ur="نتیجہ ڈاؤن لوڈ کریں۔">Download the result.</li>
+        </ol>
+        <p data-en="Your files never leave your device." data-ur="آپ کی فائلیں آپ کے آلے سے باہر نہیں جاتیں۔">Your files never leave your device.</p>
+      </div>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="../js/common.js"></script>
+  <script src="../js/image-filters.js"></script>
+</body>
+</html>

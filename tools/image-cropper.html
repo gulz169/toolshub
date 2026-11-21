@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Image Cropper - Crop Photos Online Free | ToolsHub</title>
+  <meta name="description" content="Crop images online for free. Drag to select, use ratios like 1:1, 4:3 or 16:9, and download. Works in your browser, no upload.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#0b0a1f">
+  <link rel="icon" href="../icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <style>
+    .stage{display:flex;justify-content:center;margin-top:16px}
+    #view{max-width:100%;border-radius:12px;touch-action:none;cursor:crosshair;background:#111}
+    .ratios{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+    .ratios .chip{cursor:pointer}
+    .dim{margin-top:10px;direction:ltr;text-align:center;opacity:.85}
+  </style>
+</head>
+<body data-root="../">
+
+  <header id="site-header"></header>
+
+  <main class="tool-wrap">
+    <div class="container">
+      <h1 data-en="Image Cropper" data-ur="امیج کراپر">Image Cropper</h1>
+      <p class="sub" data-en="Choose the part of the photo you want to keep."
+         data-ur="تصویر کا وہ حصہ چنیں جو آپ رکھنا چاہتے ہیں۔">Choose the part of the photo you want to keep.</p>
+
+      <div class="panel">
+        <div class="dropzone" id="dropzone">
+          <div class="big">✂️</div>
+          <strong data-en="Click to choose an image or drag &amp; drop here" data-ur="تصویر چنیں یا یہاں ڈراپ کریں">Click to choose an image or drag &amp; drop here</strong>
+          <small data-en="JPG, PNG or WebP" data-ur="JPG، PNG یا WebP">JPG, PNG or WebP</small>
+        </div>
+        <input type="file" id="fileInput" accept="image/jpeg,image/png,image/webp" hidden>
+        <div class="status" id="status"></div>
+
+        <div id="work" hidden>
+          <div class="ratios" role="group" aria-label="Ratio" id="ratios">
+            <button type="button" class="chip" data-r="0" aria-pressed="true" data-en="Free" data-ur="آزاد">Free</button>
+            <button type="button" class="chip" data-r="1" aria-pressed="false">1:1</button>
+            <button type="button" class="chip" data-r="1.3333" aria-pressed="false">4:3</button>
+            <button type="button" class="chip" data-r="0.75" aria-pressed="false">3:4</button>
+            <button type="button" class="chip" data-r="1.7778" aria-pressed="false">16:9</button>
+            <button type="button" class="chip" data-r="0.5625" aria-pressed="false">9:16</button>
+          </div>
+
+          <div class="stage"><canvas id="view"></canvas></div>
+          <div class="dim" id="dim"></div>
+
+          <div class="options" style="margin-top:16px">
+            <label><span data-en="Save as" data-ur="فارمیٹ">Save as</span>
+              <select id="fmt">
+                <option value="image/png">PNG</option>
+                <option value="image/jpeg">JPG</option>
+                <option value="image/webp">WebP</option>
+              </select></label>
+          </div>
+
+          <div class="actions" style="margin-top:16px">
+            <button class="btn green" id="dlBtn" type="button" data-en="Crop &amp; download" data-ur="کراپ اور ڈاؤن لوڈ">Crop &amp; download</button>
+            <button class="btn" id="resetBtn" type="button" data-en="Reset" data-ur="ری سیٹ">Reset</button>
+            <button class="btn ghost" id="newBtn" type="button" data-en="New image" data-ur="نئی تصویر">New image</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="ad-slot">Ad space</div>
+
+      <div class="panel info">
+        <h2 data-en="How to use" data-ur="استعمال کا طریقہ">How to use</h2>
+        <ol>
+          <li data-en="Add a photo and pick a ratio, or keep it free." data-ur="تصویر شامل کریں اور تناسب چنیں، یا آزاد رہنے دیں۔">Add a photo and pick a ratio, or keep it free.</li>
+          <li data-en="Drag inside the box to move it, drag the corners to resize." data-ur="باکس کو کھینچ کر ہلائیں، کونوں کو کھینچ کر سائز بدلیں۔">Drag inside the box to move it, drag the corners to resize.</li>
+          <li data-en="Press Crop &amp; download. The cut keeps the original quality." data-ur="کراپ اور ڈاؤن لوڈ دبائیں۔ اصل معیار برقرار رہتا ہے۔">Press Crop &amp; download. The cut keeps the original quality.</li>
+        </ol>
+        <p data-en="Your image never leaves your device." data-ur="آپ کی تصویر آپ کے آلے سے باہر نہیں جاتی۔">Your image never leaves your device.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="../js/common.js"></script>
+  <script src="../js/image-cropper.js"></script>
+</body>
+</html>

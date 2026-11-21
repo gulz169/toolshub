@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Currency Converter - PKR, USD, SAR, AED, GBP | ToolsHub</title>
+  <meta name="description" content="Convert PKR to USD, SAR, AED, GBP, EUR and more with daily exchange rates. Free online.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#0b0a1f">
+  <link rel="icon" href="../icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <style>
+    textarea.t{width:100%;min-height:150px;padding:14px;border-radius:14px;resize:vertical;font-size:1rem;line-height:1.7;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.18);color:inherit}
+    .stage{display:flex;justify-content:center;margin-top:16px}
+    .stage canvas,.stage img{max-width:100%;max-height:420px;border-radius:12px;background:#111}
+    .stat{padding:14px;border-radius:14px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);text-align:center}
+    .stat b{display:block;font-size:1.5rem;direction:ltr}.stat span{font-size:.85rem;opacity:.75}
+    .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin-top:18px}
+  </style>
+</head>
+<body data-root="../">
+  <header id="site-header"></header>
+  <main class="tool-wrap">
+    <div class="container">
+      <h1 data-en="Currency Converter" data-ur="کرنسی کنورٹر">Currency Converter</h1>
+      <p class="sub" data-en="Convert between PKR, USD, SAR, AED and other currencies." data-ur="PKR، USD، SAR، AED اور دیگر کرنسیوں میں تبدیلی کریں۔">Convert between PKR, USD, SAR, AED and other currencies.</p>
+      <div class="panel">
+        <div class="options"><label><span data-en="Amount" data-ur="رقم">Amount</span><input type="number" id="amt" value="100" min="0" dir="ltr"></label><label><span data-en="From" data-ur="سے">From</span><select id="from"></select></label><button class="btn" id="swap" type="button" data-en="⇄" data-ur="⇄">⇄</button><label><span data-en="To" data-ur="میں">To</span><select id="to"></select></label></div>
+        <div class="stats" style="grid-template-columns:1fr"><div class="stat"><b id="res">-</b><span id="rate"></span></div></div>
+        <div id="upd" style="margin-top:12px;font-size:.85rem;opacity:.8;text-align:center"></div>
+        <div class="status" id="status"></div>
+      </div>
+      <div class="ad-slot">Ad space</div>
+      <div class="panel info">
+        <h2 data-en="How to use" data-ur="استعمال کا طریقہ">How to use</h2>
+        <ol>
+          <li data-en="Enter an amount and choose the two currencies." data-ur="رقم لکھیں اور دو کرنسیاں چنیں۔">Enter an amount and choose the two currencies.</li>
+          <li data-en="The result updates instantly." data-ur="نتیجہ فوراً بدلتا ہے۔">The result updates instantly.</li>
+        </ol>
+        <p data-en="Rates are daily mid-market rates for reference. Banks and exchange shops charge their own rates." data-ur="ریٹس روزانہ کے درمیانی ریٹس ہیں جو صرف حوالے کے لیے ہیں۔ بینک اور ایکسچینج اپنے ریٹ لگاتے ہیں۔">Rates are daily mid-market rates for reference. Banks and exchange shops charge their own rates.</p>
+        <p dir="ltr"><a href="https://www.exchangerate-api.com" target="_blank" rel="noopener">Rates By Exchange Rate API</a></p>
+      </div>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="../js/common.js"></script>
+  <script src="../js/currency-converter.js"></script>
+</body>
+</html>

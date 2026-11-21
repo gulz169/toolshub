@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Compress Image to 50KB, 100KB, 200KB - Target Size | ToolsHub</title>
+  <meta name="description" content="Reduce a photo to an exact file size like 20KB, 50KB or 100KB for forms and uploads. Free, no upload.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#0b0a1f">
+  <link rel="icon" href="../icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <style>
+    textarea.t{width:100%;min-height:150px;padding:14px;border-radius:14px;resize:vertical;font-size:1rem;line-height:1.7;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.18);color:inherit}
+    .stage{display:flex;justify-content:center;margin-top:16px}
+    .stage canvas,.stage img{max-width:100%;max-height:420px;border-radius:12px;background:#111}
+  </style>
+</head>
+<body data-root="../">
+  <header id="site-header"></header>
+  <main class="tool-wrap">
+    <div class="container">
+      <h1 data-en="Compress Image to KB" data-ur="تصویر کو KB میں چھوٹا کریں">Compress Image to KB</h1>
+      <p class="sub" data-en="Shrink a photo to the file size a form or website asks for." data-ur="فارم یا ویب سائٹ کے مطلوبہ فائل سائز تک تصویر چھوٹی کریں۔">Shrink a photo to the file size a form or website asks for.</p>
+      <div class="panel">
+        <div class="dropzone" id="dropzone">
+          <div class="big">🖼️</div>
+          <strong data-en="Click to choose an image or drag &amp; drop here" data-ur="تصویر چنیں یا یہاں ڈراپ کریں">Click to choose an image or drag &amp; drop here</strong>
+          <small data-en="JPG, PNG or WebP" data-ur="JPG، PNG یا WebP">JPG, PNG or WebP</small>
+        </div>
+        <input type="file" id="fileInput" accept="image/jpeg,image/png,image/webp" hidden>
+        <div id="work" hidden>
+          <div class="options" style="margin-top:16px">
+            <label><span data-en="Target size (KB)" data-ur="مطلوبہ سائز (KB)">Target size (KB)</span><input type="number" id="kb" value="100" dir="ltr" min="5" max="5000"></label>
+            <label><span data-en="Format" data-ur="فارمیٹ">Format</span><select id="fmt"><option value="image/jpeg">JPG</option><option value="image/webp">WebP</option></select></label>
+          </div>
+          <div class="actions" style="margin-top:12px"><button class="btn" data-kb="20" type="button">20 KB</button><button class="btn" data-kb="50" type="button">50 KB</button><button class="btn" data-kb="100" type="button">100 KB</button><button class="btn" data-kb="200" type="button">200 KB</button><button class="btn" data-kb="500" type="button">500 KB</button></div>
+          <div class="actions" style="margin-top:16px"><button class="btn green" id="goBtn" type="button" data-en="Compress" data-ur="کمپریس کریں">Compress</button> <button class="btn" id="dlBtn" type="button" data-en="Download" data-ur="ڈاؤن لوڈ">Download</button> <button class="btn ghost" id="newBtn" type="button" data-en="New image" data-ur="نئی تصویر">New image</button></div>
+          <div class="stage"><img id="prev" alt="" hidden></div>
+        </div>
+        <div class="status" id="status"></div>
+      </div>
+      <div class="ad-slot">Ad space</div>
+      <div class="panel info">
+        <h2 data-en="How to use" data-ur="استعمال کا طریقہ">How to use</h2>
+        <ol>
+          <li data-en="Add a photo." data-ur="تصویر شامل کریں۔">Add a photo.</li>
+          <li data-en="Enter the size you need in KB, or tap a preset." data-ur="مطلوبہ سائز KB میں لکھیں یا پری سیٹ دبائیں۔">Enter the size you need in KB, or tap a preset.</li>
+          <li data-en="Press Compress, then download." data-ur="کمپریس دبائیں، پھر ڈاؤن لوڈ کریں۔">Press Compress, then download.</li>
+        </ol>
+        <p data-en="Very small targets may lower the image size (pixels) and quality. Your photo never leaves your device." data-ur="بہت چھوٹے ہدف پر تصویر کے پکسل اور معیار کم ہو سکتے ہیں۔ آپ کی تصویر آپ کے آلے سے باہر نہیں جاتی۔">Very small targets may lower the image size (pixels) and quality. Your photo never leaves your device.</p>
+      </div>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="../js/common.js"></script>
+  <script src="../js/image-size-reducer.js"></script>
+</body>
+</html>

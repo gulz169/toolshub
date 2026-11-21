@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Add Border to Image | ToolsHub</title>
+  <meta name="description" content="Add a colour border or frame around a photo. Free online.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#0b0a1f">
+  <link rel="icon" href="../icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+</head>
+<body data-root="../">
+  <header id="site-header"></header>
+  <main class="tool-wrap">
+    <div class="container">
+      <h1 data-en="Add Border to Image" data-ur="تصویر پر بارڈر لگائیں">Add Border to Image</h1>
+      <p class="sub" data-en="Add a colour border or frame around a photo." data-ur="تصویر کے گرد رنگین بارڈر یا فریم لگائیں۔">Add a colour border or frame around a photo.</p>
+      <div class="panel">
+<div class="dropzone" id="dz"><div class="big">🖼️</div><strong data-en="Click to choose an image or drag &amp; drop here" data-ur="تصویر چنیں یا یہاں ڈراپ کریں">Click to choose an image or drag &amp; drop here</strong><small data-en="JPG, PNG or WebP" data-ur="JPG، PNG یا WebP">JPG, PNG or WebP</small></div><input type="file" id="fi" accept="image/*" hidden><div id="work" hidden><div class="options"><label><span data-en="Border (px)" data-ur="بارڈر (پکسل)">Border (px)</span><input type="number" id="bw" value="40" dir="ltr" min="0"></label><label><span data-en="Color" data-ur="رنگ">Color</span><input type="color" id="bc" value="#ffffff" style="width:60px;height:42px"></label><label><span data-en="Corner radius" data-ur="کونوں کا گول پن">Corner radius</span><input type="number" id="rd" value="0" dir="ltr" min="0"></label><label><span data-en="Outside" data-ur="باہر">Outside</span><select id="tr"><option value="0">Solid color</option><option value="1">Transparent (PNG)</option></select></label></div><div style="text-align:center"><canvas id="cv" style="max-width:100%;max-height:420px;border-radius:6px;background:#555"></canvas></div><div class="actions" style="margin-top:16px"><button class="btn green" id="dl" type="button" data-en="Download" data-ur="ڈاؤن لوڈ">Download</button></div></div>
+        <div class="status" id="status"></div>
+      </div>
+      <div class="ad-slot">Ad space</div>
+      <div class="panel info">
+        <h2 data-en="How to use" data-ur="استعمال کا طریقہ">How to use</h2>
+        <p data-en="Add an image, set border size, color and rounded corners, then download." data-ur="تصویر شامل کریں، بارڈر کا سائز، رنگ اور گول کونے چنیں اور ڈاؤن لوڈ کریں۔">Add an image, set border size, color and rounded corners, then download.</p>
+        <p data-en="Nothing you enter leaves your device." data-ur="آپ کا درج کیا ہوا آپ کے آلے سے باہر نہیں جاتا۔">Nothing you enter leaves your device.</p>
+      </div>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="../js/common.js"></script>
+  <script src="../js/fileio.js"></script>
+  <script src="../js/image-border.js"></script>
+</body>
+</html>

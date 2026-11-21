@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Background Remover - Remove Image Background Free | ToolsHub</title>
+  <meta name="description" content="Remove the background from a photo for free and download a transparent PNG. AI runs in your browser, no upload.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#0b0a1f">
+  <link rel="icon" href="../icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <style>
+    .cmp{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:16px}
+    .cmp figure{margin:0;text-align:center}
+    .cmp figcaption{font-size:.85rem;opacity:.75;margin-top:6px}
+    .cmp canvas,.cmp img{max-width:100%;max-height:380px;border-radius:12px}
+    .checker{display:flex;justify-content:center;border-radius:12px;
+      background:conic-gradient(#ccc 25%,#fff 0 50%,#ccc 0 75%,#fff 0) 0 0/20px 20px}
+    #bgColor{height:42px;padding:2px}
+  </style>
+</head>
+<body data-root="../">
+
+  <header id="site-header"></header>
+
+  <main class="tool-wrap">
+    <div class="container">
+      <h1 data-en="Background Remover" data-ur="بیک گراؤنڈ ریموور">Background Remover</h1>
+      <p class="sub" data-en="Remove the background from a photo and save a transparent PNG."
+         data-ur="تصویر کا بیک گراؤنڈ ہٹائیں اور شفاف PNG محفوظ کریں۔">Remove the background from a photo and save a transparent PNG.</p>
+
+      <div class="panel">
+        <div class="dropzone" id="dropzone">
+          <div class="big">✨</div>
+          <strong data-en="Click to choose an image or drag &amp; drop here" data-ur="تصویر چنیں یا یہاں ڈراپ کریں">Click to choose an image or drag &amp; drop here</strong>
+          <small data-en="JPG, PNG or WebP. Photos with one clear subject work best." data-ur="JPG، PNG یا WebP۔ ایک واضح چیز یا شخص والی تصاویر بہتر چلتی ہیں۔">JPG, PNG or WebP. Photos with one clear subject work best.</small>
+        </div>
+        <input type="file" id="fileInput" accept="image/jpeg,image/png,image/webp" hidden>
+
+        <progress id="bar" value="0" max="1" hidden style="width:100%;margin-top:14px"></progress>
+        <div class="status" id="status"></div>
+
+        <div id="work" hidden>
+          <div class="options" style="margin-top:16px">
+            <label><span data-en="Background" data-ur="بیک گراؤنڈ">Background</span>
+              <select id="bgMode">
+                <option value="transparent" data-en="Transparent" data-ur="شفاف">Transparent</option>
+                <option value="white" data-en="White" data-ur="سفید">White</option>
+                <option value="color" data-en="Custom color" data-ur="اپنا رنگ">Custom color</option>
+              </select></label>
+            <label id="colorBox" hidden><span data-en="Color" data-ur="رنگ">Color</span>
+              <input type="color" id="bgColor" value="#2563eb"></label>
+          </div>
+
+          <div class="cmp">
+            <figure><img id="orig" alt=""><figcaption data-en="Original" data-ur="اصل">Original</figcaption></figure>
+            <figure><div class="checker" id="checker"><canvas id="result"></canvas></div><figcaption data-en="Result" data-ur="نتیجہ">Result</figcaption></figure>
+          </div>
+
+          <div class="actions" style="margin-top:16px">
+            <button class="btn green" id="dlBtn" type="button" data-en="Download PNG" data-ur="PNG ڈاؤن لوڈ کریں">Download PNG</button>
+            <button class="btn ghost" id="clearBtn" type="button" data-en="New image" data-ur="نئی تصویر">New image</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="ad-slot">Ad space</div>
+
+      <div class="panel info">
+        <h2 data-en="How to use" data-ur="استعمال کا طریقہ">How to use</h2>
+        <ol>
+          <li data-en="Add a photo." data-ur="تصویر شامل کریں۔">Add a photo.</li>
+          <li data-en="Wait a few seconds while the AI finds the subject." data-ur="چند سیکنڈ انتظار کریں، AI اصل چیز تلاش کرتا ہے۔">Wait a few seconds while the AI finds the subject.</li>
+          <li data-en="Pick a background and download." data-ur="بیک گراؤنڈ چنیں اور ڈاؤن لوڈ کریں۔">Pick a background and download.</li>
+        </ol>
+        <p data-en="Hair and fine edges may not be perfect, and busy backgrounds can be harder. The image is processed on your device and never uploaded."
+           data-ur="بال اور باریک کنارے مکمل درست نہ ہوں تو حیران نہ ہوں، پیچیدہ بیک گراؤنڈ مشکل ہو سکتا ہے۔ تصویر آپ کے آلے پر ہی پروسیس ہوتی ہے، اپلوڈ نہیں ہوتی۔">Hair and fine edges may not be perfect, and busy backgrounds can be harder. The image is processed on your device and never uploaded.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web@1.17.3/dist/ort.min.js"></script>
+  <script src="../js/common.js"></script>
+  <script src="../js/background-remover.js"></script>
+</body>
+</html>

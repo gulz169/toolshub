@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Base64 Encode &amp; Decode - Free Online | ToolsHub</title>
+  <meta name="description" content="Encode text to Base64 or decode Base64 back to text. Supports Urdu and emoji. Free, runs in your browser.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#0b0a1f">
+  <link rel="icon" href="../icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <style>
+    textarea.t{width:100%;min-height:150px;padding:14px;border-radius:14px;resize:vertical;font:.95rem/1.6 ui-monospace,Menlo,Consolas,monospace;
+      background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.18);color:inherit}
+    .lbl{margin:14px 0 6px;font-weight:700}
+  </style>
+</head>
+<body data-root="../">
+  <header id="site-header"></header>
+  <main class="tool-wrap">
+    <div class="container">
+      <h1 data-en="Base64 Encode &amp; Decode" data-ur="Base64 انکوڈ اور ڈی کوڈ">Base64 Encode &amp; Decode</h1>
+      <p class="sub" data-en="Turn text into Base64, or Base64 back into text." data-ur="متن کو Base64 میں بدلیں، یا Base64 کو واپس متن میں۔">Turn text into Base64, or Base64 back into text.</p>
+      <div class="panel">
+        <div class="lbl" data-en="Input" data-ur="ان پٹ">Input</div>
+        <textarea class="t" id="inp" dir="auto" spellcheck="false"></textarea>
+        <div class="actions" style="margin-top:14px">
+          <button class="btn green" id="encBtn" type="button" data-en="Encode ↓" data-ur="انکوڈ ↓">Encode ↓</button>
+          <button class="btn" id="decBtn" type="button" data-en="Decode ↓" data-ur="ڈی کوڈ ↓">Decode ↓</button>
+          <label style="display:flex;gap:6px;align-items:center"><input type="checkbox" id="urlSafe"><span data-en="URL-safe" data-ur="URL-safe">URL-safe</span></label>
+        </div>
+        <div class="lbl" data-en="Result" data-ur="نتیجہ">Result</div>
+        <textarea class="t" id="out" dir="auto" spellcheck="false" readonly></textarea>
+        <div class="actions" style="margin-top:14px">
+          <button class="btn" id="copyBtn" type="button" data-en="Copy" data-ur="کاپی">Copy</button>
+          <button class="btn" id="swapBtn" type="button" data-en="Use result as input" data-ur="نتیجہ ان پٹ میں ڈالیں">Use result as input</button>
+          <button class="btn ghost" id="clearBtn" type="button" data-en="Clear" data-ur="صاف کریں">Clear</button>
+        </div>
+        <div class="status" id="status"></div>
+      </div>
+      <div class="ad-slot">Ad space</div>
+      <div class="panel info">
+        <h2 data-en="How to use" data-ur="استعمال کا طریقہ">How to use</h2>
+        <ol>
+          <li data-en="Paste text or Base64 in the input box." data-ur="ان پٹ میں متن یا Base64 پیسٹ کریں۔">Paste text or Base64 in the input box.</li>
+          <li data-en="Press Encode or Decode." data-ur="انکوڈ یا ڈی کوڈ دبائیں۔">Press Encode or Decode.</li>
+        </ol>
+        <p data-en="Base64 is not encryption. Your data never leaves your device." data-ur="Base64 انکرپشن نہیں ہے۔ آپ کا ڈیٹا آپ کے آلے سے باہر نہیں جاتا۔">Base64 is not encryption. Your data never leaves your device.</p>
+      </div>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="../js/common.js"></script>
+  <script src="../js/base64.js"></script>
+</body>
+</html>

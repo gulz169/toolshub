@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>GPA / CGPA Calculator | ToolsHub</title>
+  <meta name="description" content="Add your courses and get GPA on a 4.0 scale. Free online.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#0b0a1f">
+  <link rel="icon" href="../icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+</head>
+<body data-root="../">
+  <header id="site-header"></header>
+  <main class="tool-wrap">
+    <div class="container">
+      <h1 data-en="GPA / CGPA Calculator" data-ur="GPA / CGPA کیلکولیٹر">GPA / CGPA Calculator</h1>
+      <p class="sub" data-en="Add your courses and get GPA on a 4.0 scale." data-ur="کورسز شامل کریں اور 4.0 اسکیل پر GPA معلوم کریں۔">Add your courses and get GPA on a 4.0 scale.</p>
+      <div class="panel">
+<div id="rows"></div><div class="actions"><button class="btn ghost" id="add" type="button" data-en="+ Add course" data-ur="+ کورس شامل کریں">+ Add course</button></div><div class="options"><label><span data-en="Previous CGPA (optional)" data-ur="پچھلا CGPA (اختیاری)">Previous CGPA (optional)</span><input type="number" id="pc" value="0" dir="ltr" step="0.01"></label><label><span data-en="Previous credit hours" data-ur="پچھلے کریڈٹ آورز">Previous credit hours</span><input type="number" id="pch" value="0" dir="ltr" ></label></div><div class="stats"><div class="stat"><b id="gpa">-</b><span data-en="GPA" data-ur="GPA">GPA</span></div><div class="stat"><b id="cgpa">-</b><span data-en="CGPA" data-ur="CGPA">CGPA</span></div><div class="stat"><b id="tc">-</b><span data-en="Credit hours" data-ur="کریڈٹ آورز">Credit hours</span></div></div>
+        <div class="status" id="status"></div>
+      </div>
+      <div class="ad-slot">Ad space</div>
+      <div class="panel info">
+        <h2 data-en="How to use" data-ur="استعمال کا طریقہ">How to use</h2>
+        <p data-en="Pick a grade and credit hours for each course. Optionally add your previous CGPA and credits." data-ur="ہر کورس کا گریڈ اور کریڈٹ آورز چنیں۔ چاہیں تو پچھلا CGPA اور کریڈٹس بھی لکھیں۔">Pick a grade and credit hours for each course. Optionally add your previous CGPA and credits.</p>
+        <p data-en="Nothing you enter leaves your device." data-ur="آپ کا درج کیا ہوا آپ کے آلے سے باہر نہیں جاتا۔">Nothing you enter leaves your device.</p>
+      </div>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="../js/common.js"></script>
+  <script src="../js/gpa-calculator.js"></script>
+</body>
+</html>

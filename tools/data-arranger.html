@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Data Auto-Arranger - Clean and Sort CSV or Excel Free | ToolsHub</title>
+  <meta name="description" content="Upload a CSV or Excel file, clean it, remove duplicates, sort by any column and download. Free, runs in your browser, no upload.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#0b0a1f">
+  <link rel="icon" href="../icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <style>
+    .tbl-wrap{overflow:auto;max-height:340px;margin-top:16px;border-radius:12px;border:1px solid rgba(255,255,255,.12)}
+    .tbl{border-collapse:collapse;width:100%;font-size:.88rem}
+    .tbl th,.tbl td{padding:8px 12px;border-bottom:1px solid rgba(255,255,255,.08);white-space:nowrap;text-align:start}
+    .tbl th{position:sticky;top:0;background:#1b1b2f;color:#fff}
+    .opt-grid{display:grid;gap:12px;margin-top:16px}
+    .opt-grid label{display:flex;gap:8px;align-items:center;cursor:pointer}
+  </style>
+</head>
+<body data-root="../">
+
+  <header id="site-header"></header>
+
+  <main class="tool-wrap">
+    <div class="container">
+      <h1 data-en="Data Auto-Arranger" data-ur="ڈیٹا آٹو ارینجر">Data Auto-Arranger</h1>
+      <p class="sub" data-en="Upload a CSV or Excel file. Clean it, sort it, and download."
+         data-ur="CSV یا Excel فائل اپلوڈ کریں۔ صاف کریں، ترتیب دیں اور ڈاؤن لوڈ کریں۔">Upload a CSV or Excel file. Clean it, sort it, and download.</p>
+
+      <div class="panel">
+        <div class="dropzone" id="dropzone">
+          <div class="big">📊</div>
+          <strong data-en="Click to choose a CSV / Excel file or drag &amp; drop" data-ur="CSV / Excel فائل چنیں یا یہاں ڈراپ کریں">Click to choose a CSV / Excel file or drag &amp; drop</strong>
+          <small data-en="CSV, XLSX or XLS" data-ur="CSV، XLSX یا XLS">CSV, XLSX or XLS</small>
+        </div>
+        <input type="file" id="fileInput" accept=".csv,.xlsx,.xls" hidden>
+
+        <div id="work" hidden>
+          <div class="options" style="margin-top:16px">
+            <label><span data-en="Sheet" data-ur="شیٹ">Sheet</span>
+              <select id="sheetSel"></select></label>
+            <label><span data-en="Sort by" data-ur="ترتیب بلحاظ">Sort by</span>
+              <select id="sortCol"></select></label>
+            <label><span data-en="Order" data-ur="ترتیب">Order</span>
+              <select id="sortDir">
+                <option value="asc" data-en="A → Z / small → big" data-ur="A → Z / چھوٹا → بڑا">A → Z / small → big</option>
+                <option value="desc" data-en="Z → A / big → small" data-ur="Z → A / بڑا → چھوٹا">Z → A / big → small</option>
+              </select></label>
+          </div>
+
+          <div class="opt-grid">
+            <label><input type="checkbox" id="optTrim" checked>
+              <span data-en="Trim extra spaces" data-ur="فالتو خالی جگہیں ہٹائیں">Trim extra spaces</span></label>
+            <label><input type="checkbox" id="optEmpty" checked>
+              <span data-en="Remove empty rows" data-ur="خالی قطاریں ہٹائیں">Remove empty rows</span></label>
+            <label><input type="checkbox" id="optDup" checked>
+              <span data-en="Remove duplicate rows" data-ur="دہرائی ہوئی قطاریں ہٹائیں">Remove duplicate rows</span></label>
+          </div>
+
+          <div class="tbl-wrap"><table class="tbl" id="tbl"></table></div>
+
+          <div class="actions" style="margin-top:16px">
+            <button class="btn green" id="xlsxBtn" type="button" data-en="Download Excel" data-ur="Excel ڈاؤن لوڈ کریں">Download Excel</button>
+            <button class="btn" id="csvBtn" type="button" data-en="Download CSV" data-ur="CSV ڈاؤن لوڈ کریں">Download CSV</button>
+            <button class="btn ghost" id="clearBtn" type="button" data-en="Clear" data-ur="ہٹائیں">Clear</button>
+          </div>
+        </div>
+
+        <div class="status" id="status"></div>
+      </div>
+
+      <div class="ad-slot">Ad space</div>
+
+      <div class="panel info">
+        <h2 data-en="How to use" data-ur="استعمال کا طریقہ">How to use</h2>
+        <ol>
+          <li data-en="Upload your CSV or Excel file." data-ur="اپنی CSV یا Excel فائل اپلوڈ کریں۔">Upload your CSV or Excel file.</li>
+          <li data-en="Pick the clean-up options and a column to sort by." data-ur="صفائی کے آپشن اور ترتیب والا کالم چنیں۔">Pick the clean-up options and a column to sort by.</li>
+          <li data-en="Check the preview, then download." data-ur="پری ویو دیکھیں، پھر ڈاؤن لوڈ کریں۔">Check the preview, then download.</li>
+        </ol>
+        <p data-en="Your files never leave your device." data-ur="آپ کی فائلیں آپ کے آلے سے باہر نہیں جاتیں۔">Your files never leave your device.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <script src="../js/common.js"></script>
+  <script src="../js/data-arranger.js"></script>
+</body>
+</html>

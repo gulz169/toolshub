@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Barcode Generator - Code 128, EAN-13, UPC | ToolsHub</title>
+  <meta name="description" content="Create barcodes in Code 128, EAN-13, EAN-8, UPC, Code 39 and more, and download as PNG. Free.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#0b0a1f">
+  <link rel="icon" href="../icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <style>
+    textarea.t{width:100%;min-height:150px;padding:14px;border-radius:14px;resize:vertical;font-size:1rem;line-height:1.7;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.18);color:inherit}
+    .stage{display:flex;justify-content:center;margin-top:16px}
+    .stage canvas,.stage img{max-width:100%;max-height:420px;border-radius:12px;background:#111}
+  </style>
+</head>
+<body data-root="../">
+  <header id="site-header"></header>
+  <main class="tool-wrap">
+    <div class="container">
+      <h1 data-en="Barcode Generator" data-ur="بار کوڈ جنریٹر">Barcode Generator</h1>
+      <p class="sub" data-en="Create a barcode and save it as an image." data-ur="بار کوڈ بنائیں اور تصویر کی صورت میں محفوظ کریں۔">Create a barcode and save it as an image.</p>
+      <div class="panel">
+        <div class="options"><label><span data-en="Value" data-ur="قدر">Value</span><input type="text" id="val" value="TOOLSHUB-2026" dir="ltr"></label><label><span data-en="Type" data-ur="قسم">Type</span><select id="fmt"><option>CODE128</option><option>EAN13</option><option>EAN8</option><option>UPC</option><option>CODE39</option><option>ITF14</option></select></label><label><span data-en="Bar width" data-ur="بار کی چوڑائی">Bar width</span><input type="range" id="bw" min="1" max="5" value="2" dir="ltr"></label><label><span data-en="Height" data-ur="اونچائی">Height</span><input type="range" id="bh" min="40" max="200" value="100" dir="ltr"></label>
+          <label style="display:flex;gap:6px;align-items:center"><input type="checkbox" id="txt" checked><span data-en="Show text" data-ur="متن دکھائیں">Show text</span></label></div>
+        <div class="stage" style="background:#fff;border-radius:12px;padding:16px;margin-top:16px;overflow:auto"><canvas id="cv" style="background:#fff"></canvas></div>
+        <div class="actions" style="margin-top:14px"><button class="btn green" id="dl" type="button" data-en="Download PNG" data-ur="PNG ڈاؤن لوڈ">Download PNG</button></div>
+        <div class="status" id="status"></div>
+      </div>
+      <div class="ad-slot">Ad space</div>
+      <div class="panel info">
+        <h2 data-en="How to use" data-ur="استعمال کا طریقہ">How to use</h2>
+        <ol>
+          <li data-en="Type the value and pick a barcode type." data-ur="قدر لکھیں اور بار کوڈ کی قسم چنیں۔">Type the value and pick a barcode type.</li>
+          <li data-en="Download the image." data-ur="تصویر ڈاؤن لوڈ کریں۔">Download the image.</li>
+        </ol>
+        <p data-en="EAN-13 needs 12 or 13 digits, EAN-8 needs 7 or 8, UPC needs 11 or 12. Nothing you enter leaves your device." data-ur="EAN-13 کے لیے 12 یا 13 ہندسے، EAN-8 کے لیے 7 یا 8، UPC کے لیے 11 یا 12 چاہییں۔ آپ کا درج کیا ہوا آپ کے آلے سے باہر نہیں جاتا۔">EAN-13 needs 12 or 13 digits, EAN-8 needs 7 or 8, UPC needs 11 or 12. Nothing you enter leaves your device.</p>
+      </div>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jsbarcode/3.11.6/JsBarcode.all.min.js"></script>
+  <script src="../js/common.js"></script>
+  <script src="../js/barcode-generator.js"></script>
+</body>
+</html>

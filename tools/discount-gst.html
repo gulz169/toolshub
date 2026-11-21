@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Discount and GST / Sales Tax Calculator | ToolsHub</title>
+  <meta name="description" content="Calculate sale price after discount, and add or remove GST or sales tax. Free online.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#0b0a1f">
+  <link rel="icon" href="../icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <style>
+    textarea.t{width:100%;min-height:150px;padding:14px;border-radius:14px;resize:vertical;font-size:1rem;line-height:1.7;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.18);color:inherit}
+    .stage{display:flex;justify-content:center;margin-top:16px}
+    .stage canvas,.stage img{max-width:100%;max-height:420px;border-radius:12px;background:#111}
+    .stat{padding:14px;border-radius:14px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);text-align:center}
+    .stat b{display:block;font-size:1.35rem;direction:ltr}.stat span{font-size:.85rem;opacity:.75}
+    .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-top:18px}
+  </style>
+</head>
+<body data-root="../">
+  <header id="site-header"></header>
+  <main class="tool-wrap">
+    <div class="container">
+      <h1 data-en="Discount &amp; GST Calculator" data-ur="ڈسکاؤنٹ اور GST کیلکولیٹر">Discount &amp; GST Calculator</h1>
+      <p class="sub" data-en="Find the sale price, or add or remove tax." data-ur="سیل کی قیمت معلوم کریں، یا ٹیکس شامل یا منہا کریں۔">Find the sale price, or add or remove tax.</p>
+      <div class="panel">
+<div style="margin:20px 0 6px;font-weight:700" data-en="Discount" data-ur="ڈسکاؤنٹ">Discount</div>
+        <div class="options"><label><span data-en="Original price" data-ur="اصل قیمت">Original price</span><input type="number" id="price" value="5000" dir="ltr" ></label><label><span data-en="Discount %" data-ur="ڈسکاؤنٹ %">Discount %</span><input type="number" id="disc" value="20" dir="ltr" ></label></div>
+        <div class="stats"><div class="stat"><b id="final">-</b><span data-en="You pay" data-ur="آپ ادا کریں گے">You pay</span></div><div class="stat"><b id="save">-</b><span data-en="You save" data-ur="آپ کی بچت">You save</span></div></div>
+        <div style="margin:20px 0 6px;font-weight:700" data-en="GST / Sales tax" data-ur="GST / سیلز ٹیکس">GST / Sales tax</div>
+        <div class="options"><label><span data-en="Amount" data-ur="رقم">Amount</span><input type="number" id="amt" value="10000" dir="ltr" ></label><label><span data-en="Tax rate %" data-ur="ٹیکس کی شرح %">Tax rate %</span><input type="number" id="rate" value="18" dir="ltr" ></label><label><span data-en="Mode" data-ur="طریقہ">Mode</span><select id="mode"><option value="add">Add tax to amount</option><option value="rem">Amount already includes tax</option></select></label></div>
+        <div class="stats"><div class="stat"><b id="net">-</b><span data-en="Price without tax" data-ur="ٹیکس کے بغیر قیمت">Price without tax</span></div><div class="stat"><b id="tax">-</b><span data-en="Tax" data-ur="ٹیکس">Tax</span></div><div class="stat"><b id="gross">-</b><span data-en="Total with tax" data-ur="ٹیکس سمیت کل">Total with tax</span></div></div>
+        <div class="status" id="status"></div>
+      </div>
+      <div class="ad-slot">Ad space</div>
+      <div class="panel info">
+        <h2 data-en="How to use" data-ur="استعمال کا طریقہ">How to use</h2>
+        <ol>
+          <li data-en="Enter a price and discount % to see the sale price." data-ur="سیل کی قیمت کے لیے قیمت اور ڈسکاؤنٹ % لکھیں۔">Enter a price and discount % to see the sale price.</li>
+          <li data-en="For tax, pick whether to add it or take it out of the amount." data-ur="ٹیکس کے لیے چنیں کہ اسے شامل کرنا ہے یا رقم میں سے نکالنا ہے۔">For tax, pick whether to add it or take it out of the amount.</li>
+        </ol>
+        <p data-en="Nothing you enter leaves your device." data-ur="آپ کا درج کیا ہوا آپ کے آلے سے باہر نہیں جاتا۔">Nothing you enter leaves your device.</p>
+      </div>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="../js/common.js"></script>
+  <script src="../js/discount-gst.js"></script>
+</body>
+</html>

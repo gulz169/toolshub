@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Fuel Cost Calculator | ToolsHub</title>
+  <meta name="description" content="Find how much petrol a trip will cost. Free online.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#0b0a1f">
+  <link rel="icon" href="../icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+</head>
+<body data-root="../">
+  <header id="site-header"></header>
+  <main class="tool-wrap">
+    <div class="container">
+      <h1 data-en="Fuel Cost Calculator" data-ur="فیول کوسٹ کیلکولیٹر">Fuel Cost Calculator</h1>
+      <p class="sub" data-en="Find how much petrol a trip will cost." data-ur="سفر پر پیٹرول کا خرچ معلوم کریں۔">Find how much petrol a trip will cost.</p>
+      <div class="panel">
+<div class="options"><label><span data-en="Distance (km)" data-ur="فاصلہ (کلومیٹر)">Distance (km)</span><input type="number" id="d" value="300" dir="ltr" ></label><label><span data-en="Mileage (km/litre)" data-ur="ایوریج (کلومیٹر/لیٹر)">Mileage (km/litre)</span><input type="number" id="k" value="12" dir="ltr" ></label><label><span data-en="Price per litre" data-ur="قیمت فی لیٹر">Price per litre</span><input type="number" id="pr" value="270" dir="ltr" ></label><label><span data-en="Trip" data-ur="سفر">Trip</span><select id="rt"><option value="1">One way</option><option value="2">Round trip</option></select></label></div><div class="stats"><div class="stat"><b id="lit">-</b><span data-en="Litres needed" data-ur="درکار لیٹر">Litres needed</span></div><div class="stat"><b id="cost">-</b><span data-en="Fuel cost" data-ur="فیول کا خرچ">Fuel cost</span></div><div class="stat"><b id="pk">-</b><span data-en="Cost per km" data-ur="خرچ فی کلومیٹر">Cost per km</span></div></div>
+        <div class="status" id="status"></div>
+      </div>
+      <div class="ad-slot">Ad space</div>
+      <div class="panel info">
+        <h2 data-en="How to use" data-ur="استعمال کا طریقہ">How to use</h2>
+        <p data-en="Enter distance, your car mileage (km per litre) and the petrol price." data-ur="فاصلہ، گاڑی کی ایوریج (کلومیٹر فی لیٹر) اور پیٹرول کی قیمت لکھیں۔">Enter distance, your car mileage (km per litre) and the petrol price.</p>
+        <p data-en="Nothing you enter leaves your device." data-ur="آپ کا درج کیا ہوا آپ کے آلے سے باہر نہیں جاتا۔">Nothing you enter leaves your device.</p>
+      </div>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="../js/common.js"></script>
+  <script src="../js/fuel-cost.js"></script>
+</body>
+</html>

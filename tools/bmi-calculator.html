@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>BMI Calculator - Body Mass Index | ToolsHub</title>
+  <meta name="description" content="Calculate your BMI in kg and cm or pounds and feet. Shows category and healthy weight range.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#0b0a1f">
+  <link rel="icon" href="../icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <style>
+    textarea.t{width:100%;min-height:150px;padding:14px;border-radius:14px;resize:vertical;font-size:1rem;line-height:1.7;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.18);color:inherit}
+    .stage{display:flex;justify-content:center;margin-top:16px}
+    .stage canvas,.stage img{max-width:100%;max-height:420px;border-radius:12px;background:#111}
+    .stat{padding:14px;border-radius:14px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);text-align:center}
+    .stat b{display:block;font-size:1.4rem;direction:ltr}.stat span{font-size:.85rem;opacity:.75}
+    .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-top:18px}
+  </style>
+</head>
+<body data-root="../">
+  <header id="site-header"></header>
+  <main class="tool-wrap">
+    <div class="container">
+      <h1 data-en="BMI Calculator" data-ur="بی ایم آئی کیلکولیٹر">BMI Calculator</h1>
+      <p class="sub" data-en="Find your Body Mass Index and healthy weight range." data-ur="اپنا باڈی ماس انڈیکس اور صحت مند وزن کی حد معلوم کریں۔">Find your Body Mass Index and healthy weight range.</p>
+      <div class="panel">
+        <div class="options"><label><span data-en="Units" data-ur="اکائی">Units</span><select id="sys"><option value="m">Metric (cm, kg)</option><option value="i">Feet / inches, pounds</option></select></label></div>
+        <div class="options" id="mBox"><label><span data-en="Height (cm)" data-ur="قد (سینٹی میٹر)">Height (cm)</span><input type="number" id="cm" value="170" min="50" max="260" dir="ltr"></label><label><span data-en="Weight (kg)" data-ur="وزن (کلو)">Weight (kg)</span><input type="number" id="kg" value="70" min="10" max="400" dir="ltr"></label></div>
+        <div class="options" id="iBox" hidden><label><span data-en="Feet" data-ur="فٹ">Feet</span><input type="number" id="ft" value="5" min="1" max="8" dir="ltr"></label><label><span data-en="Inches" data-ur="انچ">Inches</span><input type="number" id="inch" value="7" min="0" max="11" dir="ltr"></label><label><span data-en="Weight (lb)" data-ur="وزن (پاؤنڈ)">Weight (lb)</span><input type="number" id="lb" value="154" min="20" max="900" dir="ltr"></label></div>
+        <div class="stats"><div class="stat"><b id="bmi">-</b><span>BMI</span></div><div class="stat"><b id="cat" style="direction:inherit">-</b><span data-en="Category" data-ur="زمرہ">Category</span></div><div class="stat"><b id="rng">-</b><span data-en="Healthy weight" data-ur="صحت مند وزن">Healthy weight</span></div></div>
+        <div class="status" id="status"></div>
+      </div>
+      <div class="ad-slot">Ad space</div>
+      <div class="panel info">
+        <h2 data-en="How to use" data-ur="استعمال کا طریقہ">How to use</h2>
+        <ol>
+          <li data-en="Choose units and enter your height and weight." data-ur="اکائی چنیں اور اپنا قد اور وزن لکھیں۔">Choose units and enter your height and weight.</li>
+          <li data-en="Your BMI and category show instantly." data-ur="آپ کا BMI اور زمرہ فوراً نظر آتا ہے۔">Your BMI and category show instantly.</li>
+        </ol>
+        <p data-en="BMI is only a rough guide (WHO adult ranges). It is not medical advice. Ask a doctor about your health." data-ur="BMI صرف ایک موٹا اندازہ ہے (WHO کی بالغوں کی حدیں)۔ یہ طبی مشورہ نہیں۔ صحت کے بارے میں ڈاکٹر سے پوچھیں۔">BMI is only a rough guide (WHO adult ranges). It is not medical advice. Ask a doctor about your health.</p>
+      </div>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="../js/common.js"></script>
+  <script src="../js/bmi-calculator.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Favicon Maker - Create favicon.ico and PNG Icons | ToolsHub</title>
+  <meta name="description" content="Make a favicon.ico and PNG icons (16, 32, 180, 192, 512) from any image. Free, no upload.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#0b0a1f">
+  <link rel="icon" href="../icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <style>
+    textarea.t{width:100%;min-height:150px;padding:14px;border-radius:14px;resize:vertical;font-size:1rem;line-height:1.7;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.18);color:inherit}
+    .stage{display:flex;justify-content:center;margin-top:16px}
+    .stage canvas,.stage img{max-width:100%;max-height:420px;border-radius:12px;background:#111}
+    #prevs div{text-align:center;font-size:.8rem;opacity:.9}#prevs canvas{display:block;margin:0 auto 4px;background:conic-gradient(#ccc 25%,#fff 0 50%,#ccc 0 75%,#fff 0) 0 0/10px 10px;border-radius:6px}
+  </style>
+</head>
+<body data-root="../">
+  <header id="site-header"></header>
+  <main class="tool-wrap">
+    <div class="container">
+      <h1 data-en="Favicon Maker" data-ur="فیو آئیکن میکر">Favicon Maker</h1>
+      <p class="sub" data-en="Turn any image into favicon.ico and app icons." data-ur="کسی بھی تصویر سے favicon.ico اور ایپ آئیکن بنائیں۔">Turn any image into favicon.ico and app icons.</p>
+      <div class="panel">
+        <div class="dropzone" id="dropzone">
+          <div class="big">🖼️</div>
+          <strong data-en="Click to choose an image or drag &amp; drop here" data-ur="تصویر چنیں یا یہاں ڈراپ کریں">Click to choose an image or drag &amp; drop here</strong>
+          <small data-en="JPG, PNG or WebP" data-ur="JPG، PNG یا WebP">JPG, PNG or WebP</small>
+        </div>
+        <input type="file" id="fileInput" accept="image/jpeg,image/png,image/webp" hidden>
+        <div id="work" hidden>
+          <div class="options" style="margin-top:16px"><label><span data-en="Background" data-ur="پس منظر">Background</span><select id="bgm"><option value="t">Transparent</option><option value="c">Color</option></select></label><label><span data-en="Color" data-ur="رنگ">Color</span><input type="color" id="bg" value="#ffffff" style="height:42px"></label><label><span data-en="Padding" data-ur="حاشیہ">Padding</span><input type="range" id="pad" min="0" max="30" value="0" dir="ltr"></label></div>
+          <div id="prevs" style="display:flex;gap:16px;align-items:flex-end;flex-wrap:wrap;margin-top:16px;direction:ltr"></div>
+          <div class="actions" style="margin-top:16px"><button class="btn green" id="ico" type="button" data-en="Download favicon.ico" data-ur="favicon.ico ڈاؤن لوڈ">Download favicon.ico</button> <button class="btn" id="zip" type="button" data-en="Download all (ZIP)" data-ur="سب ڈاؤن لوڈ (ZIP)">Download all (ZIP)</button> <button class="btn ghost" id="newBtn" type="button" data-en="New image" data-ur="نئی تصویر">New image</button></div>
+        </div>
+        <div class="status" id="status"></div>
+      </div>
+      <div class="ad-slot">Ad space</div>
+      <div class="panel info">
+        <h2 data-en="How to use" data-ur="استعمال کا طریقہ">How to use</h2>
+        <ol>
+          <li data-en="Add a square-ish logo or image." data-ur="چوکور سا لوگو یا تصویر شامل کریں۔">Add a square-ish logo or image.</li>
+          <li data-en="Pick a background and padding." data-ur="پس منظر اور حاشیہ چنیں۔">Pick a background and padding.</li>
+          <li data-en="Download favicon.ico or a ZIP with all sizes." data-ur="favicon.ico یا تمام سائز کی ZIP ڈاؤن لوڈ کریں۔">Download favicon.ico or a ZIP with all sizes.</li>
+        </ol>
+        <p data-en="The image is centered and cropped to a square. Your files never leave your device." data-ur="تصویر درمیان سے چوکور کاٹی جاتی ہے۔ آپ کی فائلیں آپ کے آلے سے باہر نہیں جاتیں۔">The image is centered and cropped to a square. Your files never leave your device.</p>
+      </div>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+  <script src="../js/common.js"></script>
+  <script src="../js/favicon-maker.js"></script>
+</body>
+</html>

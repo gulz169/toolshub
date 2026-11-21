@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Circle Crop (Round Photo) | ToolsHub</title>
+  <meta name="description" content="Make a round profile picture with a transparent background. Free online.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#0b0a1f">
+  <link rel="icon" href="../icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+</head>
+<body data-root="../">
+  <header id="site-header"></header>
+  <main class="tool-wrap">
+    <div class="container">
+      <h1 data-en="Circle Crop (Round Photo)" data-ur="سرکل کراپ (گول تصویر)">Circle Crop (Round Photo)</h1>
+      <p class="sub" data-en="Make a round profile picture with a transparent background." data-ur="شفاف بیک گراؤنڈ کے ساتھ گول پروفائل تصویر بنائیں۔">Make a round profile picture with a transparent background.</p>
+      <div class="panel">
+<div class="dropzone" id="dz"><div class="big">🖼️</div><strong data-en="Click to choose an image or drag &amp; drop here" data-ur="تصویر چنیں یا یہاں ڈراپ کریں">Click to choose an image or drag &amp; drop here</strong><small data-en="JPG, PNG or WebP" data-ur="JPG، PNG یا WebP">JPG, PNG or WebP</small></div><input type="file" id="fi" accept="image/*" hidden><div id="work" hidden><div class="options"><label><span data-en="Zoom" data-ur="زوم">Zoom</span><input type="range" id="z" min="1" max="3" step="0.05" value="1"></label><label><span data-en="Left / Right" data-ur="بائیں / دائیں">Left / Right</span><input type="range" id="x" min="-100" max="100" value="0"></label><label><span data-en="Up / Down" data-ur="اوپر / نیچے">Up / Down</span><input type="range" id="y" min="-100" max="100" value="0"></label><label><span data-en="Size" data-ur="سائز">Size</span><select id="s"><option value="512">512 px</option><option value="256">256 px</option><option value="1024">1024 px</option></select></label></div><div style="text-align:center"><canvas id="cv" style="max-width:100%;max-height:360px;border-radius:12px;background:repeating-conic-gradient(#333 0 25%,#444 0 50%) 50%/20px 20px"></canvas></div><div class="actions" style="margin-top:16px"><button class="btn green" id="dl" type="button" data-en="Download" data-ur="ڈاؤن لوڈ">Download</button></div></div>
+        <div class="status" id="status"></div>
+      </div>
+      <div class="ad-slot">Ad space</div>
+      <div class="panel info">
+        <h2 data-en="How to use" data-ur="استعمال کا طریقہ">How to use</h2>
+        <p data-en="Add a photo, adjust zoom and position, and download a round PNG." data-ur="تصویر شامل کریں، زوم اور پوزیشن ٹھیک کریں اور گول PNG ڈاؤن لوڈ کریں۔">Add a photo, adjust zoom and position, and download a round PNG.</p>
+        <p data-en="Nothing you enter leaves your device." data-ur="آپ کا درج کیا ہوا آپ کے آلے سے باہر نہیں جاتا۔">Nothing you enter leaves your device.</p>
+      </div>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="../js/common.js"></script>
+  <script src="../js/fileio.js"></script>
+  <script src="../js/circle-crop.js"></script>
+</body>
+</html>
