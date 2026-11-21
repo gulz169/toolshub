@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Image to Text (OCR) - Extract Text from Images Free | ToolsHub</title>
+  <meta name="description" content="Extract text from images and screenshots for free with OCR. Supports English and Urdu. Runs in your browser, no upload.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#0b0a1f">
+  <link rel="icon" href="../icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <style>
+    #out{width:100%;min-height:220px;padding:14px;border-radius:14px;resize:vertical;font-size:1rem;line-height:1.8;margin-top:16px;
+      background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.18);color:inherit}
+    .file-item img{height:90px}
+  </style>
+</head>
+<body data-root="../">
+
+  <header id="site-header"></header>
+
+  <main class="tool-wrap">
+    <div class="container">
+      <h1 data-en="Image to Text (OCR)" data-ur="تصویر سے متن (OCR)">Image to Text (OCR)</h1>
+      <p class="sub" data-en="Read text from photos, screenshots and scans. English and Urdu."
+         data-ur="تصاویر، اسکرین شاٹ اور اسکین سے متن نکالیں۔ انگریزی اور اردو۔">Read text from photos, screenshots and scans. English and Urdu.</p>
+
+      <div class="panel">
+        <div class="dropzone" id="dropzone">
+          <div class="big">🔍</div>
+          <strong data-en="Click to choose images or drag &amp; drop here" data-ur="تصاویر چنیں یا یہاں ڈراپ کریں">Click to choose images or drag &amp; drop here</strong>
+          <small data-en="JPG, PNG or WebP. Clear, straight photos work best." data-ur="JPG، PNG یا WebP۔ صاف اور سیدھی تصاویر بہتر چلتی ہیں۔">JPG, PNG or WebP. Clear, straight photos work best.</small>
+        </div>
+        <input type="file" id="fileInput" accept="image/jpeg,image/png,image/webp" multiple hidden>
+
+        <div class="file-list" id="list"></div>
+
+        <div class="options" style="margin-top:16px">
+          <label><span data-en="Language" data-ur="زبان">Language</span>
+            <select id="lang">
+              <option value="eng">English</option>
+              <option value="urd">اردو (Urdu)</option>
+              <option value="eng+urd">English + اردو</option>
+            </select></label>
+        </div>
+
+        <div class="actions" id="actions" hidden style="margin-top:16px">
+          <button class="btn green" id="goBtn" type="button" data-en="Extract text" data-ur="متن نکالیں">Extract text</button>
+          <button class="btn ghost" id="clearBtn" type="button" data-en="Clear all" data-ur="سب ہٹائیں">Clear all</button>
+        </div>
+        <progress id="bar" value="0" max="1" hidden style="width:100%;margin-top:14px"></progress>
+        <div class="status" id="status"></div>
+
+        <div id="result" hidden>
+          <textarea id="out" dir="auto" aria-label="Extracted text"></textarea>
+          <div class="actions" style="margin-top:12px">
+            <button class="btn" id="copyBtn" type="button" data-en="Copy" data-ur="کاپی">Copy</button>
+            <button class="btn" id="txtBtn" type="button" data-en="Download .txt" data-ur=".txt ڈاؤن لوڈ کریں">Download .txt</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="ad-slot">Ad space</div>
+
+      <div class="panel info">
+        <h2 data-en="How to use" data-ur="استعمال کا طریقہ">How to use</h2>
+        <ol>
+          <li data-en="Add one or more images." data-ur="ایک یا زیادہ تصاویر شامل کریں۔">Add one or more images.</li>
+          <li data-en="Choose the language of the text." data-ur="متن کی زبان چنیں۔">Choose the language of the text.</li>
+          <li data-en="Press Extract text, then copy or download." data-ur="متن نکالیں دبائیں، پھر کاپی یا ڈاؤن لوڈ کریں۔">Press Extract text, then copy or download.</li>
+        </ol>
+        <p data-en="The first run downloads the language data (a few MB), so it takes longer. Always check the result for mistakes, especially Urdu."
+           data-ur="پہلی بار زبان کا ڈیٹا (چند MB) ڈاؤن لوڈ ہوتا ہے، اس لیے وقت لگتا ہے۔ نتیجہ ضرور چیک کریں، خاص طور پر اردو میں۔">The first run downloads the language data (a few MB), so it takes longer. Always check the result for mistakes, especially Urdu.</p>
+        <p data-en="Your images are processed on your device and never uploaded." data-ur="آپ کی تصاویر آپ کے آلے پر ہی پروسیس ہوتی ہیں، اپلوڈ نہیں ہوتیں۔">Your images are processed on your device and never uploaded.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tesseract.js/5.1.1/tesseract.min.js"></script>
+  <script src="../js/common.js"></script>
+  <script src="../js/image-to-text.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Lorem Ipsum Generator - Placeholder Text | ToolsHub</title>
+  <meta name="description" content="Generate Lorem Ipsum placeholder text by paragraphs, sentences or words. Free, one click copy.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#0b0a1f">
+  <link rel="icon" href="../icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <style>
+    textarea.t{width:100%;min-height:200px;padding:14px;border-radius:14px;resize:vertical;font-size:1rem;line-height:1.7;
+      background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.18);color:inherit}
+  </style>
+</head>
+<body data-root="../">
+  <header id="site-header"></header>
+  <main class="tool-wrap">
+    <div class="container">
+      <h1 data-en="Lorem Ipsum Generator" data-ur="لوریم ایپسم جنریٹر">Lorem Ipsum Generator</h1>
+      <p class="sub" data-en="Create dummy text for designs and layouts." data-ur="ڈیزائن اور لے آؤٹ کے لیے نمونے کا متن بنائیں۔">Create dummy text for designs and layouts.</p>
+      <div class="panel">
+        <div class="options">
+          <label><span data-en="Type" data-ur="قسم">Type</span>
+            <select id="kind"><option value="p" data-en="Paragraphs" data-ur="پیراگراف">Paragraphs</option><option value="s" data-en="Sentences" data-ur="جملے">Sentences</option><option value="w" data-en="Words" data-ur="الفاظ">Words</option></select></label>
+          <label><span data-en="Amount" data-ur="تعداد">Amount</span>
+            <input type="number" id="count" min="1" max="100" value="3"></label>
+          <label style="display:flex;gap:6px;align-items:center"><input type="checkbox" id="start" checked>
+            <span data-en="Start with “Lorem ipsum”" data-ur="“Lorem ipsum” سے شروع کریں">Start with “Lorem ipsum”</span></label>
+        </div>
+        <div class="actions" style="margin-top:16px">
+          <button class="btn green" id="genBtn" type="button" data-en="Generate" data-ur="بنائیں">Generate</button>
+          <button class="btn" id="copyBtn" type="button" data-en="Copy" data-ur="کاپی">Copy</button>
+        </div>
+        <textarea class="t" id="out" readonly style="margin-top:16px;direction:ltr;text-align:left"></textarea>
+        <div class="status" id="status"></div>
+      </div>
+      <div class="ad-slot">Ad space</div>
+      <div class="panel info">
+        <h2 data-en="How to use" data-ur="استعمال کا طریقہ">How to use</h2>
+        <ol>
+          <li data-en="Choose paragraphs, sentences or words." data-ur="پیراگراف، جملے یا الفاظ چنیں۔">Choose paragraphs, sentences or words.</li>
+          <li data-en="Set the amount and press Generate." data-ur="تعداد لکھیں اور بنائیں دبائیں۔">Set the amount and press Generate.</li>
+        </ol>
+        <p data-en="Text is made in your browser." data-ur="متن آپ کے براؤزر میں ہی بنتا ہے۔">Text is made in your browser.</p>
+      </div>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="../js/common.js"></script>
+  <script src="../js/lorem-ipsum.js"></script>
+</body>
+</html>

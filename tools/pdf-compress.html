@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Compress PDF - Reduce PDF Size Free Online | ToolsHub</title>
+  <meta name="description" content="Reduce PDF file size for free. Choose a compression level and download a smaller PDF. Works in your browser, no upload.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#0b0a1f">
+  <link rel="icon" href="../icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+</head>
+<body data-root="../">
+
+  <header id="site-header"></header>
+
+  <main class="tool-wrap">
+    <div class="container">
+      <h1 data-en="Compress PDF" data-ur="PDF کمپریس کریں">Compress PDF</h1>
+      <p class="sub" data-en="Make a PDF smaller so it is easy to send or upload."
+         data-ur="PDF کا سائز کم کریں تاکہ بھیجنا یا اپلوڈ کرنا آسان ہو۔">Make a PDF smaller so it is easy to send or upload.</p>
+
+      <div class="panel">
+        <div class="dropzone" id="dropzone">
+          <div class="big">🗜️</div>
+          <strong data-en="Click to choose a PDF or drag &amp; drop here" data-ur="PDF چنیں یا یہاں ڈراپ کریں">Click to choose a PDF or drag &amp; drop here</strong>
+          <small data-en="One PDF file" data-ur="ایک PDF فائل">One PDF file</small>
+        </div>
+        <input type="file" id="fileInput" accept="application/pdf,.pdf" hidden>
+
+        <div class="options" style="margin-top:16px">
+          <label><span data-en="Compression" data-ur="کمپریشن">Compression</span>
+            <select id="level">
+              <option value="light" data-en="Light (best quality)" data-ur="ہلکا (بہترین معیار)">Light (best quality)</option>
+              <option value="balanced" selected data-en="Balanced" data-ur="درمیانہ">Balanced</option>
+              <option value="strong" data-en="Strong (smallest file)" data-ur="زیادہ (سب سے چھوٹی فائل)">Strong (smallest file)</option>
+            </select></label>
+        </div>
+
+        <div class="actions" id="actions" hidden style="margin-top:16px">
+          <button class="btn green" id="goBtn" type="button" data-en="Compress PDF" data-ur="PDF کمپریس کریں">Compress PDF</button>
+          <button class="btn ghost" id="clearBtn" type="button" data-en="Clear" data-ur="ہٹائیں">Clear</button>
+        </div>
+        <progress id="bar" value="0" max="1" hidden style="width:100%;margin-top:14px"></progress>
+        <div class="status" id="status"></div>
+      </div>
+
+      <div class="ad-slot">Ad space</div>
+
+      <div class="panel info">
+        <h2 data-en="How to use" data-ur="استعمال کا طریقہ">How to use</h2>
+        <ol>
+          <li data-en="Add your PDF." data-ur="اپنی PDF شامل کریں۔">Add your PDF.</li>
+          <li data-en="Choose a compression level." data-ur="کمپریشن کی سطح چنیں۔">Choose a compression level.</li>
+          <li data-en="Press Compress and download." data-ur="کمپریس دبائیں اور ڈاؤن لوڈ کریں۔">Press Compress and download.</li>
+        </ol>
+        <p data-en="Note: pages are saved as images, so text can no longer be selected. Best for scanned or photo-heavy PDFs."
+           data-ur="نوٹ: صفحات تصویر کی شکل میں محفوظ ہوتے ہیں، اس لیے متن سلیکٹ نہیں ہو سکے گا۔ اسکین یا تصویری PDF کے لیے بہترین ہے۔">Note: pages are saved as images, so text can no longer be selected. Best for scanned or photo-heavy PDFs.</p>
+        <p data-en="Your files never leave your device." data-ur="آپ کی فائلیں آپ کے آلے سے باہر نہیں جاتیں۔">Your files never leave your device.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+  <script src="../js/common.js"></script>
+  <script src="../js/pdf-compress.js"></script>
+</body>
+</html>

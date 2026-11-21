@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>PDF Pages per Sheet (N-up) | ToolsHub</title>
+  <meta name="description" content="Put 2, 4 or 6 PDF pages on one sheet to save paper. Free online.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#0b0a1f">
+  <link rel="icon" href="../icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+</head>
+<body data-root="../">
+  <header id="site-header"></header>
+  <main class="tool-wrap">
+    <div class="container">
+      <h1 data-en="PDF Pages per Sheet (N-up)" data-ur="PDF ایک شیٹ پر کئی صفحات">PDF Pages per Sheet (N-up)</h1>
+      <p class="sub" data-en="Put 2, 4 or 6 PDF pages on one sheet to save paper." data-ur="کاغذ بچانے کے لیے ایک شیٹ پر 2، 4 یا 6 صفحات رکھیں۔">Put 2, 4 or 6 PDF pages on one sheet to save paper.</p>
+      <div class="panel">
+<div class="dropzone" id="dz"><div class="big">📄</div><strong data-en="Click to choose a PDF or drag &amp; drop here" data-ur="PDF چنیں یا یہاں ڈراپ کریں">Click to choose a PDF or drag &amp; drop here</strong><small data-en="PDF file" data-ur="PDF فائل">PDF file</small></div><input type="file" id="fi" accept="application/pdf,.pdf" hidden><div id="work" hidden><div class="options"><label><span data-en="Pages per sheet" data-ur="فی شیٹ صفحات">Pages per sheet</span><select id="n"><option value="2">2</option><option value="4">4</option><option value="6">6</option><option value="9">9</option></select></label><label><span data-en="Border" data-ur="بارڈر">Border</span><select id="bd"><option value="1">Yes</option><option value="0">No</option></select></label></div><div class="actions" style="margin-top:16px"><button class="btn green" id="dl" type="button" data-en="Download" data-ur="ڈاؤن لوڈ">Download</button></div></div>
+        <div class="status" id="status"></div>
+      </div>
+      <div class="ad-slot">Ad space</div>
+      <div class="panel info">
+        <h2 data-en="How to use" data-ur="استعمال کا طریقہ">How to use</h2>
+        <p data-en="Add a PDF, choose pages per sheet and download." data-ur="PDF شامل کریں، فی شیٹ صفحات چنیں اور ڈاؤن لوڈ کریں۔">Add a PDF, choose pages per sheet and download.</p>
+        <p data-en="Nothing you enter leaves your device." data-ur="آپ کا درج کیا ہوا آپ کے آلے سے باہر نہیں جاتا۔">Nothing you enter leaves your device.</p>
+      </div>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+  <script src="../js/common.js"></script>
+  <script src="../js/fileio.js"></script>
+  <script src="../js/pdf-n-up.js"></script>
+</body>
+</html>

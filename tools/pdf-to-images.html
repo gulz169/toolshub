@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>PDF to Images Converter (JPG/PNG) - Free Online | ToolsHub</title>
+  <meta name="description" content="Convert every page of a PDF to JPG or PNG images for free. Download one by one or all as a ZIP. No upload, works in your browser.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#0b0a1f">
+  <link rel="icon" href="../icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+</head>
+<body data-root="../">
+
+  <header id="site-header"></header>
+
+  <main class="tool-wrap">
+    <div class="container">
+      <h1 data-en="PDF to Images Converter" data-ur="PDF سے تصاویر کنورٹر">PDF to Images Converter</h1>
+      <p class="sub" data-en="Choose a PDF and get each page as a JPG or PNG image."
+         data-ur="PDF چنیں اور ہر صفحہ JPG یا PNG تصویر کی صورت میں حاصل کریں۔">Choose a PDF and get each page as a JPG or PNG image.</p>
+
+      <div class="panel">
+        <div class="dropzone" id="dropzone">
+          <div class="big">📄</div>
+          <strong data-en="Click to choose a PDF or drag &amp; drop here" data-ur="PDF چننے کے لیے کلک کریں یا یہاں ڈراپ کریں">Click to choose a PDF or drag &amp; drop here</strong>
+          <small data-en="One PDF at a time" data-ur="ایک وقت میں ایک PDF">One PDF at a time</small>
+        </div>
+        <input type="file" id="fileInput" accept="application/pdf,.pdf" hidden>
+
+        <div id="fileInfo" class="info" style="margin-top:12px" hidden></div>
+
+        <div class="options" id="options" hidden>
+          <label>
+            <span data-en="Format" data-ur="فارمیٹ">Format</span>
+            <select id="format">
+              <option value="jpeg">JPG</option>
+              <option value="png">PNG</option>
+            </select>
+          </label>
+          <label>
+            <span data-en="Quality (resolution)" data-ur="کوالٹی (ریزولوشن)">Quality (resolution)</span>
+            <select id="scale">
+              <option value="1" data-en="Normal (fast)" data-ur="عام (تیز)">Normal (fast)</option>
+              <option value="2" selected data-en="High" data-ur="اعلیٰ">High</option>
+              <option value="3" data-en="Very high (slow)" data-ur="بہت اعلیٰ (سست)">Very high (slow)</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="actions" id="actions" hidden>
+          <button class="btn green" id="convertBtn" type="button" data-en="Convert to Images" data-ur="تصاویر بنائیں">Convert to Images</button>
+          <button class="btn" id="zipBtn" type="button" hidden data-en="Download all (ZIP)" data-ur="سب ڈاؤن لوڈ کریں (ZIP)">Download all (ZIP)</button>
+          <button class="btn ghost" id="clearBtn" type="button" data-en="Clear" data-ur="ہٹائیں">Clear</button>
+        </div>
+
+        <progress id="progress" value="0" max="100" hidden></progress>
+        <div class="status" id="status"></div>
+
+        <div class="page-grid" id="pageGrid"></div>
+      </div>
+
+      <div class="ad-slot">Ad space</div>
+
+      <div class="panel info">
+        <h2 data-en="How to use" data-ur="استعمال کا طریقہ">How to use</h2>
+        <ol>
+          <li data-en="Choose your PDF file." data-ur="اپنی PDF فائل چنیں۔">Choose your PDF file.</li>
+          <li data-en="Pick the format (JPG is smaller, PNG is sharper) and quality." data-ur="فارمیٹ (JPG چھوٹا، PNG زیادہ صاف) اور کوالٹی چنیں۔">Pick the format (JPG is smaller, PNG is sharper) and quality.</li>
+          <li data-en="Press Convert, then download single pages or everything as a ZIP." data-ur="بنائیں دبائیں، پھر ایک صفحہ یا سب ZIP میں ڈاؤن لوڈ کریں۔">Press Convert, then download single pages or everything as a ZIP.</li>
+        </ol>
+        <p data-en="Your PDF never leaves your device." data-ur="آپ کی PDF آپ کے آلے سے باہر نہیں جاتی۔">Your PDF never leaves your device.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+  <script src="../js/common.js"></script>
+  <script src="../js/pdf-to-images.js"></script>
+</body>
+</html>

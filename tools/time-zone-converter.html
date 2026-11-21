@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Time Zone Converter - Pakistan, Saudi, UK, USA | ToolsHub</title>
+  <meta name="description" content="Convert a time between Pakistan, Dubai, Saudi Arabia, UK, USA, Canada, Australia and more. Free online.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#0b0a1f">
+  <link rel="icon" href="../icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <style>
+    textarea.t{width:100%;min-height:150px;padding:14px;border-radius:14px;resize:vertical;font-size:1rem;line-height:1.7;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.18);color:inherit}
+    .stage{display:flex;justify-content:center;margin-top:16px}
+    .stage canvas,.stage img{max-width:100%;max-height:420px;border-radius:12px;background:#111}
+    .tbl{border-collapse:collapse;width:100%;direction:ltr}.tbl th,.tbl td{padding:9px 12px;border-bottom:1px solid rgba(255,255,255,.1);text-align:left;white-space:nowrap}.tbl tr.me{background:rgba(255,255,255,.07)}
+  </style>
+</head>
+<body data-root="../">
+  <header id="site-header"></header>
+  <main class="tool-wrap">
+    <div class="container">
+      <h1 data-en="Time Zone Converter" data-ur="ٹائم زون کنورٹر">Time Zone Converter</h1>
+      <p class="sub" data-en="Pick a time and see it in cities around the world." data-ur="وقت چنیں اور دنیا کے شہروں میں اسے دیکھیں۔">Pick a time and see it in cities around the world.</p>
+      <div class="panel">
+        <div class="options"><label><span data-en="Date and time" data-ur="تاریخ اور وقت">Date and time</span><input type="datetime-local" id="dt"></label><label><span data-en="In zone" data-ur="ٹائم زون">In zone</span><select id="src"></select></label><button class="btn" id="now" type="button" data-en="Now" data-ur="ابھی">Now</button></div>
+        <div style="overflow:auto;margin-top:16px"><table class="tbl" id="tbl"></table></div>
+        <div class="status" id="status"></div>
+      </div>
+      <div class="ad-slot">Ad space</div>
+      <div class="panel info">
+        <h2 data-en="How to use" data-ur="استعمال کا طریقہ">How to use</h2>
+        <ol>
+          <li data-en="Choose a date, time and the zone it is in." data-ur="تاریخ، وقت اور اس کا ٹائم زون چنیں۔">Choose a date, time and the zone it is in.</li>
+          <li data-en="See the same moment in all cities below." data-ur="نیچے تمام شہروں میں وہی لمحہ دیکھیں۔">See the same moment in all cities below.</li>
+        </ol>
+        <p data-en="Daylight saving time is handled automatically by your browser." data-ur="ڈے لائٹ سیونگ ٹائم آپ کا براؤزر خود سنبھالتا ہے۔">Daylight saving time is handled automatically by your browser.</p>
+      </div>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="../js/common.js"></script>
+  <script src="../js/time-zone-converter.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Sort Lines &amp; Remove Duplicate Lines - Free Online | ToolsHub</title>
+  <meta name="description" content="Sort lines A-Z, remove duplicate lines, reverse, shuffle and clean empty lines in your text. Free, runs in your browser.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#0b0a1f">
+  <link rel="icon" href="../icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <style>
+    textarea.t{width:100%;min-height:200px;padding:14px;border-radius:14px;resize:vertical;font-size:1rem;line-height:1.7;
+      background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.18);color:inherit}
+  </style>
+  <style>.case-btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}</style>
+</head>
+<body data-root="../">
+  <header id="site-header"></header>
+  <main class="tool-wrap">
+    <div class="container">
+      <h1 data-en="Line Tools" data-ur="لائن ٹولز">Line Tools</h1>
+      <p class="sub" data-en="Sort lines, remove duplicates and clean up a list." data-ur="لائنیں ترتیب دیں، دہرائی ہوئی ہٹائیں اور فہرست صاف کریں۔">Sort lines, remove duplicates and clean up a list.</p>
+      <div class="panel">
+        <textarea class="t" id="txt" dir="auto" spellcheck="false" data-en-ph="One item per line..." data-ur-ph="ہر لائن میں ایک آئٹم..." placeholder="One item per line..."></textarea>
+        <div class="case-btns">
+          <button class="btn" data-op="az" type="button">Sort A → Z</button>
+          <button class="btn" data-op="za" type="button">Sort Z → A</button>
+          <button class="btn" data-op="num" type="button" data-en="Sort numbers" data-ur="نمبر ترتیب">Sort numbers</button>
+          <button class="btn" data-op="dup" type="button" data-en="Remove duplicates" data-ur="دہرائی ہوئی ہٹائیں">Remove duplicates</button>
+          <button class="btn" data-op="empty" type="button" data-en="Remove empty lines" data-ur="خالی لائنیں ہٹائیں">Remove empty lines</button>
+          <button class="btn" data-op="trim" type="button" data-en="Trim spaces" data-ur="خالی جگہیں ہٹائیں">Trim spaces</button>
+          <button class="btn" data-op="rev" type="button" data-en="Reverse order" data-ur="الٹی ترتیب">Reverse order</button>
+          <button class="btn" data-op="shuf" type="button" data-en="Shuffle" data-ur="شفل">Shuffle</button>
+        </div>
+        <div class="actions" style="margin-top:16px">
+          <button class="btn green" id="copyBtn" type="button" data-en="Copy" data-ur="کاپی">Copy</button>
+          <button class="btn ghost" id="clearBtn" type="button" data-en="Clear" data-ur="صاف کریں">Clear</button>
+        </div>
+        <div class="status" id="status"></div>
+      </div>
+      <div class="ad-slot">Ad space</div>
+      <div class="panel info">
+        <h2 data-en="How to use" data-ur="استعمال کا طریقہ">How to use</h2>
+        <ol>
+          <li data-en="Paste your list, one item per line." data-ur="اپنی فہرست پیسٹ کریں، ہر لائن میں ایک آئٹم۔">Paste your list, one item per line.</li>
+          <li data-en="Press any button. You can press several in a row." data-ur="کوئی بھی بٹن دبائیں۔ ایک کے بعد دوسرا بھی دبا سکتے ہیں۔">Press any button. You can press several in a row.</li>
+        </ol>
+        <p data-en="Your text never leaves your device." data-ur="آپ کا متن آپ کے آلے سے باہر نہیں جاتا۔">Your text never leaves your device.</p>
+      </div>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="../js/common.js"></script>
+  <script src="../js/line-tools.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Image to Base64 - Convert Image to Data URL | ToolsHub</title>
+  <meta name="description" content="Convert an image to a Base64 data URL, or turn Base64 back into an image. Free, runs in your browser.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#0b0a1f">
+  <link rel="icon" href="../icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <style>
+    textarea.t{width:100%;min-height:150px;padding:14px;border-radius:14px;resize:vertical;font-size:1rem;line-height:1.7;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.18);color:inherit}
+    .stage{display:flex;justify-content:center;margin-top:16px}
+    .stage canvas,.stage img{max-width:100%;max-height:420px;border-radius:12px;background:#111}
+  </style>
+</head>
+<body data-root="../">
+  <header id="site-header"></header>
+  <main class="tool-wrap">
+    <div class="container">
+      <h1 data-en="Image to Base64" data-ur="تصویر سے Base64">Image to Base64</h1>
+      <p class="sub" data-en="Convert an image to Base64, or Base64 back to an image." data-ur="تصویر کو Base64 میں بدلیں، یا Base64 کو تصویر میں۔">Convert an image to Base64, or Base64 back to an image.</p>
+      <div class="panel">
+        <div class="dropzone" id="dropzone">
+          <div class="big">🔣</div>
+          <strong data-en="Click to choose an image or drag &amp; drop here" data-ur="تصویر چنیں یا یہاں ڈراپ کریں">Click to choose an image or drag &amp; drop here</strong>
+          <small data-en="JPG, PNG, WebP, GIF or SVG" data-ur="JPG، PNG، WebP، GIF یا SVG">JPG, PNG, WebP, GIF or SVG</small>
+        </div>
+        <input type="file" id="fileInput" accept="image/*" hidden>
+        <div class="stage"><img id="prev" alt="" hidden></div>
+        <div style="margin-top:16px;font-weight:700">Base64 / Data URL</div>
+        <textarea class="t" id="b64" spellcheck="false" style="direction:ltr;text-align:left;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.85rem"></textarea>
+        <div class="options" style="margin-top:12px">
+          <label style="display:flex;gap:6px;align-items:center"><input type="checkbox" id="raw"><span data-en="Raw Base64 (no data: prefix)" data-ur="صرف Base64 (data: کے بغیر)">Raw Base64 (no data: prefix)</span></label>
+        </div>
+        <div class="actions" style="margin-top:12px">
+          <button class="btn green" id="copyBtn" type="button" data-en="Copy" data-ur="کاپی">Copy</button>
+          <button class="btn" id="toImg" type="button" data-en="Base64 → Image" data-ur="Base64 → تصویر">Base64 → Image</button>
+          <button class="btn" id="dlBtn" type="button" data-en="Download image" data-ur="تصویر ڈاؤن لوڈ">Download image</button>
+          <button class="btn ghost" id="clearBtn" type="button" data-en="Clear" data-ur="صاف کریں">Clear</button>
+        </div>
+        <div class="status" id="status"></div>
+      </div>
+      <div class="ad-slot">Ad space</div>
+      <div class="panel info">
+        <h2 data-en="How to use" data-ur="استعمال کا طریقہ">How to use</h2>
+        <ol>
+          <li data-en="Add an image to get its Base64 code." data-ur="Base64 کوڈ کے لیے تصویر شامل کریں۔">Add an image to get its Base64 code.</li>
+          <li data-en="Or paste Base64 and press “Base64 → Image”." data-ur="یا Base64 پیسٹ کر کے “Base64 → تصویر” دبائیں۔">Or paste Base64 and press “Base64 → Image”.</li>
+        </ol>
+        <p data-en="Your files never leave your device." data-ur="آپ کی فائلیں آپ کے آلے سے باہر نہیں جاتیں۔">Your files never leave your device.</p>
+      </div>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="../js/common.js"></script>
+  <script src="../js/image-to-base64.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Reorder PDF Pages - Organize PDF Online | ToolsHub</title>
+  <meta name="description" content="Rearrange the pages of a PDF by dragging or with arrows, then download the new PDF. Free, no upload.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#0b0a1f">
+  <link rel="icon" href="../icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <style>
+    textarea.t{width:100%;min-height:150px;padding:14px;border-radius:14px;resize:vertical;font-size:1rem;line-height:1.7;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.18);color:inherit}
+    .stage{display:flex;justify-content:center;margin-top:16px}
+    .stage canvas,.stage img{max-width:100%;max-height:420px;border-radius:12px;background:#111}
+    .pg{position:relative;padding:8px;text-align:center;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:16px;cursor:grab}.pg.over{border-color:#34d399}.pg canvas{max-width:100%;border-radius:8px;background:#fff}.pg .row{display:flex;gap:6px;justify-content:center;margin-top:6px}.pg button{padding:0 12px;border-radius:9px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.09);color:inherit;cursor:pointer}
+  </style>
+</head>
+<body data-root="../">
+  <header id="site-header"></header>
+  <main class="tool-wrap">
+    <div class="container">
+      <h1 data-en="Reorder PDF Pages" data-ur="PDF صفحات کی ترتیب بدلیں">Reorder PDF Pages</h1>
+      <p class="sub" data-en="Move pages around and save a new PDF." data-ur="صفحات آگے پیچھے کریں اور نئی PDF محفوظ کریں۔">Move pages around and save a new PDF.</p>
+      <div class="panel">
+        <div class="dropzone" id="dropzone">
+          <div class="big">🗂️</div>
+          <strong data-en="Click to choose a PDF or drag &amp; drop here" data-ur="PDF چنیں یا یہاں ڈراپ کریں">Click to choose a PDF or drag &amp; drop here</strong>
+          <small data-en="One PDF file" data-ur="ایک PDF فائل">One PDF file</small>
+        </div>
+        <input type="file" id="fileInput" accept="application/pdf,.pdf" hidden>
+        <progress id="bar" value="0" max="1" hidden style="width:100%;margin-top:14px"></progress>
+        <div id="work" hidden>
+          <div class="page-grid" id="grid"></div>
+          <div class="actions" style="margin-top:16px"><button class="btn green" id="saveBtn" type="button" data-en="Download PDF" data-ur="PDF ڈاؤن لوڈ">Download PDF</button> <button class="btn" id="revBtn" type="button" data-en="Reverse order" data-ur="الٹی ترتیب">Reverse order</button> <button class="btn ghost" id="newBtn" type="button" data-en="New file" data-ur="نئی فائل">New file</button></div>
+        </div>
+        <div class="status" id="status"></div>
+      </div>
+      <div class="ad-slot">Ad space</div>
+      <div class="panel info">
+        <h2 data-en="How to use" data-ur="استعمال کا طریقہ">How to use</h2>
+        <ol>
+          <li data-en="Add a PDF." data-ur="PDF شامل کریں۔">Add a PDF.</li>
+          <li data-en="Drag pages, or use the ◀ ▶ buttons, to change the order." data-ur="صفحات کھینچیں، یا ◀ ▶ بٹن سے ترتیب بدلیں۔">Drag pages, or use the ◀ ▶ buttons, to change the order.</li>
+          <li data-en="Download the new PDF." data-ur="نئی PDF ڈاؤن لوڈ کریں۔">Download the new PDF.</li>
+        </ol>
+        <p data-en="Your files never leave your device." data-ur="آپ کی فائلیں آپ کے آلے سے باہر نہیں جاتیں۔">Your files never leave your device.</p>
+      </div>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+  <script src="../js/common.js"></script>
+  <script src="../js/pdf-organize.js"></script>
+</body>
+</html>

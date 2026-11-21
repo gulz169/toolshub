@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Salary Converter | ToolsHub</title>
+  <meta name="description" content="Convert pay between hourly, daily, weekly, monthly and yearly. Free online.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#0b0a1f">
+  <link rel="icon" href="../icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+</head>
+<body data-root="../">
+  <header id="site-header"></header>
+  <main class="tool-wrap">
+    <div class="container">
+      <h1 data-en="Salary Converter" data-ur="سیلری کنورٹر">Salary Converter</h1>
+      <p class="sub" data-en="Convert pay between hourly, daily, weekly, monthly and yearly." data-ur="تنخواہ کو گھنٹہ، دن، ہفتہ، ماہ اور سال میں بدلیں۔">Convert pay between hourly, daily, weekly, monthly and yearly.</p>
+      <div class="panel">
+<div class="options"><label><span data-en="Amount" data-ur="رقم">Amount</span><input type="number" id="a" value="100000" dir="ltr" ></label><label><span data-en="Paid per" data-ur="ادائیگی">Paid per</span><select id="per"><option value="h">Hour</option><option value="d">Day</option><option value="w">Week</option><option value="m">Month</option><option value="y">Year</option></select></label><label><span data-en="Hours per day" data-ur="گھنٹے روزانہ">Hours per day</span><input type="number" id="hd" value="8" dir="ltr" ></label><label><span data-en="Days per week" data-ur="دن ہفتے میں">Days per week</span><input type="number" id="dw" value="5" dir="ltr" ></label></div><div class="stats"><div class="stat"><b id="ph">-</b><span data-en="Hourly" data-ur="فی گھنٹہ">Hourly</span></div><div class="stat"><b id="pd">-</b><span data-en="Daily" data-ur="روزانہ">Daily</span></div><div class="stat"><b id="pw">-</b><span data-en="Weekly" data-ur="ہفتہ وار">Weekly</span></div><div class="stat"><b id="pm">-</b><span data-en="Monthly" data-ur="ماہانہ">Monthly</span></div><div class="stat"><b id="py">-</b><span data-en="Yearly" data-ur="سالانہ">Yearly</span></div></div>
+        <div class="status" id="status"></div>
+      </div>
+      <div class="ad-slot">Ad space</div>
+      <div class="panel info">
+        <h2 data-en="How to use" data-ur="استعمال کا طریقہ">How to use</h2>
+        <p data-en="Enter an amount, pick how often it is paid, and set your working hours." data-ur="رقم لکھیں، چنیں کہ کتنے وقفے پر ملتی ہے اور کام کے گھنٹے لکھیں۔">Enter an amount, pick how often it is paid, and set your working hours.</p>
+        <p data-en="Nothing you enter leaves your device." data-ur="آپ کا درج کیا ہوا آپ کے آلے سے باہر نہیں جاتا۔">Nothing you enter leaves your device.</p>
+      </div>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="../js/common.js"></script>
+  <script src="../js/salary-converter.js"></script>
+</body>
+</html>

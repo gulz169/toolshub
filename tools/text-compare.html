@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Text Compare - Find Differences Between Two Texts | ToolsHub</title>
+  <meta name="description" content="Compare two texts line by line and see added and removed lines highlighted. Free, runs in your browser.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#0b0a1f">
+  <link rel="icon" href="../icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <style>
+    textarea.t{width:100%;min-height:200px;padding:14px;border-radius:14px;resize:vertical;font-size:1rem;line-height:1.7;
+      background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.18);color:inherit}
+  </style>
+  <style>
+    .two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .two textarea.t{min-height:220px;direction:ltr;text-align:left;font:.9rem/1.6 ui-monospace,Menlo,Consolas,monospace}
+    @media(max-width:700px){.two{grid-template-columns:1fr}}
+    #diff{margin-top:16px;border-radius:14px;border:1px solid rgba(255,255,255,.15);overflow:auto;max-height:460px;direction:ltr;text-align:left;font:.9rem/1.6 ui-monospace,Menlo,Consolas,monospace}
+    #diff div{padding:2px 12px;white-space:pre-wrap;word-break:break-word}
+    #diff .add{background:rgba(52,211,153,.22)}
+    #diff .del{background:rgba(244,63,94,.25)}
+  </style>
+</head>
+<body data-root="../">
+  <header id="site-header"></header>
+  <main class="tool-wrap">
+    <div class="container">
+      <h1 data-en="Text Compare" data-ur="ٹیکسٹ کمپیئر">Text Compare</h1>
+      <p class="sub" data-en="Paste two texts and see what changed, line by line." data-ur="دو متن پیسٹ کریں اور لائن بہ لائن فرق دیکھیں۔">Paste two texts and see what changed, line by line.</p>
+      <div class="panel">
+        <div class="two">
+          <textarea class="t" id="a" spellcheck="false" data-en-ph="Original text" data-ur-ph="اصل متن" placeholder="Original text"></textarea>
+          <textarea class="t" id="b" spellcheck="false" data-en-ph="Changed text" data-ur-ph="تبدیل شدہ متن" placeholder="Changed text"></textarea>
+        </div>
+        <div class="options" style="margin-top:16px">
+          <label style="display:flex;gap:6px;align-items:center"><input type="checkbox" id="ic"><span data-en="Ignore case" data-ur="کیس نظر انداز کریں">Ignore case</span></label>
+          <label style="display:flex;gap:6px;align-items:center"><input type="checkbox" id="iw"><span data-en="Ignore extra spaces" data-ur="فالتو خالی جگہ نظر انداز کریں">Ignore extra spaces</span></label>
+        </div>
+        <div class="actions" style="margin-top:16px">
+          <button class="btn green" id="goBtn" type="button" data-en="Compare" data-ur="موازنہ کریں">Compare</button>
+          <button class="btn ghost" id="clearBtn" type="button" data-en="Clear" data-ur="صاف کریں">Clear</button>
+        </div>
+        <div class="status" id="status"></div>
+        <div id="diff" hidden></div>
+      </div>
+      <div class="ad-slot">Ad space</div>
+      <div class="panel info">
+        <h2 data-en="How to use" data-ur="استعمال کا طریقہ">How to use</h2>
+        <ol>
+          <li data-en="Paste the original text on the left and the changed text on the right." data-ur="اصل متن بائیں اور تبدیل شدہ متن دائیں پیسٹ کریں۔">Paste the original text on the left and the changed text on the right.</li>
+          <li data-en="Press Compare. Green lines were added, red lines were removed." data-ur="موازنہ دبائیں۔ سبز لائنیں شامل ہوئیں، سرخ لائنیں ہٹائی گئیں۔">Press Compare. Green lines were added, red lines were removed.</li>
+        </ol>
+        <p data-en="Your text never leaves your device." data-ur="آپ کا متن آپ کے آلے سے باہر نہیں جاتا۔">Your text never leaves your device.</p>
+      </div>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="../js/common.js"></script>
+  <script src="../js/text-compare.js"></script>
+</body>
+</html>

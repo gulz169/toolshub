@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Random Name Picker Wheel and Number Generator | ToolsHub</title>
+  <meta name="description" content="Spin a wheel to pick a random name, or generate a random number. Free online.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#0b0a1f">
+  <link rel="icon" href="../icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <style>
+    textarea.t{width:100%;min-height:150px;padding:14px;border-radius:14px;resize:vertical;font-size:1rem;line-height:1.7;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.18);color:inherit}
+    .stage{display:flex;justify-content:center;margin-top:16px}
+    .stage canvas,.stage img{max-width:100%;max-height:420px;border-radius:12px;background:#111}
+  </style>
+</head>
+<body data-root="../">
+  <header id="site-header"></header>
+  <main class="tool-wrap">
+    <div class="container">
+      <h1 data-en="Random Picker" data-ur="رینڈم پکر">Random Picker</h1>
+      <p class="sub" data-en="Spin the wheel to pick a name, or get a random number." data-ur="نام چننے کے لیے وہیل گھمائیں، یا رینڈم نمبر لیں۔">Spin the wheel to pick a name, or get a random number.</p>
+      <div class="panel">
+        <div class="two" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;align-items:start">
+          <div>
+            <textarea class="t" id="names" dir="auto" style="min-height:220px" data-en-ph="One name per line (up to 40)" data-ur-ph="ہر لائن میں ایک نام (زیادہ سے زیادہ 40)" placeholder="One name per line (up to 40)">Ali
+Sara
+Ahmed
+Fatima
+Usman
+Ayesha</textarea>
+            <label style="display:flex;gap:6px;align-items:center;margin-top:10px"><input type="checkbox" id="rm"><span data-en="Remove winner after each spin" data-ur="ہر بار جیتنے والے کو ہٹا دیں">Remove winner after each spin</span></label>
+          </div>
+          <div style="text-align:center"><canvas id="wheel" width="420" height="420" style="max-width:100%"></canvas>
+            <div class="actions" style="justify-content:center;margin-top:10px"><button class="btn green" id="spin" type="button" data-en="Spin" data-ur="گھمائیں">Spin</button></div></div>
+        </div>
+        <div id="result" style="text-align:center;font-size:1.8rem;font-weight:700;margin-top:16px;min-height:2.4rem"></div>
+        <hr style="border:0;border-top:1px solid rgba(255,255,255,.12);margin:18px 0">
+        <div style="font-weight:700" data-en="Random number" data-ur="رینڈم نمبر">Random number</div>
+        <div class="options" style="direction:ltr"><input type="number" id="mn" value="1" style="width:110px"> <span>–</span> <input type="number" id="mx" value="100" style="width:110px"> <button class="btn" id="rnd" type="button" data-en="Generate" data-ur="بنائیں">Generate</button></div>
+        <div class="status" id="status"></div>
+      </div>
+      <div class="ad-slot">Ad space</div>
+      <div class="panel info">
+        <h2 data-en="How to use" data-ur="استعمال کا طریقہ">How to use</h2>
+        <ol>
+          <li data-en="Type the names, one per line." data-ur="نام لکھیں، ہر لائن میں ایک۔">Type the names, one per line.</li>
+          <li data-en="Press Spin. The winner is chosen fairly at random." data-ur="گھمائیں دبائیں۔ جیتنے والا بے ترتیب طریقے سے چنا جاتا ہے۔">Press Spin. The winner is chosen fairly at random.</li>
+        </ol>
+        <p data-en="Everything runs in your browser." data-ur="سب کچھ آپ کے براؤزر میں چلتا ہے۔">Everything runs in your browser.</p>
+      </div>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="../js/common.js"></script>
+  <script src="../js/random-picker.js"></script>
+</body>
+</html>

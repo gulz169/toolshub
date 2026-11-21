@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Image to PDF Converter - Free Online | ToolsHub</title>
+  <meta name="description" content="Convert JPG, PNG and WebP images to a single PDF for free. Reorder pages, choose A4 or fit-to-image size. No upload, works in your browser.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#0b0a1f">
+  <link rel="icon" href="../icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+</head>
+<body data-root="../">
+
+  <header id="site-header"></header>
+
+  <main class="tool-wrap">
+    <div class="container">
+      <h1 data-en="Image to PDF Converter" data-ur="تصویر سے PDF کنورٹر">Image to PDF Converter</h1>
+      <p class="sub" data-en="Add your images, arrange the order, and download one PDF."
+         data-ur="اپنی تصاویر شامل کریں، ترتیب سیٹ کریں اور ایک PDF ڈاؤن لوڈ کریں۔">Add your images, arrange the order, and download one PDF.</p>
+
+      <div class="panel">
+        <div class="dropzone" id="dropzone">
+          <div class="big">📁</div>
+          <strong data-en="Click to choose images or drag &amp; drop here" data-ur="تصاویر چننے کے لیے کلک کریں یا یہاں ڈراپ کریں">Click to choose images or drag &amp; drop here</strong>
+          <small data-en="JPG, PNG, WebP — multiple files allowed" data-ur="JPG، PNG، WebP — ایک سے زیادہ فائلیں">JPG, PNG, WebP — multiple files allowed</small>
+        </div>
+        <input type="file" id="fileInput" accept="image/*" multiple hidden>
+
+        <div class="file-list" id="fileList"></div>
+
+        <div class="options" id="options" hidden>
+          <label>
+            <span data-en="Page size" data-ur="صفحے کا سائز">Page size</span>
+            <select id="pageSize">
+              <option value="a4" data-en="A4" data-ur="A4">A4</option>
+              <option value="letter" data-en="Letter" data-ur="Letter">Letter</option>
+              <option value="fit" data-en="Fit to image" data-ur="تصویر کے برابر">Fit to image</option>
+            </select>
+          </label>
+          <label>
+            <span data-en="Orientation" data-ur="رخ">Orientation</span>
+            <select id="orientation">
+              <option value="auto" data-en="Auto" data-ur="خودکار">Auto</option>
+              <option value="portrait" data-en="Portrait" data-ur="عمودی">Portrait</option>
+              <option value="landscape" data-en="Landscape" data-ur="افقی">Landscape</option>
+            </select>
+          </label>
+          <label>
+            <span data-en="Margin" data-ur="حاشیہ">Margin</span>
+            <select id="margin">
+              <option value="0" data-en="None" data-ur="کوئی نہیں">None</option>
+              <option value="20" selected data-en="Small" data-ur="چھوٹا">Small</option>
+              <option value="40" data-en="Big" data-ur="بڑا">Big</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="actions" id="actions" hidden>
+          <button class="btn green" id="convertBtn" type="button" data-en="Convert to PDF" data-ur="PDF بنائیں">Convert to PDF</button>
+          <button class="btn ghost" id="clearBtn" type="button" data-en="Clear all" data-ur="سب ہٹائیں">Clear all</button>
+        </div>
+
+        <div class="status" id="status"></div>
+      </div>
+
+      <div class="ad-slot">Ad space</div>
+
+      <div class="panel info">
+        <h2 data-en="How to use" data-ur="استعمال کا طریقہ">How to use</h2>
+        <ol>
+          <li data-en="Add one or more images." data-ur="ایک یا زیادہ تصاویر شامل کریں۔">Add one or more images.</li>
+          <li data-en="Use the arrow buttons to change the order." data-ur="ترتیب بدلنے کے لیے تیر والے بٹن استعمال کریں۔">Use the arrow buttons to change the order.</li>
+          <li data-en="Choose page size, then press Convert." data-ur="صفحے کا سائز چنیں اور بنائیں دبائیں۔">Choose page size, then press Convert.</li>
+        </ol>
+        <p data-en="Your images never leave your device. The PDF is created inside your browser."
+           data-ur="آپ کی تصاویر آپ کے آلے سے باہر نہیں جاتیں۔ PDF براؤزر کے اندر ہی بنتی ہے۔">Your images never leave your device. The PDF is created inside your browser.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+  <script src="../js/common.js"></script>
+  <script src="../js/image-to-pdf.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Zakat Calculator - Nisab and 2.5% Zakat | ToolsHub</title>
+  <meta name="description" content="Calculate Zakat on cash, gold, silver and business assets. Uses the silver or gold nisab. Free online.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#0b0a1f">
+  <link rel="icon" href="../icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <style>
+    textarea.t{width:100%;min-height:150px;padding:14px;border-radius:14px;resize:vertical;font-size:1rem;line-height:1.7;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.18);color:inherit}
+    .stage{display:flex;justify-content:center;margin-top:16px}
+    .stage canvas,.stage img{max-width:100%;max-height:420px;border-radius:12px;background:#111}
+    .stat{padding:14px;border-radius:14px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);text-align:center}
+    .stat b{display:block;font-size:1.4rem;direction:ltr}.stat span{font-size:.85rem;opacity:.75}
+    .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-top:18px}
+  </style>
+</head>
+<body data-root="../">
+  <header id="site-header"></header>
+  <main class="tool-wrap">
+    <div class="container">
+      <h1 data-en="Zakat Calculator" data-ur="زکوٰۃ کیلکولیٹر">Zakat Calculator</h1>
+      <p class="sub" data-en="Work out the Zakat due on your savings and assets." data-ur="اپنی بچت اور اثاثوں پر واجب الادا زکوٰۃ معلوم کریں۔">Work out the Zakat due on your savings and assets.</p>
+      <div class="panel">
+        <div class="options">
+          <label><span data-en="Gold price per gram" data-ur="سونے کی قیمت فی گرام">Gold price per gram</span><input type="number" id="gp" value="25000" min="0" dir="ltr"></label>
+          <label><span data-en="Silver price per gram" data-ur="چاندی کی قیمت فی گرام">Silver price per gram</span><input type="number" id="sp" value="300" min="0" dir="ltr"></label>
+          <label><span data-en="Nisab based on" data-ur="نصاب بنیاد">Nisab based on</span><select id="basis"><option value="s">Silver (612.36 g)</option><option value="g">Gold (87.48 g)</option></select></label>
+        </div>
+        <div class="options" style="margin-top:14px">
+          <label><span data-en="Cash and bank savings" data-ur="نقد اور بینک بچت">Cash and bank savings</span><input type="number" id="cash" value="0" min="0" dir="ltr"></label>
+          <label><span data-en="Gold weight" data-ur="سونے کا وزن">Gold weight</span><input type="number" id="gold" value="0" min="0" dir="ltr"></label>
+          <label><span data-en="Silver weight" data-ur="چاندی کا وزن">Silver weight</span><input type="number" id="silver" value="0" min="0" dir="ltr"></label>
+          <label><span data-en="Weight unit" data-ur="وزن کی اکائی">Weight unit</span><select id="unit"><option value="1">Grams</option><option value="11.664">Tola</option></select></label>
+        </div>
+        <div class="options" style="margin-top:14px">
+          <label><span data-en="Business stock and investments" data-ur="کاروباری مال اور سرمایہ کاری">Business stock and investments</span><input type="number" id="biz" value="0" min="0" dir="ltr"></label>
+          <label><span data-en="Money others owe you" data-ur="دوسروں کے ذمے آپ کی رقم">Money others owe you</span><input type="number" id="recv" value="0" min="0" dir="ltr"></label>
+          <label><span data-en="Debts and bills you owe" data-ur="آپ کے ذمے قرض اور بل">Debts and bills you owe</span><input type="number" id="debt" value="0" min="0" dir="ltr"></label>
+        </div>
+        <div class="stats"><div class="stat"><b id="net">-</b><span data-en="Net wealth" data-ur="خالص دولت">Net wealth</span></div><div class="stat"><b id="nis">-</b><span data-en="Nisab value" data-ur="نصاب کی قیمت">Nisab value</span></div><div class="stat"><b id="zak">-</b><span data-en="Zakat due (2.5%)" data-ur="واجب زکوٰۃ (2.5%)">Zakat due (2.5%)</span></div></div>
+        <div id="msg" style="margin-top:12px;font-weight:700;text-align:center"></div>
+        <div class="status" id="status"></div>
+      </div>
+      <div class="ad-slot">Ad space</div>
+      <div class="panel info">
+        <h2 data-en="How to use" data-ur="استعمال کا طریقہ">How to use</h2>
+        <ol>
+          <li data-en="Enter today's gold and silver price per gram." data-ur="آج کی سونے اور چاندی کی فی گرام قیمت لکھیں۔">Enter today's gold and silver price per gram.</li>
+          <li data-en="Fill in your assets and debts." data-ur="اپنے اثاثے اور قرض لکھیں۔">Fill in your assets and debts.</li>
+          <li data-en="Zakat is due if your net wealth reaches the nisab and a full lunar year has passed." data-ur="خالص دولت نصاب تک پہنچ جائے اور قمری سال گزر چکا ہو تو زکوٰۃ واجب ہے۔">Zakat is due if your net wealth reaches the nisab and a full lunar year has passed.</li>
+        </ol>
+        <p data-en="Nisab: 52.5 tola silver (612.36 g) or 7.5 tola gold (87.48 g). Scholars differ on details, so confirm with a trusted scholar." data-ur="نصاب: 52.5 تولہ چاندی (612.36 گرام) یا 7.5 تولہ سونا (87.48 گرام)۔ تفصیلات میں علماء کا اختلاف ہے، کسی معتبر عالم سے تصدیق کریں۔">Nisab: 52.5 tola silver (612.36 g) or 7.5 tola gold (87.48 g). Scholars differ on details, so confirm with a trusted scholar.</p>
+      </div>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="../js/common.js"></script>
+  <script src="../js/zakat-calculator.js"></script>
+</body>
+</html>

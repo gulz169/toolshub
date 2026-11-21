@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>QR Code Generator - Free Online | ToolsHub</title>
+  <meta name="description" content="Create a QR code for any link or text and download it as PNG. Free, works in your browser, no signup.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#0b0a1f">
+  <link rel="icon" href="../icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <style>
+    #txt{width:100%;min-height:90px;padding:14px;border-radius:14px;resize:vertical;font-size:1rem;
+      background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.18);color:inherit}
+    .qr-box{display:flex;justify-content:center;margin-top:16px}
+    #qr{background:#fff;padding:12px;border-radius:14px;max-width:100%;height:auto}
+  </style>
+</head>
+<body data-root="../">
+
+  <header id="site-header"></header>
+
+  <main class="tool-wrap">
+    <div class="container">
+      <h1 data-en="QR Code Generator" data-ur="کیو آر کوڈ جنریٹر">QR Code Generator</h1>
+      <p class="sub" data-en="Turn any link or text into a QR code."
+         data-ur="کسی بھی لنک یا متن کا QR کوڈ بنائیں۔">Turn any link or text into a QR code.</p>
+
+      <div class="panel">
+        <textarea id="txt" dir="auto" aria-label="Text or link"
+          data-en-ph="Paste a link or type text, like https://example.com" data-ur-ph="لنک پیسٹ کریں یا متن لکھیں، مثلاً https://example.com"
+          placeholder="Paste a link or type text, like https://example.com"></textarea>
+
+        <div class="options" style="margin-top:16px">
+          <label><span data-en="Size" data-ur="سائز">Size</span>
+            <select id="size">
+              <option value="256">256 px</option>
+              <option value="512" selected>512 px</option>
+              <option value="1024">1024 px</option>
+            </select></label>
+          <label><span data-en="Error correction" data-ur="غلطی کی درستگی">Error correction</span>
+            <select id="ec">
+              <option value="L" data-en="Low" data-ur="کم">Low</option>
+              <option value="M" selected data-en="Medium" data-ur="درمیانہ">Medium</option>
+              <option value="Q" data-en="High" data-ur="زیادہ">High</option>
+              <option value="H" data-en="Highest" data-ur="سب سے زیادہ">Highest</option>
+            </select></label>
+          <label><span data-en="Color" data-ur="رنگ">Color</span>
+            <input type="color" id="color" value="#000000"></label>
+        </div>
+
+        <div class="qr-box" id="qrBox" hidden><canvas id="qr"></canvas></div>
+
+        <div class="actions" id="actions" hidden style="margin-top:16px">
+          <button class="btn green" id="dlBtn" type="button" data-en="Download PNG" data-ur="PNG ڈاؤن لوڈ کریں">Download PNG</button>
+        </div>
+        <div class="status" id="status"></div>
+      </div>
+
+      <div class="ad-slot">Ad space</div>
+
+      <div class="panel info">
+        <h2 data-en="How to use" data-ur="استعمال کا طریقہ">How to use</h2>
+        <ol>
+          <li data-en="Paste a link or type text." data-ur="لنک پیسٹ کریں یا متن لکھیں۔">Paste a link or type text.</li>
+          <li data-en="The QR code appears instantly." data-ur="QR کوڈ فوراً بن جاتا ہے۔">The QR code appears instantly.</li>
+          <li data-en="Download it as a PNG." data-ur="PNG کی صورت میں ڈاؤن لوڈ کریں۔">Download it as a PNG.</li>
+        </ol>
+        <p data-en="Nothing you type leaves your device." data-ur="آپ کا لکھا ہوا آپ کے آلے سے باہر نہیں جاتا۔">Nothing you type leaves your device.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
+  <script src="../js/common.js"></script>
+  <script src="../js/qr-generator.js"></script>
+</body>
+</html>

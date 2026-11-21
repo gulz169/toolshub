@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Word Frequency Counter - Most Used Words | ToolsHub</title>
+  <meta name="description" content="Find the most used words in any text. Works with English and Urdu. Export to CSV. Free online.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#0b0a1f">
+  <link rel="icon" href="../icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <style>
+    textarea.t{width:100%;min-height:150px;padding:14px;border-radius:14px;resize:vertical;font-size:1rem;line-height:1.7;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.18);color:inherit}
+    .stage{display:flex;justify-content:center;margin-top:16px}
+    .stage canvas,.stage img{max-width:100%;max-height:420px;border-radius:12px;background:#111}
+    .stat{padding:14px;border-radius:14px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);text-align:center}
+    .stat b{display:block;font-size:1.5rem;direction:ltr}.stat span{font-size:.85rem;opacity:.75}
+    .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin-top:18px}
+    .tbl{border-collapse:collapse;width:100%}.tbl th,.tbl td{padding:7px 10px;border-bottom:1px solid rgba(255,255,255,.1);text-align:start}.bar{height:8px;border-radius:99px;background:#34d399;min-width:2px}
+  </style>
+</head>
+<body data-root="../">
+  <header id="site-header"></header>
+  <main class="tool-wrap">
+    <div class="container">
+      <h1 data-en="Word Frequency Counter" data-ur="الفاظ کی تعداد">Word Frequency Counter</h1>
+      <p class="sub" data-en="See which words appear most often in a text." data-ur="دیکھیں کہ متن میں کون سے الفاظ سب سے زیادہ آتے ہیں۔">See which words appear most often in a text.</p>
+      <div class="panel">
+        <textarea class="t" id="txt" dir="auto" spellcheck="false" style="min-height:160px" data-en-ph="Paste your text here..." data-ur-ph="اپنا متن یہاں پیسٹ کریں..." placeholder="Paste your text here..."></textarea>
+        <div class="options" style="margin-top:12px"><label><span data-en="Show top" data-ur="سب سے اوپر">Show top</span><select id="top"><option>10</option><option selected>20</option><option>50</option><option>100</option></select></label><label><span data-en="Min length" data-ur="کم از کم لمبائی">Min length</span><select id="min"><option value="1">1</option><option value="2">2</option><option value="3" selected>3</option><option value="4">4</option></select></label>
+          <label style="display:flex;gap:6px;align-items:center"><input type="checkbox" id="stop" checked><span data-en="Skip common English words" data-ur="عام انگریزی الفاظ چھوڑیں">Skip common English words</span></label></div>
+        <div class="stats"><div class="stat"><b id="tw">0</b><span data-en="Total words" data-ur="کل الفاظ">Total words</span></div><div class="stat"><b id="uw">0</b><span data-en="Unique words" data-ur="منفرد الفاظ">Unique words</span></div></div>
+        <div style="overflow:auto;margin-top:14px"><table class="tbl" id="tbl"></table></div>
+        <div class="actions" style="margin-top:14px"><button class="btn" id="csv" type="button" data-en="Download CSV" data-ur="CSV ڈاؤن لوڈ">Download CSV</button> <button class="btn ghost" id="clear" type="button" data-en="Clear" data-ur="صاف کریں">Clear</button></div>
+        <div class="status" id="status"></div>
+      </div>
+      <div class="ad-slot">Ad space</div>
+      <div class="panel info">
+        <h2 data-en="How to use" data-ur="استعمال کا طریقہ">How to use</h2>
+        <ol>
+          <li data-en="Paste your text." data-ur="اپنا متن پیسٹ کریں۔">Paste your text.</li>
+          <li data-en="The most used words appear with counts." data-ur="سب سے زیادہ استعمال شدہ الفاظ تعداد کے ساتھ نظر آتے ہیں۔">The most used words appear with counts.</li>
+        </ol>
+        <p data-en="Nothing you enter leaves your device." data-ur="آپ کا درج کیا ہوا آپ کے آلے سے باہر نہیں جاتا۔">Nothing you enter leaves your device.</p>
+      </div>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="../js/common.js"></script>
+  <script src="../js/word-frequency.js"></script>
+</body>
+</html>

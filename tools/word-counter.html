@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Word &amp; Character Counter - Free Online | ToolsHub</title>
+  <meta name="description" content="Count words, characters, sentences, paragraphs and reading time instantly. Works with English and Urdu. Free, no upload.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#0b0a1f">
+  <link rel="icon" href="../icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <style>
+    .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px;margin-top:16px}
+    .stat{padding:14px;border-radius:14px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);text-align:center}
+    .stat b{display:block;font-size:1.6rem}
+    .stat span{font-size:.85rem;opacity:.75}
+    #txt{width:100%;min-height:220px;padding:14px;border-radius:14px;resize:vertical;font-size:1rem;line-height:1.7;
+      background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.18);color:inherit}
+  </style>
+</head>
+<body data-root="../">
+
+  <header id="site-header"></header>
+
+  <main class="tool-wrap">
+    <div class="container">
+      <h1 data-en="Word &amp; Character Counter" data-ur="لفظ اور حروف گننے والا">Word &amp; Character Counter</h1>
+      <p class="sub" data-en="Type or paste text and see the counts live."
+         data-ur="متن لکھیں یا پیسٹ کریں، گنتی فوراً نظر آئے گی۔">Type or paste text and see the counts live.</p>
+
+      <div class="panel">
+        <textarea id="txt" dir="auto" aria-label="Text"
+          data-en-ph="Type or paste your text here..." data-ur-ph="اپنا متن یہاں لکھیں یا پیسٹ کریں..."
+          placeholder="Type or paste your text here..."></textarea>
+
+        <div class="stats">
+          <div class="stat"><b id="sWords">0</b><span data-en="Words" data-ur="الفاظ">Words</span></div>
+          <div class="stat"><b id="sChars">0</b><span data-en="Characters" data-ur="حروف">Characters</span></div>
+          <div class="stat"><b id="sNoSp">0</b><span data-en="No spaces" data-ur="بغیر خالی جگہ">No spaces</span></div>
+          <div class="stat"><b id="sSent">0</b><span data-en="Sentences" data-ur="جملے">Sentences</span></div>
+          <div class="stat"><b id="sPara">0</b><span data-en="Paragraphs" data-ur="پیراگراف">Paragraphs</span></div>
+          <div class="stat"><b id="sRead">0</b><span data-en="Min to read" data-ur="پڑھنے کے منٹ">Min to read</span></div>
+        </div>
+
+        <div class="actions" style="margin-top:16px">
+          <button class="btn ghost" id="clearBtn" type="button" data-en="Clear" data-ur="صاف کریں">Clear</button>
+        </div>
+      </div>
+
+      <div class="ad-slot">Ad space</div>
+
+      <div class="panel info">
+        <h2 data-en="How to use" data-ur="استعمال کا طریقہ">How to use</h2>
+        <ol>
+          <li data-en="Type or paste your text." data-ur="اپنا متن لکھیں یا پیسٹ کریں۔">Type or paste your text.</li>
+          <li data-en="Counts update as you type." data-ur="لکھتے ہی گنتی بدلتی رہتی ہے۔">Counts update as you type.</li>
+        </ol>
+        <p data-en="Your text never leaves your device." data-ur="آپ کا متن آپ کے آلے سے باہر نہیں جاتا۔">Your text never leaves your device.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="../js/common.js"></script>
+  <script src="../js/word-counter.js"></script>
+</body>
+</html>

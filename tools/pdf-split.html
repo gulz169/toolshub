@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Split PDF - Extract Pages Free Online | ToolsHub</title>
+  <meta name="description" content="Split a PDF or extract selected pages for free. Get a page range as one PDF, or every page as a separate PDF in a ZIP. No upload.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#0b0a1f">
+  <link rel="icon" href="../icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+</head>
+<body data-root="../">
+
+  <header id="site-header"></header>
+
+  <main class="tool-wrap">
+    <div class="container">
+      <h1 data-en="Split PDF / Extract Pages" data-ur="PDF اسپلٹ / صفحات نکالیں">Split PDF / Extract Pages</h1>
+      <p class="sub" data-en="Pick the pages you need, or split every page into its own PDF."
+         data-ur="اپنی ضرورت کے صفحات چنیں، یا ہر صفحے کی الگ PDF بنائیں۔">Pick the pages you need, or split every page into its own PDF.</p>
+
+      <div class="panel">
+        <div class="dropzone" id="dropzone">
+          <div class="big">✂️</div>
+          <strong data-en="Click to choose a PDF or drag &amp; drop here" data-ur="PDF چننے کے لیے کلک کریں یا یہاں ڈراپ کریں">Click to choose a PDF or drag &amp; drop here</strong>
+          <small data-en="One PDF at a time" data-ur="ایک وقت میں ایک PDF">One PDF at a time</small>
+        </div>
+        <input type="file" id="fileInput" accept="application/pdf,.pdf" hidden>
+
+        <div id="fileInfo" class="info" style="margin-top:12px" hidden></div>
+
+        <div id="controls" hidden>
+          <div class="mode">
+            <label><input type="radio" name="mode" value="range" checked>
+              <span data-en="Extract selected pages into one PDF" data-ur="چنے ہوئے صفحات ایک PDF میں نکالیں">Extract selected pages into one PDF</span></label>
+            <div class="range-box" id="rangeBox">
+              <input type="text" id="rangeInput" placeholder="1-3, 5, 8-10">
+              <div class="info" style="margin-top:6px" data-en="Example: 1-3, 5, 8-10" data-ur="مثال: 1-3, 5, 8-10">Example: 1-3, 5, 8-10</div>
+            </div>
+            <label><input type="radio" name="mode" value="each">
+              <span data-en="Split every page into a separate PDF (ZIP)" data-ur="ہر صفحے کی الگ PDF بنائیں (ZIP)">Split every page into a separate PDF (ZIP)</span></label>
+          </div>
+
+          <div class="actions">
+            <button class="btn green" id="splitBtn" type="button" data-en="Split PDF" data-ur="PDF اسپلٹ کریں">Split PDF</button>
+            <button class="btn ghost" id="clearBtn" type="button" data-en="Clear" data-ur="ہٹائیں">Clear</button>
+          </div>
+        </div>
+
+        <div class="status" id="status"></div>
+      </div>
+
+      <div class="ad-slot">Ad space</div>
+
+      <div class="panel info">
+        <h2 data-en="How to use" data-ur="استعمال کا طریقہ">How to use</h2>
+        <ol>
+          <li data-en="Choose your PDF." data-ur="اپنی PDF چنیں۔">Choose your PDF.</li>
+          <li data-en="Type the pages you want (like 1-3, 5) or choose to split every page." data-ur="مطلوبہ صفحات لکھیں (جیسے 1-3, 5) یا ہر صفحہ الگ کرنے کا آپشن چنیں۔">Type the pages you want (like 1-3, 5) or choose to split every page.</li>
+          <li data-en="Press Split and download the result." data-ur="اسپلٹ دبائیں اور نتیجہ ڈاؤن لوڈ کریں۔">Press Split and download the result.</li>
+        </ol>
+        <p data-en="Your file never leaves your device." data-ur="آپ کی فائل آپ کے آلے سے باہر نہیں جاتی۔">Your file never leaves your device.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+  <script src="../js/common.js"></script>
+  <script src="../js/pdf-split.js"></script>
+</body>
+</html>

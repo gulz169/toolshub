@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Merge PDF - Combine PDF Files Free Online | ToolsHub</title>
+  <meta name="description" content="Merge multiple PDF files into one for free. Reorder files, then download a single PDF. No upload, works in your browser.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#0b0a1f">
+  <link rel="icon" href="../icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+</head>
+<body data-root="../">
+
+  <header id="site-header"></header>
+
+  <main class="tool-wrap">
+    <div class="container">
+      <h1 data-en="Merge PDF Files" data-ur="PDF فائلیں مرج کریں">Merge PDF Files</h1>
+      <p class="sub" data-en="Combine several PDFs into one document in the order you want."
+         data-ur="کئی PDF فائلوں کو اپنی مرضی کی ترتیب میں ایک دستاویز میں جوڑیں۔">Combine several PDFs into one document in the order you want.</p>
+
+      <div class="panel">
+        <div class="dropzone" id="dropzone">
+          <div class="big">🧩</div>
+          <strong data-en="Click to choose PDFs or drag &amp; drop here" data-ur="PDF چننے کے لیے کلک کریں یا یہاں ڈراپ کریں">Click to choose PDFs or drag &amp; drop here</strong>
+          <small data-en="Select two or more PDF files" data-ur="دو یا زیادہ PDF فائلیں چنیں">Select two or more PDF files</small>
+        </div>
+        <input type="file" id="fileInput" accept="application/pdf,.pdf" multiple hidden>
+
+        <div class="pdf-list" id="pdfList"></div>
+
+        <div class="actions" id="actions" hidden style="margin-top:16px">
+          <button class="btn green" id="mergeBtn" type="button" data-en="Merge PDFs" data-ur="PDF مرج کریں">Merge PDFs</button>
+          <button class="btn ghost" id="clearBtn" type="button" data-en="Clear all" data-ur="سب ہٹائیں">Clear all</button>
+        </div>
+
+        <div class="status" id="status"></div>
+      </div>
+
+      <div class="ad-slot">Ad space</div>
+
+      <div class="panel info">
+        <h2 data-en="How to use" data-ur="استعمال کا طریقہ">How to use</h2>
+        <ol>
+          <li data-en="Add two or more PDF files." data-ur="دو یا زیادہ PDF فائلیں شامل کریں۔">Add two or more PDF files.</li>
+          <li data-en="Use the arrows to set the order." data-ur="تیر والے بٹن سے ترتیب سیٹ کریں۔">Use the arrows to set the order.</li>
+          <li data-en="Press Merge and the combined PDF downloads." data-ur="مرج دبائیں، جڑی ہوئی PDF ڈاؤن لوڈ ہو جائے گی۔">Press Merge and the combined PDF downloads.</li>
+        </ol>
+        <p data-en="Your files never leave your device." data-ur="آپ کی فائلیں آپ کے آلے سے باہر نہیں جاتیں۔">Your files never leave your device.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+  <script src="../js/common.js"></script>
+  <script src="../js/pdf-merge.js"></script>
+</body>
+</html>

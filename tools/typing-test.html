@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Typing Speed Test - English and Urdu | ToolsHub</title>
+  <meta name="description" content="Test your typing speed in words per minute (WPM) with English or Urdu text. Free online.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#0b0a1f">
+  <link rel="icon" href="../icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <style>
+    textarea.t{width:100%;min-height:150px;padding:14px;border-radius:14px;resize:vertical;font-size:1rem;line-height:1.7;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.18);color:inherit}
+    .stage{display:flex;justify-content:center;margin-top:16px}
+    .stage canvas,.stage img{max-width:100%;max-height:420px;border-radius:12px;background:#111}
+    .stat{padding:14px;border-radius:14px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);text-align:center}
+    .stat b{display:block;font-size:1.5rem;direction:ltr}.stat span{font-size:.85rem;opacity:.75}
+    .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin-top:18px}
+    #words span{padding:2px 4px;border-radius:6px}#words .ok{color:#34d399}#words .bad{color:#f43f5e;text-decoration:line-through}#words .cur{background:rgba(255,255,255,.18)}
+  </style>
+</head>
+<body data-root="../">
+  <header id="site-header"></header>
+  <main class="tool-wrap">
+    <div class="container">
+      <h1 data-en="Typing Speed Test" data-ur="ٹائپنگ اسپیڈ ٹیسٹ">Typing Speed Test</h1>
+      <p class="sub" data-en="Find your typing speed in words per minute." data-ur="اپنی ٹائپنگ کی رفتار الفاظ فی منٹ میں معلوم کریں۔">Find your typing speed in words per minute.</p>
+      <div class="panel">
+        <div class="options"><label><span data-en="Language" data-ur="زبان">Language</span><select id="lang"><option value="en">English</option><option value="ur">اردو</option></select></label><label><span data-en="Time" data-ur="وقت">Time</span><select id="dur"><option value="30">30 s</option><option value="60" selected>60 s</option><option value="120">120 s</option></select></label></div>
+        <div id="words" style="margin-top:16px;padding:16px;border-radius:14px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);font-size:1.25rem;line-height:2.2;max-height:190px;overflow:hidden" dir="auto"></div>
+        <input type="text" id="inp" autocomplete="off" autocapitalize="off" spellcheck="false" dir="auto" style="width:100%;margin-top:14px;font-size:1.2rem" data-en-ph="Start typing here..." data-ur-ph="یہاں ٹائپ کرنا شروع کریں..." placeholder="Start typing here...">
+        <div class="stats"><div class="stat"><b id="time">60</b><span data-en="Seconds left" data-ur="باقی سیکنڈ">Seconds left</span></div><div class="stat"><b id="wpm">0</b><span>WPM</span></div><div class="stat"><b id="acc">100%</b><span data-en="Accuracy" data-ur="درستگی">Accuracy</span></div></div>
+        <div class="actions" style="margin-top:14px"><button class="btn green" id="restart" type="button" data-en="Restart" data-ur="دوبارہ شروع">Restart</button></div>
+        <div class="status" id="status"></div>
+      </div>
+      <div class="ad-slot">Ad space</div>
+      <div class="panel info">
+        <h2 data-en="How to use" data-ur="استعمال کا طریقہ">How to use</h2>
+        <ol>
+          <li data-en="Choose a language and time." data-ur="زبان اور وقت چنیں۔">Choose a language and time.</li>
+          <li data-en="Type the words shown. Press space after each word." data-ur="دکھائے گئے الفاظ ٹائپ کریں۔ ہر لفظ کے بعد اسپیس دبائیں۔">Type the words shown. Press space after each word.</li>
+          <li data-en="The timer starts when you type the first letter." data-ur="پہلا حرف ٹائپ کرتے ہی ٹائمر شروع ہو جاتا ہے۔">The timer starts when you type the first letter.</li>
+        </ol>
+        <p data-en="WPM counts only correctly typed words." data-ur="WPM میں صرف درست ٹائپ ہوئے الفاظ گنے جاتے ہیں۔">WPM counts only correctly typed words.</p>
+      </div>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="../js/common.js"></script>
+  <script src="../js/typing-test.js"></script>
+</body>
+</html>

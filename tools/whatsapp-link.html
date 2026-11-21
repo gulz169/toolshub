@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>WhatsApp Link Generator - wa.me Chat Link | ToolsHub</title>
+  <meta name="description" content="Create a WhatsApp chat link with a ready message. Works for any country number. Free.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#0b0a1f">
+  <link rel="icon" href="../icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <style>
+    textarea.t{width:100%;min-height:150px;padding:14px;border-radius:14px;resize:vertical;font-size:1rem;line-height:1.7;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.18);color:inherit}
+    .stage{display:flex;justify-content:center;margin-top:16px}
+    .stage canvas,.stage img{max-width:100%;max-height:420px;border-radius:12px;background:#111}
+    textarea.t{width:100%;padding:12px;border-radius:12px;font-size:1rem;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.18);color:inherit}
+  </style>
+</head>
+<body data-root="../">
+  <header id="site-header"></header>
+  <main class="tool-wrap">
+    <div class="container">
+      <h1 data-en="WhatsApp Link Generator" data-ur="واٹس ایپ لنک جنریٹر">WhatsApp Link Generator</h1>
+      <p class="sub" data-en="Make a chat link that opens WhatsApp with your message." data-ur="ایسا لنک بنائیں جو آپ کے پیغام کے ساتھ واٹس ایپ کھول دے۔">Make a chat link that opens WhatsApp with your message.</p>
+      <div class="panel">
+        <div class="options"><label><span data-en="Country" data-ur="ملک">Country</span><select id="cc"><option value="92">Pakistan +92</option><option value="91">India +91</option><option value="966">Saudi Arabia +966</option><option value="971">UAE +971</option><option value="44">UK +44</option><option value="1">USA / Canada +1</option><option value="880">Bangladesh +880</option><option value="90">Turkey +90</option><option value="60">Malaysia +60</option><option value="974">Qatar +974</option><option value="965">Kuwait +965</option><option value="61">Australia +61</option></select></label><label><span data-en="Phone number" data-ur="فون نمبر">Phone number</span><input type="tel" id="num" placeholder="0300 1234567" dir="ltr"></label></div>
+        <textarea class="t" id="msg" dir="auto" style="min-height:90px;margin-top:12px" data-en-ph="Message (optional)" data-ur-ph="پیغام (اختیاری)" placeholder="Message (optional)"></textarea>
+        <input type="text" id="link" readonly dir="ltr" style="width:100%;margin-top:12px">
+        <div class="actions" style="margin-top:12px"><button class="btn green" id="copyBtn" type="button" data-en="Copy link" data-ur="لنک کاپی">Copy link</button> <a class="btn" id="open" target="_blank" rel="noopener" data-en="Open in WhatsApp" data-ur="واٹس ایپ میں کھولیں">Open in WhatsApp</a></div>
+        <div class="status" id="status"></div>
+      </div>
+      <div class="ad-slot">Ad space</div>
+      <div class="panel info">
+        <h2 data-en="How to use" data-ur="استعمال کا طریقہ">How to use</h2>
+        <ol>
+          <li data-en="Choose the country and type the number." data-ur="ملک چنیں اور نمبر لکھیں۔">Choose the country and type the number.</li>
+          <li data-en="Add a message if you want, then copy the link." data-ur="چاہیں تو پیغام لکھیں، پھر لنک کاپی کریں۔">Add a message if you want, then copy the link.</li>
+        </ol>
+        <p data-en="Nothing you enter leaves your device." data-ur="آپ کا درج کیا ہوا آپ کے آلے سے باہر نہیں جاتا۔">Nothing you enter leaves your device.</p>
+      </div>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="../js/common.js"></script>
+  <script src="../js/whatsapp-link.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Rotate &amp; Delete PDF Pages - Free Online | ToolsHub</title>
+  <meta name="description" content="Rotate PDF pages or delete the ones you don't need, then download the new PDF. Free, works in your browser, no upload.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#0b0a1f">
+  <link rel="icon" href="../icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <style>
+    .page-item .thumb{aspect-ratio:1;display:flex;align-items:center;justify-content:center;overflow:hidden}
+    .page-item .thumb canvas{max-width:100%;max-height:100%;background:#fff;border-radius:8px;transition:transform .25s}
+    .page-item.gone{opacity:.35}
+    .page-item.gone canvas{filter:grayscale(1)}
+    .page-item .row{display:flex;gap:6px;justify-content:center}
+  </style>
+</head>
+<body data-root="../">
+
+  <header id="site-header"></header>
+
+  <main class="tool-wrap">
+    <div class="container">
+      <h1 data-en="Rotate &amp; Delete PDF Pages" data-ur="PDF صفحات گھمائیں اور ہٹائیں">Rotate &amp; Delete PDF Pages</h1>
+      <p class="sub" data-en="Rotate pages or remove the ones you don't need."
+         data-ur="صفحات گھمائیں یا غیر ضروری صفحات ہٹائیں۔">Rotate pages or remove the ones you don't need.</p>
+
+      <div class="panel">
+        <div class="dropzone" id="dropzone">
+          <div class="big">🔃</div>
+          <strong data-en="Click to choose a PDF or drag &amp; drop here" data-ur="PDF چنیں یا یہاں ڈراپ کریں">Click to choose a PDF or drag &amp; drop here</strong>
+          <small data-en="One PDF file" data-ur="ایک PDF فائل">One PDF file</small>
+        </div>
+        <input type="file" id="fileInput" accept="application/pdf,.pdf" hidden>
+
+        <div class="page-grid" id="grid"></div>
+
+        <div class="actions" id="actions" hidden style="margin-top:16px">
+          <button class="btn green" id="saveBtn" type="button" data-en="Download PDF" data-ur="PDF ڈاؤن لوڈ کریں">Download PDF</button>
+          <button class="btn" id="rotAllBtn" type="button" data-en="Rotate all ↻" data-ur="سب گھمائیں ↻">Rotate all ↻</button>
+          <button class="btn ghost" id="clearBtn" type="button" data-en="Clear" data-ur="ہٹائیں">Clear</button>
+        </div>
+        <div class="status" id="status"></div>
+      </div>
+
+      <div class="ad-slot">Ad space</div>
+
+      <div class="panel info">
+        <h2 data-en="How to use" data-ur="استعمال کا طریقہ">How to use</h2>
+        <ol>
+          <li data-en="Add your PDF." data-ur="اپنی PDF شامل کریں۔">Add your PDF.</li>
+          <li data-en="Press ↻ to rotate a page, ✕ to remove it." data-ur="↻ سے صفحہ گھمائیں، ✕ سے ہٹائیں۔">Press ↻ to rotate a page, ✕ to remove it.</li>
+          <li data-en="Download the new PDF." data-ur="نئی PDF ڈاؤن لوڈ کریں۔">Download the new PDF.</li>
+        </ol>
+        <p data-en="Your files never leave your device." data-ur="آپ کی فائلیں آپ کے آلے سے باہر نہیں جاتیں۔">Your files never leave your device.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+  <script src="../js/common.js"></script>
+  <script src="../js/pdf-pages.js"></script>
+</body>
+</html>

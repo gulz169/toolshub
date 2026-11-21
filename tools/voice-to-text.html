@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Voice to Text - Speech to Text Online Free | ToolsHub</title>
+  <meta name="description" content="Speak and see your words typed out. Supports Urdu and English. Works in Chrome and Edge.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#0b0a1f">
+  <link rel="icon" href="../icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <style>
+    textarea.t{width:100%;min-height:150px;padding:14px;border-radius:14px;resize:vertical;font-size:1rem;line-height:1.7;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.18);color:inherit}
+    .stage{display:flex;justify-content:center;margin-top:16px}
+    .stage canvas,.stage img{max-width:100%;max-height:420px;border-radius:12px;background:#111}
+  </style>
+</head>
+<body data-root="../">
+  <header id="site-header"></header>
+  <main class="tool-wrap">
+    <div class="container">
+      <h1 data-en="Voice to Text" data-ur="آواز سے متن">Voice to Text</h1>
+      <p class="sub" data-en="Talk and your words are typed for you." data-ur="بولیں اور آپ کے الفاظ خود لکھے جائیں گے۔">Talk and your words are typed for you.</p>
+      <div class="panel">
+        <div class="options"><label><span data-en="Language" data-ur="زبان">Language</span><select id="lang"><option value="ur-PK">اردو</option><option value="en-US">English (US)</option><option value="en-GB">English (UK)</option><option value="en-IN">English (India)</option><option value="ar-SA">العربية</option><option value="hi-IN">हिन्दी</option></select></label></div>
+        <textarea class="t" id="out" dir="auto" style="min-height:220px;margin-top:14px"></textarea>
+        <div class="actions" style="margin-top:12px"><button class="btn green" id="mic" type="button" data-en="🎤 Start" data-ur="🎤 شروع">🎤 Start</button> <button class="btn" id="copyBtn" type="button" data-en="Copy" data-ur="کاپی">Copy</button> <button class="btn ghost" id="clearBtn" type="button" data-en="Clear" data-ur="صاف کریں">Clear</button></div>
+        <div class="status" id="status"></div>
+      </div>
+      <div class="ad-slot">Ad space</div>
+      <div class="panel info">
+        <h2 data-en="How to use" data-ur="استعمال کا طریقہ">How to use</h2>
+        <ol>
+          <li data-en="Choose the language you will speak." data-ur="وہ زبان چنیں جس میں بولیں گے۔">Choose the language you will speak.</li>
+          <li data-en="Press Start and allow the microphone." data-ur="شروع دبائیں اور مائیکروفون کی اجازت دیں۔">Press Start and allow the microphone.</li>
+          <li data-en="Speak. Press Stop when done." data-ur="بولیں۔ مکمل ہونے پر روکیں دبائیں۔">Speak. Press Stop when done.</li>
+        </ol>
+        <p data-en="Works in Chrome and Edge. These browsers send your voice to their speech service online, so do not use it for private content." data-ur="Chrome اور Edge میں چلتا ہے۔ یہ براؤزر آپ کی آواز آن لائن اسپیچ سروس کو بھیجتے ہیں، اس لیے نجی مواد کے لیے استعمال نہ کریں۔">Works in Chrome and Edge. These browsers send your voice to their speech service online, so do not use it for private content.</p>
+      </div>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="../js/common.js"></script>
+  <script src="../js/voice-to-text.js"></script>
+</body>
+</html>

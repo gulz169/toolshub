@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Remove Image Metadata (EXIF) - Photo Privacy | ToolsHub</title>
+  <meta name="description" content="Remove EXIF data such as location and camera details from photos. Free, no upload.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#0b0a1f">
+  <link rel="icon" href="../icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <style>
+    textarea.t{width:100%;min-height:150px;padding:14px;border-radius:14px;resize:vertical;font-size:1rem;line-height:1.7;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.18);color:inherit}
+    .stage{display:flex;justify-content:center;margin-top:16px}
+    .stage canvas,.stage img{max-width:100%;max-height:420px;border-radius:12px;background:#111}
+  </style>
+</head>
+<body data-root="../">
+  <header id="site-header"></header>
+  <main class="tool-wrap">
+    <div class="container">
+      <h1 data-en="Remove Image Metadata" data-ur="تصویر کا میٹا ڈیٹا ہٹائیں">Remove Image Metadata</h1>
+      <p class="sub" data-en="Strip location and camera details from a photo before sharing." data-ur="شیئر کرنے سے پہلے تصویر سے لوکیشن اور کیمرے کی معلومات ہٹائیں۔">Strip location and camera details from a photo before sharing.</p>
+      <div class="panel">
+        <div class="dropzone" id="dropzone">
+          <div class="big">🛡️</div>
+          <strong data-en="Click to choose a photo or drag &amp; drop here" data-ur="تصویر چنیں یا یہاں ڈراپ کریں">Click to choose a photo or drag &amp; drop here</strong>
+          <small data-en="JPG, PNG or WebP" data-ur="JPG، PNG یا WebP">JPG, PNG or WebP</small>
+        </div>
+        <input type="file" id="fileInput" accept="image/jpeg,image/png,image/webp" hidden>
+        <div id="work" hidden>
+          <div id="info" class="status" style="margin-top:16px"></div>
+          <div class="options" style="margin-top:12px"><label><span data-en="Save as" data-ur="فارمیٹ">Save as</span><select id="fmt"><option value="image/jpeg">JPG</option><option value="image/png">PNG</option><option value="image/webp">WebP</option></select></label></div>
+          <div class="actions" style="margin-top:16px"><button class="btn green" id="dlBtn" type="button" data-en="Clean &amp; download" data-ur="صاف کریں اور ڈاؤن لوڈ">Clean &amp; download</button> <button class="btn ghost" id="newBtn" type="button" data-en="New photo" data-ur="نئی تصویر">New photo</button></div>
+        </div>
+        <div class="status" id="status"></div>
+      </div>
+      <div class="ad-slot">Ad space</div>
+      <div class="panel info">
+        <h2 data-en="How to use" data-ur="استعمال کا طریقہ">How to use</h2>
+        <ol>
+          <li data-en="Add a photo." data-ur="تصویر شامل کریں۔">Add a photo.</li>
+          <li data-en="See whether it has hidden data." data-ur="دیکھیں کہ اس میں چھپا ڈیٹا ہے یا نہیں۔">See whether it has hidden data.</li>
+          <li data-en="Download the clean copy." data-ur="صاف کاپی ڈاؤن لوڈ کریں۔">Download the clean copy.</li>
+        </ol>
+        <p data-en="The clean copy is re-saved from the picture itself, so location, camera and date tags are gone. Your photo never leaves your device." data-ur="صاف کاپی خود تصویر سے دوبارہ بنتی ہے، اس لیے لوکیشن، کیمرا اور تاریخ کے ٹیگ ختم ہو جاتے ہیں۔ آپ کی تصویر آپ کے آلے سے باہر نہیں جاتی۔">The clean copy is re-saved from the picture itself, so location, camera and date tags are gone. Your photo never leaves your device.</p>
+      </div>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="../js/common.js"></script>
+  <script src="../js/remove-metadata.js"></script>
+</body>
+</html>

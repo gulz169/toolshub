@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Social Media Image Resizer | ToolsHub</title>
+  <meta name="description" content="Resize images for Instagram, YouTube, WhatsApp and more. Free online.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#0b0a1f">
+  <link rel="icon" href="../icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+</head>
+<body data-root="../">
+  <header id="site-header"></header>
+  <main class="tool-wrap">
+    <div class="container">
+      <h1 data-en="Social Media Image Resizer" data-ur="سوشل میڈیا امیج ری سائزر">Social Media Image Resizer</h1>
+      <p class="sub" data-en="Resize images for Instagram, YouTube, WhatsApp and more." data-ur="انسٹاگرام، یوٹیوب، واٹس ایپ وغیرہ کے لیے تصویر کا سائز بدلیں۔">Resize images for Instagram, YouTube, WhatsApp and more.</p>
+      <div class="panel">
+<div class="dropzone" id="dz"><div class="big">🖼️</div><strong data-en="Click to choose an image or drag &amp; drop here" data-ur="تصویر چنیں یا یہاں ڈراپ کریں">Click to choose an image or drag &amp; drop here</strong><small data-en="JPG, PNG or WebP" data-ur="JPG، PNG یا WebP">JPG, PNG or WebP</small></div><input type="file" id="fi" accept="image/*" hidden><div id="work" hidden><div class="options"><label><span data-en="Size" data-ur="سائز">Size</span><select id="p"><option value="1080,1080">Instagram post 1080x1080</option><option value="1080,1350">Instagram portrait 1080x1350</option><option value="1080,1920">Story / Reel / TikTok 1080x1920</option><option value="1280,720">YouTube thumbnail 1280x720</option><option value="500,500">WhatsApp DP 500x500</option><option value="820,312">Facebook cover 820x312</option><option value="1500,500">X / Twitter header 1500x500</option><option value="1584,396">LinkedIn banner 1584x396</option></select></label><label><span data-en="Fit" data-ur="فٹ">Fit</span><select id="m"><option value="cover">Fill (crop)</option><option value="contain">Fit (add bars)</option></select></label><label><span data-en="Bar color" data-ur="بار کا رنگ">Bar color</span><input type="color" id="bg" value="#000000" style="width:60px;height:42px"></label><label><span data-en="Format" data-ur="فارمیٹ">Format</span><select id="f"><option value="image/jpeg">JPG</option><option value="image/png">PNG</option><option value="image/webp">WebP</option></select></label></div><div style="text-align:center"><canvas id="cv" style="max-width:100%;max-height:420px;border-radius:12px;background:#111"></canvas></div><div class="actions" style="margin-top:16px"><button class="btn green" id="dl" type="button" data-en="Download" data-ur="ڈاؤن لوڈ">Download</button></div></div>
+        <div class="status" id="status"></div>
+      </div>
+      <div class="ad-slot">Ad space</div>
+      <div class="panel info">
+        <h2 data-en="How to use" data-ur="استعمال کا طریقہ">How to use</h2>
+        <p data-en="Add an image, pick a size and how to fit it, then download." data-ur="تصویر شامل کریں، سائز اور فٹ کرنے کا طریقہ چنیں اور ڈاؤن لوڈ کریں۔">Add an image, pick a size and how to fit it, then download.</p>
+        <p data-en="Nothing you enter leaves your device." data-ur="آپ کا درج کیا ہوا آپ کے آلے سے باہر نہیں جاتا۔">Nothing you enter leaves your device.</p>
+      </div>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="../js/common.js"></script>
+  <script src="../js/fileio.js"></script>
+  <script src="../js/social-resizer.js"></script>
+</body>
+</html>

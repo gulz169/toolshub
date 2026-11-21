@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Text to Speech - Read Text Aloud Free | ToolsHub</title>
+  <meta name="description" content="Listen to any text read aloud in your browser with adjustable voice, speed and pitch. Free.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#0b0a1f">
+  <link rel="icon" href="../icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <style>
+    textarea.t{width:100%;min-height:150px;padding:14px;border-radius:14px;resize:vertical;font-size:1rem;line-height:1.7;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.18);color:inherit}
+    .stage{display:flex;justify-content:center;margin-top:16px}
+    .stage canvas,.stage img{max-width:100%;max-height:420px;border-radius:12px;background:#111}
+  </style>
+</head>
+<body data-root="../">
+  <header id="site-header"></header>
+  <main class="tool-wrap">
+    <div class="container">
+      <h1 data-en="Text to Speech" data-ur="متن سے آواز">Text to Speech</h1>
+      <p class="sub" data-en="Have your browser read text out loud." data-ur="اپنے براؤزر سے متن بلند آواز میں پڑھوائیں۔">Have your browser read text out loud.</p>
+      <div class="panel">
+        <textarea class="t" id="txt" dir="auto" style="min-height:180px" data-en-ph="Type or paste text..." data-ur-ph="متن لکھیں یا پیسٹ کریں..." placeholder="Type or paste text..."></textarea>
+        <div class="options" style="margin-top:16px">
+          <label><span data-en="Voice" data-ur="آواز">Voice</span><select id="voice"></select></label>
+          <label><span data-en="Speed" data-ur="رفتار">Speed</span><input type="range" id="rate" min="0.5" max="2" step="0.1" value="1" dir="ltr"></label>
+          <label><span data-en="Pitch" data-ur="پچ">Pitch</span><input type="range" id="pitch" min="0" max="2" step="0.1" value="1" dir="ltr"></label>
+        </div>
+        <div class="actions" style="margin-top:16px"><button class="btn green" id="speak" type="button" data-en="Speak" data-ur="بولیں">Speak</button> <button class="btn" id="pause" type="button" data-en="Pause" data-ur="روکیں">Pause</button> <button class="btn ghost" id="stop" type="button" data-en="Stop" data-ur="بند کریں">Stop</button></div>
+        <div class="status" id="status"></div>
+      </div>
+      <div class="ad-slot">Ad space</div>
+      <div class="panel info">
+        <h2 data-en="How to use" data-ur="استعمال کا طریقہ">How to use</h2>
+        <ol>
+          <li data-en="Type or paste text." data-ur="متن لکھیں یا پیسٹ کریں۔">Type or paste text.</li>
+          <li data-en="Pick a voice that matches the language of the text." data-ur="متن کی زبان سے ملتی آواز چنیں۔">Pick a voice that matches the language of the text.</li>
+          <li data-en="Press Speak." data-ur="بولیں دبائیں۔">Press Speak.</li>
+        </ol>
+        <p data-en="Voices come from your device. If there is no Urdu voice, install one in your system or browser settings." data-ur="آوازیں آپ کے آلے سے آتی ہیں۔ اردو آواز نہ ہو تو اپنے سسٹم یا براؤزر کی سیٹنگ میں انسٹال کریں۔">Voices come from your device. If there is no Urdu voice, install one in your system or browser settings.</p>
+      </div>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="../js/common.js"></script>
+  <script src="../js/text-to-speech.js"></script>
+</body>
+</html>

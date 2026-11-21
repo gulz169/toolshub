@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Signature Maker - Draw Signature Online PNG | ToolsHub</title>
+  <meta name="description" content="Draw your signature with mouse or finger and download it as a transparent PNG. Free, no upload.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#0b0a1f">
+  <link rel="icon" href="../icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <style>
+    textarea.t{width:100%;min-height:150px;padding:14px;border-radius:14px;resize:vertical;font-size:1rem;line-height:1.7;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.18);color:inherit}
+    .stage{display:flex;justify-content:center;margin-top:16px}
+    .stage canvas,.stage img{max-width:100%;max-height:420px;border-radius:12px;background:#111}
+  </style>
+</head>
+<body data-root="../">
+  <header id="site-header"></header>
+  <main class="tool-wrap">
+    <div class="container">
+      <h1 data-en="Signature Maker" data-ur="دستخط میکر">Signature Maker</h1>
+      <p class="sub" data-en="Draw your signature and save it as a transparent PNG." data-ur="اپنے دستخط بنائیں اور شفاف PNG میں محفوظ کریں۔">Draw your signature and save it as a transparent PNG.</p>
+      <div class="panel">
+        <div class="options"><label><span data-en="Pen color" data-ur="قلم کا رنگ">Pen color</span><input type="color" id="col" value="#111111" style="height:42px"></label><label><span data-en="Pen width" data-ur="قلم کی موٹائی">Pen width</span><input type="range" id="w" min="1" max="12" value="3" dir="ltr"></label></div>
+        <canvas id="pad" width="900" height="360" style="width:100%;max-width:900px;margin-top:14px;border-radius:14px;background:#fff;touch-action:none;cursor:crosshair"></canvas>
+        <div class="actions" style="margin-top:14px"><button class="btn green" id="png" type="button" data-en="Download transparent PNG" data-ur="شفاف PNG ڈاؤن لوڈ">Download transparent PNG</button> <button class="btn" id="jpg" type="button" data-en="Download JPG" data-ur="JPG ڈاؤن لوڈ">Download JPG</button> <button class="btn" id="undo" type="button" data-en="Undo" data-ur="واپس">Undo</button> <button class="btn ghost" id="clear" type="button" data-en="Clear" data-ur="صاف کریں">Clear</button></div>
+        <div class="status" id="status"></div>
+      </div>
+      <div class="ad-slot">Ad space</div>
+      <div class="panel info">
+        <h2 data-en="How to use" data-ur="استعمال کا طریقہ">How to use</h2>
+        <ol>
+          <li data-en="Draw your signature in the box." data-ur="باکس میں اپنے دستخط بنائیں۔">Draw your signature in the box.</li>
+          <li data-en="Download it as a PNG with a see-through background." data-ur="اسے شفاف پس منظر والی PNG میں ڈاؤن لوڈ کریں۔">Download it as a PNG with a see-through background.</li>
+        </ol>
+        <p data-en="Nothing you enter leaves your device." data-ur="آپ کا درج کیا ہوا آپ کے آلے سے باہر نہیں جاتا۔">Nothing you enter leaves your device.</p>
+      </div>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="../js/common.js"></script>
+  <script src="../js/signature-maker.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>PDF Metadata Editor | ToolsHub</title>
+  <meta name="description" content="Edit title, author, subject and keywords of a PDF. Free online.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#0b0a1f">
+  <link rel="icon" href="../icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+</head>
+<body data-root="../">
+  <header id="site-header"></header>
+  <main class="tool-wrap">
+    <div class="container">
+      <h1 data-en="PDF Metadata Editor" data-ur="PDF میٹا ڈیٹا ایڈیٹر">PDF Metadata Editor</h1>
+      <p class="sub" data-en="Edit title, author, subject and keywords of a PDF." data-ur="PDF کا ٹائٹل، مصنف، سبجیکٹ اور کی ورڈز بدلیں۔">Edit title, author, subject and keywords of a PDF.</p>
+      <div class="panel">
+<div class="dropzone" id="dz"><div class="big">📄</div><strong data-en="Click to choose a PDF or drag &amp; drop here" data-ur="PDF چنیں یا یہاں ڈراپ کریں">Click to choose a PDF or drag &amp; drop here</strong><small data-en="PDF file" data-ur="PDF فائل">PDF file</small></div><input type="file" id="fi" accept="application/pdf,.pdf" hidden><div id="work" hidden><div class="options" style="flex-direction:column"><label><span data-en="Title" data-ur="ٹائٹل">Title</span><input id="ti" dir="auto" style="padding:9px 12px;border-radius:12px;width:100%"></label><label><span data-en="Author" data-ur="مصنف">Author</span><input id="au" dir="auto" style="padding:9px 12px;border-radius:12px;width:100%"></label><label><span data-en="Subject" data-ur="سبجیکٹ">Subject</span><input id="su" dir="auto" style="padding:9px 12px;border-radius:12px;width:100%"></label><label><span data-en="Keywords (comma separated)" data-ur="کی ورڈز (کوما سے الگ)">Keywords (comma separated)</span><input id="kw" dir="auto" style="padding:9px 12px;border-radius:12px;width:100%"></label><label><span data-en="Creator" data-ur="تخلیق کار">Creator</span><input id="cr" dir="auto" style="padding:9px 12px;border-radius:12px;width:100%"></label><label><span data-en="Producer" data-ur="پروڈیوسر">Producer</span><input id="pr" dir="auto" style="padding:9px 12px;border-radius:12px;width:100%"></label></div><div class="actions" style="margin-top:16px"><button class="btn green" id="dl" type="button" data-en="Download" data-ur="ڈاؤن لوڈ">Download</button></div></div>
+        <div class="status" id="status"></div>
+      </div>
+      <div class="ad-slot">Ad space</div>
+      <div class="panel info">
+        <h2 data-en="How to use" data-ur="استعمال کا طریقہ">How to use</h2>
+        <p data-en="Add a PDF, change the fields, then download the updated file." data-ur="PDF شامل کریں، خانے بدلیں اور نئی فائل ڈاؤن لوڈ کریں۔">Add a PDF, change the fields, then download the updated file.</p>
+        <p data-en="Nothing you enter leaves your device." data-ur="آپ کا درج کیا ہوا آپ کے آلے سے باہر نہیں جاتا۔">Nothing you enter leaves your device.</p>
+      </div>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+  <script src="../js/common.js"></script>
+  <script src="../js/fileio.js"></script>
+  <script src="../js/pdf-metadata.js"></script>
+</body>
+</html>

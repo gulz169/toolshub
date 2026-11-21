@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Stopwatch and Countdown Timer - Online | ToolsHub</title>
+  <meta name="description" content="Free online stopwatch with laps and a countdown timer with an alarm sound.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#0b0a1f">
+  <link rel="icon" href="../icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <style>
+    textarea.t{width:100%;min-height:150px;padding:14px;border-radius:14px;resize:vertical;font-size:1rem;line-height:1.7;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.18);color:inherit}
+    .stage{display:flex;justify-content:center;margin-top:16px}
+    .stage canvas,.stage img{max-width:100%;max-height:420px;border-radius:12px;background:#111}
+    .clock{font:700 3.4rem/1.2 ui-monospace,Menlo,Consolas,monospace;text-align:center;margin:18px 0;direction:ltr}
+    .laps{max-height:220px;overflow:auto;margin:12px auto 0;max-width:340px;padding-inline-start:28px}
+    .laps li{padding:4px 0;border-bottom:1px solid rgba(255,255,255,.1)}
+  </style>
+</head>
+<body data-root="../">
+  <header id="site-header"></header>
+  <main class="tool-wrap">
+    <div class="container">
+      <h1 data-en="Stopwatch &amp; Timer" data-ur="اسٹاپ واچ اور ٹائمر">Stopwatch &amp; Timer</h1>
+      <p class="sub" data-en="A stopwatch with laps and a countdown with an alarm." data-ur="لیپس کے ساتھ اسٹاپ واچ اور الارم والا کاؤنٹ ڈاؤن۔">A stopwatch with laps and a countdown with an alarm.</p>
+      <div class="panel">
+        <div class="ratios" id="tabs" style="display:flex;gap:8px"><button class="chip" type="button" data-tab="sw" aria-pressed="true" data-en="Stopwatch" data-ur="اسٹاپ واچ">Stopwatch</button><button class="chip" type="button" data-tab="cd" aria-pressed="false" data-en="Countdown" data-ur="کاؤنٹ ڈاؤن">Countdown</button></div>
+        <div id="sw">
+          <div class="clock" id="swTime">00:00.00</div>
+          <div class="actions" style="justify-content:center"><button class="btn green" id="swGo" type="button" data-en="Start" data-ur="شروع">Start</button> <button class="btn" id="swLap" type="button" data-en="Lap" data-ur="لیپ">Lap</button> <button class="btn ghost" id="swReset" type="button" data-en="Reset" data-ur="ری سیٹ">Reset</button></div>
+          <ol id="laps" class="laps" dir="ltr"></ol>
+        </div>
+        <div id="cd" hidden>
+          <div class="clock" id="cdTime">00:05:00</div>
+          <div class="options" style="justify-content:center;direction:ltr"><input type="number" id="ch" min="0" max="99" value="0" style="width:80px"> <span>h</span><input type="number" id="cm" min="0" max="59" value="5" style="width:80px"> <span>m</span><input type="number" id="cs" min="0" max="59" value="0" style="width:80px"> <span>s</span></div>
+          <div class="actions" style="justify-content:center;margin-top:12px"><button class="btn" data-set="60" type="button">1 min</button><button class="btn" data-set="300" type="button">5 min</button><button class="btn" data-set="600" type="button">10 min</button><button class="btn" data-set="1500" type="button">25 min</button></div>
+          <div class="actions" style="justify-content:center;margin-top:12px"><button class="btn green" id="cdGo" type="button" data-en="Start" data-ur="شروع">Start</button> <button class="btn ghost" id="cdReset" type="button" data-en="Reset" data-ur="ری سیٹ">Reset</button></div>
+        </div>
+        <div class="status" id="status"></div>
+      </div>
+      <div class="ad-slot">Ad space</div>
+      <div class="panel info">
+        <h2 data-en="How to use" data-ur="استعمال کا طریقہ">How to use</h2>
+        <ol>
+          <li data-en="Choose Stopwatch or Countdown." data-ur="اسٹاپ واچ یا کاؤنٹ ڈاؤن چنیں۔">Choose Stopwatch or Countdown.</li>
+          <li data-en="Press Start. Use Lap to record split times." data-ur="شروع دبائیں۔ لیپ سے درمیانی وقت محفوظ کریں۔">Press Start. Use Lap to record split times.</li>
+          <li data-en="The countdown plays a sound when time is up." data-ur="وقت ختم ہونے پر کاؤنٹ ڈاؤن آواز بجاتا ہے۔">The countdown plays a sound when time is up.</li>
+        </ol>
+        <p data-en="Keep this tab open while the countdown runs. Your browser may slow timers in background tabs." data-ur="کاؤنٹ ڈاؤن چلنے تک یہ ٹیب کھلا رکھیں۔ بیک گراؤنڈ ٹیب میں براؤزر ٹائمر سست کر سکتا ہے۔">Keep this tab open while the countdown runs. Your browser may slow timers in background tabs.</p>
+      </div>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="../js/common.js"></script>
+  <script src="../js/timer.js"></script>
+</body>
+</html>

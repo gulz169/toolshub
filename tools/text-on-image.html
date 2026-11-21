@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Add Text to Image - Meme Maker Free | ToolsHub</title>
+  <meta name="description" content="Add top and bottom text to a photo, meme style. Works with English and Urdu. Free, no upload.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#0b0a1f">
+  <link rel="icon" href="../icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <style>
+    textarea.t{width:100%;min-height:150px;padding:14px;border-radius:14px;resize:vertical;font-size:1rem;line-height:1.7;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.18);color:inherit}
+    .stage{display:flex;justify-content:center;margin-top:16px}
+    .stage canvas,.stage img{max-width:100%;max-height:420px;border-radius:12px;background:#111}
+  </style>
+</head>
+<body data-root="../">
+  <header id="site-header"></header>
+  <main class="tool-wrap">
+    <div class="container">
+      <h1 data-en="Text on Image" data-ur="تصویر پر متن">Text on Image</h1>
+      <p class="sub" data-en="Add meme-style text to the top and bottom of a photo." data-ur="تصویر کے اوپر اور نیچے میم اسٹائل متن لکھیں۔">Add meme-style text to the top and bottom of a photo.</p>
+      <div class="panel">
+        <div class="dropzone" id="dropzone">
+          <div class="big">🖼️</div>
+          <strong data-en="Click to choose an image or drag &amp; drop here" data-ur="تصویر چنیں یا یہاں ڈراپ کریں">Click to choose an image or drag &amp; drop here</strong>
+          <small data-en="JPG, PNG or WebP" data-ur="JPG، PNG یا WebP">JPG, PNG or WebP</small>
+        </div>
+        <input type="file" id="fileInput" accept="image/jpeg,image/png,image/webp" hidden>
+        <div id="work" hidden>
+          <div class="options" style="margin-top:16px">
+            <label><span data-en="Top text" data-ur="اوپر کا متن">Top text</span><input type="text" id="top" dir="auto"></label>
+            <label><span data-en="Bottom text" data-ur="نیچے کا متن">Bottom text</span><input type="text" id="bot" dir="auto"></label>
+            <label><span data-en="Size" data-ur="سائز">Size</span><input type="range" id="size" min="4" max="20" value="9" dir="ltr"></label>
+            <label><span data-en="Text color" data-ur="متن کا رنگ">Text color</span><input type="color" id="fill" value="#ffffff" style="height:42px"></label>
+            <label><span data-en="Outline" data-ur="کنارہ">Outline</span><input type="color" id="stroke" value="#000000" style="height:42px"></label>
+            <label style="display:flex;gap:6px;align-items:center"><input type="checkbox" id="caps" checked><span data-en="UPPERCASE" data-ur="بڑے حروف">UPPERCASE</span></label>
+          </div>
+          <div class="stage"><canvas id="view"></canvas></div>
+          <div class="actions" style="margin-top:16px"><button class="btn green" id="dlBtn" type="button" data-en="Download PNG" data-ur="PNG ڈاؤن لوڈ">Download PNG</button> <button class="btn ghost" id="newBtn" type="button" data-en="New image" data-ur="نئی تصویر">New image</button></div>
+        </div>
+        <div class="status" id="status"></div>
+      </div>
+      <div class="ad-slot">Ad space</div>
+      <div class="panel info">
+        <h2 data-en="How to use" data-ur="استعمال کا طریقہ">How to use</h2>
+        <ol>
+          <li data-en="Add a photo." data-ur="تصویر شامل کریں۔">Add a photo.</li>
+          <li data-en="Type the top and bottom text." data-ur="اوپر اور نیچے کا متن لکھیں۔">Type the top and bottom text.</li>
+          <li data-en="Download the result." data-ur="نتیجہ ڈاؤن لوڈ کریں۔">Download the result.</li>
+        </ol>
+        <p data-en="Your files never leave your device." data-ur="آپ کی فائلیں آپ کے آلے سے باہر نہیں جاتیں۔">Your files never leave your device.</p>
+      </div>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="../js/common.js"></script>
+  <script src="../js/text-on-image.js"></script>
+</body>
+</html>

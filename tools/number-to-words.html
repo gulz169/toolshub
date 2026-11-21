@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Number to Words - English and Urdu | ToolsHub</title>
+  <meta name="description" content="Convert numbers to words in English and Urdu. Supports lakh and crore. Free online.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#0b0a1f">
+  <link rel="icon" href="../icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <style>
+    textarea.t{width:100%;min-height:150px;padding:14px;border-radius:14px;resize:vertical;font-size:1rem;line-height:1.7;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.18);color:inherit}
+    .stage{display:flex;justify-content:center;margin-top:16px}
+    .stage canvas,.stage img{max-width:100%;max-height:420px;border-radius:12px;background:#111}
+  </style>
+</head>
+<body data-root="../">
+  <header id="site-header"></header>
+  <main class="tool-wrap">
+    <div class="container">
+      <h1 data-en="Number to Words" data-ur="نمبر سے الفاظ">Number to Words</h1>
+      <p class="sub" data-en="Write any number in words, in English or Urdu." data-ur="کسی بھی نمبر کو انگریزی یا اردو الفاظ میں لکھیں۔">Write any number in words, in English or Urdu.</p>
+      <div class="panel">
+        <div class="options">
+          <label><span data-en="Number" data-ur="نمبر">Number</span><input type="text" id="num" inputmode="decimal" value="1250000" dir="ltr"></label>
+          <label style="display:flex;gap:6px;align-items:center"><input type="checkbox" id="cur"><span data-en="Rupees (with paisa)" data-ur="روپے (پیسوں کے ساتھ)">Rupees (with paisa)</span></label>
+        </div>
+        <div style="margin-top:16px;font-weight:700" data-en="Urdu" data-ur="اردو">Urdu</div>
+        <textarea class="t" id="ur" readonly style="min-height:80px;font-size:1.3rem"></textarea>
+        <div style="margin-top:12px;font-weight:700">English</div>
+        <textarea class="t" id="en" readonly style="min-height:80px;direction:ltr;text-align:left"></textarea>
+        <div style="margin-top:12px;font-weight:700">English (lakh / crore)</div>
+        <textarea class="t" id="enpk" readonly style="min-height:80px;direction:ltr;text-align:left"></textarea>
+        <div class="status" id="status"></div>
+      </div>
+      <div class="ad-slot">Ad space</div>
+      <div class="panel info">
+        <h2 data-en="How to use" data-ur="استعمال کا طریقہ">How to use</h2>
+        <ol>
+          <li data-en="Type or paste a number." data-ur="نمبر لکھیں یا پیسٹ کریں۔">Type or paste a number.</li>
+          <li data-en="Words appear instantly. Click a box to copy it." data-ur="الفاظ فوراً نظر آتے ہیں۔ کاپی کرنے کے لیے خانے پر کلک کریں۔">Words appear instantly. Click a box to copy it.</li>
+        </ol>
+        <p data-en="Works for numbers up to 15 digits. Always double-check cheques and legal documents." data-ur="15 ہندسوں تک کے نمبر چلتے ہیں۔ چیک اور قانونی دستاویزات میں ضرور دوبارہ جانچ لیں۔">Works for numbers up to 15 digits. Always double-check cheques and legal documents.</p>
+      </div>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="../js/common.js"></script>
+  <script src="../js/number-to-words.js"></script>
+</body>
+</html>

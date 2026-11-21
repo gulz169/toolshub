@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Number Base Converter - Binary, Hex, Octal, Roman | ToolsHub</title>
+  <meta name="description" content="Convert numbers between binary, octal, decimal, hexadecimal and Roman numerals. Free online.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#0b0a1f">
+  <link rel="icon" href="../icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <style>
+    textarea.t{width:100%;min-height:150px;padding:14px;border-radius:14px;resize:vertical;font-size:1rem;line-height:1.7;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.18);color:inherit}
+    .stage{display:flex;justify-content:center;margin-top:16px}
+    .stage canvas,.stage img{max-width:100%;max-height:420px;border-radius:12px;background:#111}
+    .stat{padding:14px;border-radius:14px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);text-align:center}
+    .stat b{display:block;font-size:1.35rem;direction:ltr}.stat span{font-size:.85rem;opacity:.75}
+    .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-top:18px}
+    .stat b{word-break:break-all}.stat{cursor:pointer}
+  </style>
+</head>
+<body data-root="../">
+  <header id="site-header"></header>
+  <main class="tool-wrap">
+    <div class="container">
+      <h1 data-en="Number Base Converter" data-ur="نمبر بیس کنورٹر">Number Base Converter</h1>
+      <p class="sub" data-en="Convert between binary, octal, decimal, hex and Roman numerals." data-ur="بائنری، آکٹل، ڈیسیمل، ہیکس اور رومن اعداد میں تبدیلی کریں۔">Convert between binary, octal, decimal, hex and Roman numerals.</p>
+      <div class="panel">
+        <div class="options"><label><span data-en="Number" data-ur="نمبر">Number</span><input type="text" id="num" value="255" dir="ltr" spellcheck="false"></label><label><span data-en="Is in base" data-ur="بیس">Is in base</span><select id="base"><option value="10">Decimal (10)</option><option value="2">Binary (2)</option><option value="8">Octal (8)</option><option value="16">Hex (16)</option><option value="36">Base 36</option></select></label></div>
+        <div class="stats" style="grid-template-columns:1fr"><div class="stat" style="text-align:left"><span>Binary</span><b id="b2">-</b></div><div class="stat" style="text-align:left"><span>Octal</span><b id="b8">-</b></div><div class="stat" style="text-align:left"><span>Decimal</span><b id="b10">-</b></div><div class="stat" style="text-align:left"><span>Hex</span><b id="b16">-</b></div><div class="stat" style="text-align:left"><span data-en="Roman (1-3999)" data-ur="رومن (1-3999)">Roman (1-3999)</span><b id="rom">-</b></div></div>
+        <div class="status" id="status"></div>
+      </div>
+      <div class="ad-slot">Ad space</div>
+      <div class="panel info">
+        <h2 data-en="How to use" data-ur="استعمال کا طریقہ">How to use</h2>
+        <ol>
+          <li data-en="Type a number and choose its base." data-ur="نمبر لکھیں اور اس کی بیس چنیں۔">Type a number and choose its base.</li>
+          <li data-en="All other bases appear instantly. Click a value to copy." data-ur="باقی تمام بیس فوراً نظر آتی ہیں۔ کاپی کرنے کے لیے قدر پر کلک کریں۔">All other bases appear instantly. Click a value to copy.</li>
+        </ol>
+        <p data-en="Nothing you enter leaves your device." data-ur="آپ کا درج کیا ہوا آپ کے آلے سے باہر نہیں جاتا۔">Nothing you enter leaves your device.</p>
+      </div>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="../js/common.js"></script>
+  <script src="../js/number-base.js"></script>
+</body>
+</html>

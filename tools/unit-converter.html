@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Unit Converter - Length, Weight, Temperature, Area | ToolsHub</title>
+  <meta name="description" content="Convert length, weight, temperature, area, volume, speed and data size. Includes marla, kanal, tola and maund. Free online.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#0b0a1f">
+  <link rel="icon" href="../icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <style>
+    .conv{display:grid;grid-template-columns:1fr auto 1fr;gap:12px;align-items:end;margin-top:16px;direction:ltr}
+    .conv label{display:block}
+    .conv input,.conv select{width:100%}
+    #swap{padding:8px 14px}
+    .big-res{margin-top:18px;font-size:1.5rem;font-weight:700;text-align:center;direction:ltr;word-break:break-all}
+    @media(max-width:560px){.conv{grid-template-columns:1fr}#swap{justify-self:center}}
+  </style>
+</head>
+<body data-root="../">
+
+  <header id="site-header"></header>
+
+  <main class="tool-wrap">
+    <div class="container">
+      <h1 data-en="Unit Converter" data-ur="یونٹ کنورٹر">Unit Converter</h1>
+      <p class="sub" data-en="Convert length, weight, temperature, area and more."
+         data-ur="لمبائی، وزن، درجہ حرارت، رقبہ اور مزید کنورٹ کریں۔">Convert length, weight, temperature, area and more.</p>
+
+      <div class="panel">
+        <div class="options">
+          <label><span data-en="Type" data-ur="قسم">Type</span>
+            <select id="cat"></select></label>
+        </div>
+
+        <div class="conv">
+          <label><span data-en="From" data-ur="سے">From</span>
+            <input type="number" id="val" value="1" step="any">
+            <select id="from" style="margin-top:8px"></select></label>
+          <button class="btn ghost" id="swap" type="button" aria-label="Swap">⇄</button>
+          <label><span data-en="To" data-ur="میں">To</span>
+            <input type="text" id="res" readonly>
+            <select id="to" style="margin-top:8px"></select></label>
+        </div>
+
+        <div class="big-res" id="line"></div>
+      </div>
+
+      <div class="ad-slot">Ad space</div>
+
+      <div class="panel info">
+        <h2 data-en="How to use" data-ur="استعمال کا طریقہ">How to use</h2>
+        <ol>
+          <li data-en="Choose a type, like Area or Weight." data-ur="قسم چنیں، مثلاً رقبہ یا وزن۔">Choose a type, like Area or Weight.</li>
+          <li data-en="Enter a value and pick the units." data-ur="قدر لکھیں اور یونٹ چنیں۔">Enter a value and pick the units.</li>
+        </ol>
+        <p data-en="Marla = 272.25 sq ft, Kanal = 20 marla, Tola = 11.6638 g, Maund = 37.3242 kg." data-ur="مرلہ = 272.25 مربع فٹ، کنال = 20 مرلے، تولہ = 11.6638 گرام، من = 37.3242 کلو۔">Marla = 272.25 sq ft, Kanal = 20 marla, Tola = 11.6638 g, Maund = 37.3242 kg.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="../js/common.js"></script>
+  <script src="../js/unit-converter.js"></script>
+</body>
+</html>

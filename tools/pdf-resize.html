@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Resize PDF to A4 / Letter | ToolsHub</title>
+  <meta name="description" content="Fit every page of a PDF onto A4, Letter or Legal paper. Free online.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#0b0a1f">
+  <link rel="icon" href="../icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+</head>
+<body data-root="../">
+  <header id="site-header"></header>
+  <main class="tool-wrap">
+    <div class="container">
+      <h1 data-en="Resize PDF to A4 / Letter" data-ur="PDF کو A4 / Letter میں بدلیں">Resize PDF to A4 / Letter</h1>
+      <p class="sub" data-en="Fit every page of a PDF onto A4, Letter or Legal paper." data-ur="PDF کے ہر صفحے کو A4، Letter یا Legal کاغذ پر فٹ کریں۔">Fit every page of a PDF onto A4, Letter or Legal paper.</p>
+      <div class="panel">
+<div class="dropzone" id="dz"><div class="big">📄</div><strong data-en="Click to choose a PDF or drag &amp; drop here" data-ur="PDF چنیں یا یہاں ڈراپ کریں">Click to choose a PDF or drag &amp; drop here</strong><small data-en="PDF file" data-ur="PDF فائل">PDF file</small></div><input type="file" id="fi" accept="application/pdf,.pdf" hidden><div id="work" hidden><div class="options"><label><span data-en="Paper size" data-ur="کاغذ کا سائز">Paper size</span><select id="sz"><option value="595.28,841.89">A4</option><option value="612,792">Letter</option><option value="612,1008">Legal</option><option value="419.53,595.28">A5</option><option value="841.89,1190.55">A3</option></select></label></div><div class="actions" style="margin-top:16px"><button class="btn green" id="dl" type="button" data-en="Download" data-ur="ڈاؤن لوڈ">Download</button></div></div>
+        <div class="status" id="status"></div>
+      </div>
+      <div class="ad-slot">Ad space</div>
+      <div class="panel info">
+        <h2 data-en="How to use" data-ur="استعمال کا طریقہ">How to use</h2>
+        <p data-en="Add a PDF, pick the paper size and download." data-ur="PDF شامل کریں، کاغذ کا سائز چنیں اور ڈاؤن لوڈ کریں۔">Add a PDF, pick the paper size and download.</p>
+        <p data-en="Nothing you enter leaves your device." data-ur="آپ کا درج کیا ہوا آپ کے آلے سے باہر نہیں جاتا۔">Nothing you enter leaves your device.</p>
+      </div>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+  <script src="../js/common.js"></script>
+  <script src="../js/fileio.js"></script>
+  <script src="../js/pdf-resize.js"></script>
+</body>
+</html>

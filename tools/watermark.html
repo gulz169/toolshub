@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Add Watermark to Image or PDF - Free | ToolsHub</title>
+  <meta name="description" content="Add a text watermark to images or PDF files. Choose size, opacity and position. Free, no upload.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#0b0a1f">
+  <link rel="icon" href="../icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <style>
+    textarea.t{width:100%;min-height:150px;padding:14px;border-radius:14px;resize:vertical;font-size:1rem;line-height:1.7;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.18);color:inherit}
+    .stage{display:flex;justify-content:center;margin-top:16px}
+    .stage canvas,.stage img{max-width:100%;max-height:420px;border-radius:12px;background:#111}
+  </style>
+</head>
+<body data-root="../">
+  <header id="site-header"></header>
+  <main class="tool-wrap">
+    <div class="container">
+      <h1 data-en="Add Watermark" data-ur="واٹر مارک لگائیں">Add Watermark</h1>
+      <p class="sub" data-en="Put a text watermark on an image or a PDF." data-ur="تصویر یا PDF پر ٹیکسٹ واٹر مارک لگائیں۔">Put a text watermark on an image or a PDF.</p>
+      <div class="panel">
+        <div class="dropzone" id="dropzone">
+          <div class="big">💧</div>
+          <strong data-en="Click to choose an image or PDF, or drag &amp; drop" data-ur="تصویر یا PDF چنیں یا ڈراپ کریں">Click to choose an image or PDF, or drag &amp; drop</strong>
+          <small data-en="JPG, PNG, WebP or PDF" data-ur="JPG، PNG، WebP یا PDF">JPG, PNG, WebP or PDF</small>
+        </div>
+        <input type="file" id="fileInput" accept="image/jpeg,image/png,image/webp,application/pdf,.pdf" hidden>
+        <div id="work" hidden>
+          <div class="options" style="margin-top:16px">
+            <label><span data-en="Text" data-ur="متن">Text</span><input type="text" id="wmText" value="ToolsHub" maxlength="60"></label>
+            <label><span data-en="Position" data-ur="مقام">Position</span>
+              <select id="pos"><option value="tile" data-en="Repeat (tiled)" data-ur="بار بار (ٹائل)">Repeat (tiled)</option><option value="center" data-en="Center" data-ur="درمیان">Center</option><option value="br" data-en="Bottom right" data-ur="نیچے دائیں">Bottom right</option></select></label>
+            <label><span data-en="Size" data-ur="سائز">Size</span><input type="range" id="size" min="2" max="20" value="6" dir="ltr"></label>
+            <label><span data-en="Opacity" data-ur="شفافیت">Opacity</span><input type="range" id="opacity" min="5" max="100" value="35" dir="ltr"></label>
+            <label><span data-en="Color" data-ur="رنگ">Color</span><input type="color" id="color" value="#808080" style="height:42px"></label>
+          </div>
+          <div class="stage" id="stage"></div>
+          <div class="actions" style="margin-top:16px">
+            <button class="btn green" id="dlBtn" type="button" data-en="Download" data-ur="ڈاؤن لوڈ">Download</button>
+            <button class="btn ghost" id="newBtn" type="button" data-en="New file" data-ur="نئی فائل">New file</button>
+          </div>
+        </div>
+        <div class="status" id="status"></div>
+      </div>
+      <div class="ad-slot">Ad space</div>
+      <div class="panel info">
+        <h2 data-en="How to use" data-ur="استعمال کا طریقہ">How to use</h2>
+        <ol>
+          <li data-en="Add an image or PDF." data-ur="تصویر یا PDF شامل کریں۔">Add an image or PDF.</li>
+          <li data-en="Type the watermark text and adjust the look." data-ur="واٹر مارک کا متن لکھیں اور انداز سیٹ کریں۔">Type the watermark text and adjust the look.</li>
+          <li data-en="Download the result." data-ur="نتیجہ ڈاؤن لوڈ کریں۔">Download the result.</li>
+        </ol>
+        <p data-en="PDF watermarks support English letters and numbers only. Images support any language." data-ur="PDF واٹر مارک میں صرف انگریزی حروف اور اعداد چلتے ہیں۔ تصاویر میں کوئی بھی زبان چلتی ہے۔">PDF watermarks support English letters and numbers only. Images support any language.</p>
+      </div>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+  <script src="../js/common.js"></script>
+  <script src="../js/watermark.js"></script>
+</body>
+</html>

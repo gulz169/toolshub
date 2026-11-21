@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>URL Encoder and Decoder - Online | ToolsHub</title>
+  <meta name="description" content="Encode or decode URLs and query text with percent-encoding. Supports Urdu. Free.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="theme-color" content="#0b0a1f">
+  <link rel="icon" href="../icons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <style>
+    textarea.t{width:100%;min-height:150px;padding:14px;border-radius:14px;resize:vertical;font-size:1rem;line-height:1.7;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.18);color:inherit}
+    .stage{display:flex;justify-content:center;margin-top:16px}
+    .stage canvas,.stage img{max-width:100%;max-height:420px;border-radius:12px;background:#111}
+  </style>
+</head>
+<body data-root="../">
+  <header id="site-header"></header>
+  <main class="tool-wrap">
+    <div class="container">
+      <h1 data-en="URL Encoder &amp; Decoder" data-ur="URL انکوڈر اور ڈی کوڈر">URL Encoder &amp; Decoder</h1>
+      <p class="sub" data-en="Make text safe for links, or read an encoded link." data-ur="متن کو لنک کے لیے محفوظ بنائیں، یا انکوڈ شدہ لنک پڑھیں۔">Make text safe for links, or read an encoded link.</p>
+      <div class="panel">
+        <textarea class="t" id="inp" dir="auto" spellcheck="false" style="min-height:130px" placeholder="https://example.com/search?q=اردو text"></textarea>
+        <div class="options" style="margin-top:12px"><label><span data-en="Mode" data-ur="طریقہ">Mode</span><select id="mode"><option value="c">Text / query value (encodeURIComponent)</option><option value="f">Full URL (encodeURI)</option></select></label></div>
+        <div class="actions" style="margin-top:12px"><button class="btn green" id="enc" type="button" data-en="Encode ↓" data-ur="انکوڈ ↓">Encode ↓</button> <button class="btn green" id="dec" type="button" data-en="Decode ↓" data-ur="ڈی کوڈ ↓">Decode ↓</button></div>
+        <textarea class="t" id="out" dir="auto" readonly style="min-height:130px;margin-top:12px"></textarea>
+        <div class="actions" style="margin-top:12px"><button class="btn" id="copyBtn" type="button" data-en="Copy" data-ur="کاپی">Copy</button> <button class="btn ghost" id="clearBtn" type="button" data-en="Clear" data-ur="صاف کریں">Clear</button></div>
+        <div class="status" id="status"></div>
+      </div>
+      <div class="ad-slot">Ad space</div>
+      <div class="panel info">
+        <h2 data-en="How to use" data-ur="استعمال کا طریقہ">How to use</h2>
+        <ol>
+          <li data-en="Paste your text or link." data-ur="اپنا متن یا لنک پیسٹ کریں۔">Paste your text or link.</li>
+          <li data-en="Press Encode or Decode." data-ur="انکوڈ یا ڈی کوڈ دبائیں۔">Press Encode or Decode.</li>
+        </ol>
+        <p data-en="Your files never leave your device." data-ur="آپ کی فائلیں آپ کے آلے سے باہر نہیں جاتیں۔">Your files never leave your device.</p>
+      </div>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="../js/common.js"></script>
+  <script src="../js/url-encoder.js"></script>
+</body>
+</html>
