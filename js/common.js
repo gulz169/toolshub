@@ -49,7 +49,7 @@
     h.innerHTML =
       '<div class="container">' +
       '<button class="menu-btn" id="menuBtn" type="button" aria-label="Menu" aria-expanded="false"><i></i><i></i><i></i></button>' +
-      '<a class="logo" href="' + root + 'index.html">Tools<span>Hub</span></a>' +
+      '<a class="logo" href="' + root + 'index.html" aria-label="ToolsHub"><img class="logo-mark" src="' + root + 'icons/logo.svg" width="34" height="34" alt="">Tools<span>Hub</span></a>' +
       '<nav class="nav">' +
       '<a class="nav-all" href="' + root + 'index.html#tools" data-en="All Tools" data-ur="تمام ٹولز">All Tools</a>' +
       '<button class="lang-btn" id="installBtn" type="button" data-en="📲 Install" data-ur="📲 انسٹال">📲 Install</button>' +
