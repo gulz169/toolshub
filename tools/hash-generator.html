@@ -19,6 +19,7 @@
     .stage canvas,.stage img{max-width:100%;max-height:420px;border-radius:12px;background:#111}
     .h{display:flex;gap:10px;align-items:center;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.1);cursor:pointer}.h b{width:70px;flex:none}.h code{word-break:break-all;font-size:.82rem}
   </style>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is a hash?", "acceptedAnswer": {"@type": "Answer", "text": "A hash is a fixed-length fingerprint of data. The same input always gives the same hash, and a tiny change gives a very different one."}}, {"@type": "Question", "name": "Can a hash be reversed?", "acceptedAnswer": {"@type": "Answer", "text": "No. Hashing is one-way, so you cannot get the original text back from the hash."}}, {"@type": "Question", "name": "Which algorithm is safest?", "acceptedAnswer": {"@type": "Answer", "text": "SHA-256 or stronger is recommended. SHA-1 is only for old compatibility and should not be used for security."}}]}</script>
 </head>
 <body data-root="../">
   <header id="site-header"></header>
@@ -41,6 +42,24 @@
         </ol>
         <p data-en="Your files never leave your device." data-ur="آپ کی فائلیں آپ کے آلے سے باہر نہیں جاتیں۔">Your files never leave your device.</p>
       </div>
+
+      <section class="panel info faq-section">
+        <h2 data-en="About this tool" data-ur="اس ٹول کے بارے میں">About this tool</h2>
+        <p data-en="Generate SHA-1, SHA-256 and other hashes from any text to verify data or create checksums. Everything runs in your browser." data-ur="کسی بھی متن سے SHA-1، SHA-256 اور دیگر ہیش بنائیں تاکہ ڈیٹا کی تصدیق یا چیک سم بنا سکیں۔ سب کچھ آپ کے براؤزر میں چلتا ہے۔">Generate SHA-1, SHA-256 and other hashes from any text to verify data or create checksums. Everything runs in your browser.</p>
+        <h2 data-en="Frequently asked questions" data-ur="اکثر پوچھے جانے والے سوالات">Frequently asked questions</h2>
+        <details class="faq">
+          <summary data-en="What is a hash?" data-ur="ہیش کیا ہے؟">What is a hash?</summary>
+          <p data-en="A hash is a fixed-length fingerprint of data. The same input always gives the same hash, and a tiny change gives a very different one." data-ur="ہیش ڈیٹا کی مقررہ لمبائی والی انگلی کی چھاپ ہے۔ ایک ہی ان پٹ سے ہمیشہ وہی ہیش بنتا ہے اور ذرا سی تبدیلی پر بالکل مختلف بنتا ہے۔">A hash is a fixed-length fingerprint of data. The same input always gives the same hash, and a tiny change gives a very different one.</p>
+        </details>
+        <details class="faq">
+          <summary data-en="Can a hash be reversed?" data-ur="کیا ہیش کو واپس بدلا جا سکتا ہے؟">Can a hash be reversed?</summary>
+          <p data-en="No. Hashing is one-way, so you cannot get the original text back from the hash." data-ur="نہیں۔ ہیشنگ یک طرفہ ہے، ہیش سے اصل متن واپس نہیں مل سکتا۔">No. Hashing is one-way, so you cannot get the original text back from the hash.</p>
+        </details>
+        <details class="faq">
+          <summary data-en="Which algorithm is safest?" data-ur="کون سا الگورتھم زیادہ محفوظ ہے؟">Which algorithm is safest?</summary>
+          <p data-en="SHA-256 or stronger is recommended. SHA-1 is only for old compatibility and should not be used for security." data-ur="SHA-256 یا اس سے مضبوط تجویز کیا جاتا ہے۔ SHA-1 صرف پرانی مطابقت کے لیے ہے اور سیکیورٹی کے لیے استعمال نہیں ہونا چاہیے۔">SHA-256 or stronger is recommended. SHA-1 is only for old compatibility and should not be used for security.</p>
+        </details>
+      </section>
     </div>
   </main>
   <footer id="site-footer"></footer>

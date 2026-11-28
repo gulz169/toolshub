@@ -13,6 +13,7 @@
   <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="mobile-web-app-capable" content="yes">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is an HTML entity?", "acceptedAnswer": {"@type": "Answer", "text": "It is a safe way to write characters like <, > and & in HTML, for example &lt; for the less-than sign."}}, {"@type": "Question", "name": "When should I encode text?", "acceptedAnswer": {"@type": "Answer", "text": "Encode when you want to display code or special characters as text instead of letting the browser treat them as HTML."}}, {"@type": "Question", "name": "Does it help with security?", "acceptedAnswer": {"@type": "Answer", "text": "Escaping user input is one part of preventing XSS, but real sites should also escape on the server side."}}]}</script>
 </head>
 <body data-root="../">
   <header id="site-header"></header>
@@ -30,6 +31,24 @@
         <p data-en="Choose encode or decode and paste your text." data-ur="انکوڈ یا ڈی کوڈ چنیں اور ٹیکسٹ پیسٹ کریں۔">Choose encode or decode and paste your text.</p>
         <p data-en="Nothing you enter leaves your device." data-ur="آپ کا درج کیا ہوا آپ کے آلے سے باہر نہیں جاتا۔">Nothing you enter leaves your device.</p>
       </div>
+
+      <section class="panel info faq-section">
+        <h2 data-en="About this tool" data-ur="اس ٹول کے بارے میں">About this tool</h2>
+        <p data-en="Encode special characters into HTML entities or decode entities back to normal text. Prevents broken markup when showing code on a page." data-ur="خاص حروف کو HTML اینٹیٹی میں بدلیں یا اینٹیٹی کو واپس عام متن بنائیں۔ صفحے پر کوڈ دکھاتے وقت مارک اپ ٹوٹنے سے بچاتا ہے۔">Encode special characters into HTML entities or decode entities back to normal text. Prevents broken markup when showing code on a page.</p>
+        <h2 data-en="Frequently asked questions" data-ur="اکثر پوچھے جانے والے سوالات">Frequently asked questions</h2>
+        <details class="faq">
+          <summary data-en="What is an HTML entity?" data-ur="HTML اینٹیٹی کیا ہے؟">What is an HTML entity?</summary>
+          <p data-en="It is a safe way to write characters like &lt;, &gt; and &amp; in HTML, for example &amp;lt; for the less-than sign." data-ur="یہ HTML میں &lt;، &gt; اور &amp; جیسے حروف لکھنے کا محفوظ طریقہ ہے، جیسے &lt; کے لیے &amp;lt;۔">It is a safe way to write characters like &lt;, &gt; and &amp; in HTML, for example &amp;lt; for the less-than sign.</p>
+        </details>
+        <details class="faq">
+          <summary data-en="When should I encode text?" data-ur="متن کو انکوڈ کب کرنا چاہیے؟">When should I encode text?</summary>
+          <p data-en="Encode when you want to display code or special characters as text instead of letting the browser treat them as HTML." data-ur="جب آپ کوڈ یا خاص حروف کو متن کے طور پر دکھانا چاہیں اور براؤزر انہیں HTML نہ سمجھے۔">Encode when you want to display code or special characters as text instead of letting the browser treat them as HTML.</p>
+        </details>
+        <details class="faq">
+          <summary data-en="Does it help with security?" data-ur="کیا یہ سیکیورٹی میں مدد کرتا ہے؟">Does it help with security?</summary>
+          <p data-en="Escaping user input is one part of preventing XSS, but real sites should also escape on the server side." data-ur="صارف کے ان پٹ کو ایسکیپ کرنا XSS روکنے کا ایک حصہ ہے، مگر اصل سائٹس کو سرور کی طرف بھی ایسکیپ کرنا چاہیے۔">Escaping user input is one part of preventing XSS, but real sites should also escape on the server side.</p>
+        </details>
+      </section>
     </div>
   </main>
   <footer id="site-footer"></footer>

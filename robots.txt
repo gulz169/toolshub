@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://toolshub-five-sigma.vercel.app/sitemap.xml

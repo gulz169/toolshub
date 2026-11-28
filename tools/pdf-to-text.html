@@ -18,6 +18,7 @@
     .stage{display:flex;justify-content:center;margin-top:16px}
     .stage canvas,.stage img{max-width:100%;max-height:420px;border-radius:12px;background:#111}
   </style>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why is the result empty for my PDF?", "acceptedAnswer": {"@type": "Answer", "text": "The PDF is probably a scan made of images. Use the Image to Text (OCR) tool on its pages instead."}}, {"@type": "Question", "name": "Does it keep the layout?", "acceptedAnswer": {"@type": "Answer", "text": "It extracts the text content. Tables and columns may not keep their exact layout."}}, {"@type": "Question", "name": "Does Urdu text extract correctly?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on how the PDF was made. Some Urdu PDFs store letters in a way that may paste in the wrong order."}}]}</script>
 </head>
 <body data-root="../">
   <header id="site-header"></header>
@@ -50,6 +51,24 @@
         </ol>
         <p data-en="Scanned PDFs have no real text. For those, use the Image to Text tool. Your file never leaves your device." data-ur="اسکین شدہ PDF میں اصل متن نہیں ہوتا، ان کے لیے Image to Text استعمال کریں۔ آپ کی فائل آپ کے آلے سے باہر نہیں جاتی۔">Scanned PDFs have no real text. For those, use the Image to Text tool. Your file never leaves your device.</p>
       </div>
+
+      <section class="panel info faq-section">
+        <h2 data-en="About this tool" data-ur="اس ٹول کے بارے میں">About this tool</h2>
+        <p data-en="Extract the text from a PDF and copy or download it. Works for PDFs that contain real text, not scanned images." data-ur="PDF سے متن نکالیں اور کاپی یا ڈاؤن لوڈ کریں۔ ان PDF پر چلتا ہے جن میں اصل متن ہو، اسکین شدہ تصاویر پر نہیں۔">Extract the text from a PDF and copy or download it. Works for PDFs that contain real text, not scanned images.</p>
+        <h2 data-en="Frequently asked questions" data-ur="اکثر پوچھے جانے والے سوالات">Frequently asked questions</h2>
+        <details class="faq">
+          <summary data-en="Why is the result empty for my PDF?" data-ur="میری PDF کا نتیجہ خالی کیوں ہے؟">Why is the result empty for my PDF?</summary>
+          <p data-en="The PDF is probably a scan made of images. Use the Image to Text (OCR) tool on its pages instead." data-ur="غالباً PDF تصاویر پر مبنی اسکین ہے۔ اس کے بجائے اس کے صفحات پر امیج ٹو ٹیکسٹ (OCR) ٹول استعمال کریں۔">The PDF is probably a scan made of images. Use the Image to Text (OCR) tool on its pages instead.</p>
+        </details>
+        <details class="faq">
+          <summary data-en="Does it keep the layout?" data-ur="کیا یہ لے آؤٹ برقرار رکھتا ہے؟">Does it keep the layout?</summary>
+          <p data-en="It extracts the text content. Tables and columns may not keep their exact layout." data-ur="یہ متن کا مواد نکالتا ہے۔ ٹیبل اور کالم اپنے اصل لے آؤٹ میں نہ رہیں۔">It extracts the text content. Tables and columns may not keep their exact layout.</p>
+        </details>
+        <details class="faq">
+          <summary data-en="Does Urdu text extract correctly?" data-ur="کیا اردو متن درست نکلتا ہے؟">Does Urdu text extract correctly?</summary>
+          <p data-en="It depends on how the PDF was made. Some Urdu PDFs store letters in a way that may paste in the wrong order." data-ur="یہ PDF کے بننے کے طریقے پر منحصر ہے۔ کچھ اردو PDF میں حروف اس طرح محفوظ ہوتے ہیں کہ پیسٹ کرنے پر ترتیب غلط ہو سکتی ہے۔">It depends on how the PDF was made. Some Urdu PDFs store letters in a way that may paste in the wrong order.</p>
+        </details>
+      </section>
     </div>
   </main>
   <footer id="site-footer"></footer>

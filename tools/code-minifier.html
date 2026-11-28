@@ -13,6 +13,7 @@
   <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="mobile-web-app-capable" content="yes">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What does minifying do?", "acceptedAnswer": {"@type": "Answer", "text": "It strips characters that browsers do not need, such as comments and extra whitespace, without changing how the page looks."}}, {"@type": "Question", "name": "Should I keep my original code?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Always keep the readable version for editing and use the minified copy only on your live site."}}, {"@type": "Question", "name": "Does it minify JavaScript?", "acceptedAnswer": {"@type": "Answer", "text": "This tool is for CSS and HTML. JavaScript needs a dedicated minifier because its rules are more complex."}}]}</script>
 </head>
 <body data-root="../">
   <header id="site-header"></header>
@@ -30,6 +31,24 @@
         <p data-en="Choose CSS or HTML, paste your code and copy the small version." data-ur="CSS یا HTML چنیں، کوڈ پیسٹ کریں اور چھوٹا ورژن کاپی کریں۔">Choose CSS or HTML, paste your code and copy the small version.</p>
         <p data-en="Nothing you enter leaves your device." data-ur="آپ کا درج کیا ہوا آپ کے آلے سے باہر نہیں جاتا۔">Nothing you enter leaves your device.</p>
       </div>
+
+      <section class="panel info faq-section">
+        <h2 data-en="About this tool" data-ur="اس ٹول کے بارے میں">About this tool</h2>
+        <p data-en="Minify CSS and HTML by removing comments, spaces and line breaks. Smaller files load faster and help your page speed score." data-ur="کمنٹس، خالی جگہیں اور نئی لائنیں ہٹا کر CSS اور HTML کو چھوٹا کریں۔ چھوٹی فائلیں تیزی سے لوڈ ہوتی ہیں اور پیج اسپیڈ بہتر بناتی ہیں۔">Minify CSS and HTML by removing comments, spaces and line breaks. Smaller files load faster and help your page speed score.</p>
+        <h2 data-en="Frequently asked questions" data-ur="اکثر پوچھے جانے والے سوالات">Frequently asked questions</h2>
+        <details class="faq">
+          <summary data-en="What does minifying do?" data-ur="منیفائی کرنے سے کیا ہوتا ہے؟">What does minifying do?</summary>
+          <p data-en="It strips characters that browsers do not need, such as comments and extra whitespace, without changing how the page looks." data-ur="یہ ان حروف کو ہٹاتا ہے جو براؤزر کو درکار نہیں، جیسے کمنٹس اور فالتو خالی جگہ، اور صفحے کی شکل نہیں بدلتی۔">It strips characters that browsers do not need, such as comments and extra whitespace, without changing how the page looks.</p>
+        </details>
+        <details class="faq">
+          <summary data-en="Should I keep my original code?" data-ur="کیا اصل کوڈ سنبھال کر رکھوں؟">Should I keep my original code?</summary>
+          <p data-en="Yes. Always keep the readable version for editing and use the minified copy only on your live site." data-ur="جی ہاں۔ ایڈیٹنگ کے لیے ہمیشہ پڑھنے والا ورژن رکھیں اور منیفائی شدہ کاپی صرف لائیو سائٹ پر لگائیں۔">Yes. Always keep the readable version for editing and use the minified copy only on your live site.</p>
+        </details>
+        <details class="faq">
+          <summary data-en="Does it minify JavaScript?" data-ur="کیا یہ جاوا اسکرپٹ بھی چھوٹا کرتا ہے؟">Does it minify JavaScript?</summary>
+          <p data-en="This tool is for CSS and HTML. JavaScript needs a dedicated minifier because its rules are more complex." data-ur="یہ ٹول CSS اور HTML کے لیے ہے۔ جاوا اسکرپٹ کے اصول پیچیدہ ہیں اس لیے اس کے لیے الگ منیفائر چاہیے۔">This tool is for CSS and HTML. JavaScript needs a dedicated minifier because its rules are more complex.</p>
+        </details>
+      </section>
     </div>
   </main>
   <footer id="site-footer"></footer>

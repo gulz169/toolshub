@@ -21,6 +21,7 @@
     .stat b{display:block;font-size:1.5rem;direction:ltr}.stat span{font-size:.85rem;opacity:.75}
     .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin-top:18px}
   </style>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Where do the exchange rates come from?", "acceptedAnswer": {"@type": "Answer", "text": "They come from a public daily rates service and are cached for about six hours. They are for reference, not the exact rate a bank or money changer will give."}}, {"@type": "Question", "name": "Do I need internet?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, at least once to fetch the latest rates. After that the saved rates can still be used for a few hours."}}, {"@type": "Question", "name": "Why is the open-market rate different?", "acceptedAnswer": {"@type": "Answer", "text": "Open-market and bank rates include buying and selling margins and local demand, so they can differ from the mid-market rate shown here."}}]}</script>
 </head>
 <body data-root="../">
   <header id="site-header"></header>
@@ -44,6 +45,24 @@
         <p data-en="Rates are daily mid-market rates for reference. Banks and exchange shops charge their own rates." data-ur="ریٹس روزانہ کے درمیانی ریٹس ہیں جو صرف حوالے کے لیے ہیں۔ بینک اور ایکسچینج اپنے ریٹ لگاتے ہیں۔">Rates are daily mid-market rates for reference. Banks and exchange shops charge their own rates.</p>
         <p dir="ltr"><a href="https://www.exchangerate-api.com" target="_blank" rel="noopener">Rates By Exchange Rate API</a></p>
       </div>
+
+      <section class="panel info faq-section">
+        <h2 data-en="About this tool" data-ur="اس ٹول کے بارے میں">About this tool</h2>
+        <p data-en="Convert between 30 popular currencies including PKR, USD, SAR, AED, GBP and EUR using daily exchange rates. Rates are cached for a few hours." data-ur="PKR، USD، SAR، AED، GBP اور EUR سمیت 30 مقبول کرنسیوں کے درمیان روزانہ کی شرح سے تبدیلی کریں۔ ریٹ چند گھنٹوں کے لیے محفوظ رہتے ہیں۔">Convert between 30 popular currencies including PKR, USD, SAR, AED, GBP and EUR using daily exchange rates. Rates are cached for a few hours.</p>
+        <h2 data-en="Frequently asked questions" data-ur="اکثر پوچھے جانے والے سوالات">Frequently asked questions</h2>
+        <details class="faq">
+          <summary data-en="Where do the exchange rates come from?" data-ur="ایکسچینج ریٹ کہاں سے آتے ہیں؟">Where do the exchange rates come from?</summary>
+          <p data-en="They come from a public daily rates service and are cached for about six hours. They are for reference, not the exact rate a bank or money changer will give." data-ur="یہ ایک عوامی روزانہ ریٹ سروس سے آتے ہیں اور تقریباً چھ گھنٹے محفوظ رہتے ہیں۔ یہ صرف حوالے کے لیے ہیں، بینک یا منی چینجر کا ریٹ مختلف ہو سکتا ہے۔">They come from a public daily rates service and are cached for about six hours. They are for reference, not the exact rate a bank or money changer will give.</p>
+        </details>
+        <details class="faq">
+          <summary data-en="Do I need internet?" data-ur="کیا انٹرنیٹ چاہیے؟">Do I need internet?</summary>
+          <p data-en="Yes, at least once to fetch the latest rates. After that the saved rates can still be used for a few hours." data-ur="جی ہاں، تازہ ریٹ لانے کے لیے کم از کم ایک بار۔ اس کے بعد محفوظ ریٹ چند گھنٹے استعمال ہو سکتے ہیں۔">Yes, at least once to fetch the latest rates. After that the saved rates can still be used for a few hours.</p>
+        </details>
+        <details class="faq">
+          <summary data-en="Why is the open-market rate different?" data-ur="اوپن مارکیٹ ریٹ مختلف کیوں ہوتا ہے؟">Why is the open-market rate different?</summary>
+          <p data-en="Open-market and bank rates include buying and selling margins and local demand, so they can differ from the mid-market rate shown here." data-ur="اوپن مارکیٹ اور بینک ریٹ میں خرید و فروخت کا مارجن اور مقامی طلب شامل ہوتی ہے، اس لیے یہ یہاں دکھائے گئے مڈ مارکیٹ ریٹ سے مختلف ہو سکتے ہیں۔">Open-market and bank rates include buying and selling margins and local demand, so they can differ from the mid-market rate shown here.</p>
+        </details>
+      </section>
     </div>
   </main>
   <footer id="site-footer"></footer>

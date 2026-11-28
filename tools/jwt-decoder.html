@@ -13,6 +13,7 @@
   <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="mobile-web-app-capable" content="yes">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does decoding verify the token?", "acceptedAnswer": {"@type": "Answer", "text": "No. Decoding only reads the contents. Verifying the signature needs the secret or public key."}}, {"@type": "Question", "name": "Is it safe to paste my token?", "acceptedAnswer": {"@type": "Answer", "text": "The tool runs locally and does not send it anywhere, but avoid sharing live production tokens with others."}}, {"@type": "Question", "name": "What is in a JWT?", "acceptedAnswer": {"@type": "Answer", "text": "Three parts separated by dots: header, payload and signature."}}]}</script>
 </head>
 <body data-root="../">
   <header id="site-header"></header>
@@ -30,6 +31,24 @@
         <p data-en="Paste a JWT. The header and payload are decoded here. The signature is not verified." data-ur="JWT پیسٹ کریں۔ ہیڈر اور پے لوڈ یہیں ڈیکوڈ ہوں گے۔ سگنیچر کی تصدیق نہیں ہوتی۔">Paste a JWT. The header and payload are decoded here. The signature is not verified.</p>
         <p data-en="Nothing you enter leaves your device." data-ur="آپ کا درج کیا ہوا آپ کے آلے سے باہر نہیں جاتا۔">Nothing you enter leaves your device.</p>
       </div>
+
+      <section class="panel info faq-section">
+        <h2 data-en="About this tool" data-ur="اس ٹول کے بارے میں">About this tool</h2>
+        <p data-en="Decode a JSON Web Token to read its header and payload, including expiry time. The token stays in your browser." data-ur="JSON ویب ٹوکن ڈی کوڈ کر کے اس کا ہیڈر اور پے لوڈ، بشمول ختم ہونے کا وقت، پڑھیں۔ ٹوکن آپ کے براؤزر ہی میں رہتا ہے۔">Decode a JSON Web Token to read its header and payload, including expiry time. The token stays in your browser.</p>
+        <h2 data-en="Frequently asked questions" data-ur="اکثر پوچھے جانے والے سوالات">Frequently asked questions</h2>
+        <details class="faq">
+          <summary data-en="Does decoding verify the token?" data-ur="کیا ڈی کوڈ کرنے سے ٹوکن کی تصدیق ہوتی ہے؟">Does decoding verify the token?</summary>
+          <p data-en="No. Decoding only reads the contents. Verifying the signature needs the secret or public key." data-ur="نہیں۔ ڈی کوڈ صرف مواد پڑھتا ہے۔ دستخط کی تصدیق کے لیے خفیہ یا پبلک کلید چاہیے۔">No. Decoding only reads the contents. Verifying the signature needs the secret or public key.</p>
+        </details>
+        <details class="faq">
+          <summary data-en="Is it safe to paste my token?" data-ur="کیا ٹوکن پیسٹ کرنا محفوظ ہے؟">Is it safe to paste my token?</summary>
+          <p data-en="The tool runs locally and does not send it anywhere, but avoid sharing live production tokens with others." data-ur="ٹول مقامی طور پر چلتا ہے اور کہیں نہیں بھیجتا، مگر لائیو پروڈکشن ٹوکن دوسروں سے شیئر کرنے سے بچیں۔">The tool runs locally and does not send it anywhere, but avoid sharing live production tokens with others.</p>
+        </details>
+        <details class="faq">
+          <summary data-en="What is in a JWT?" data-ur="JWT میں کیا ہوتا ہے؟">What is in a JWT?</summary>
+          <p data-en="Three parts separated by dots: header, payload and signature." data-ur="نقطوں سے الگ تین حصے: ہیڈر، پے لوڈ اور دستخط۔">Three parts separated by dots: header, payload and signature.</p>
+        </details>
+      </section>
     </div>
   </main>
   <footer id="site-footer"></footer>
